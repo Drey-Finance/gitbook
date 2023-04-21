@@ -100,7 +100,7 @@ The formula for new Dreybit monthly allocation per individual investor is as bef
 
 These additional Dreybits change the overall amount of Dreybits in circulation.
 
-### New Dreybit Monthly Re-Allocation
+### Survivor's Distributions
 
 When an existing investor passes away, Dreybits are re-allocated to the surviving investors. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
 
@@ -109,5 +109,7 @@ When an existing investor passes away, Dreybits are re-allocated to the survivin
 3. Divide by the sum of the total of all surviving member's Dreybits in circulation at the end of the month.
 
 These Dreybits will be converted into bitcoin and distributed to the surviving members at the beginning of each month.
+
+&#x20;New Dreybit Monthly Re-Allocation
 
 At the beginning of the month, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members.
