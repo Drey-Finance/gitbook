@@ -94,7 +94,7 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
 ### Allocating Deceased's Distributions
 
-When an existing investor passes away, Dreybits are re-allocated to the surviving investors. This step happens _BEFORE_ new investors are allocated Dreybits at the beginning of the month. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
+When an existing investor passes away, Dreybits are re-allocated to the surviving investors. This step happens _BEFORE_ new investors are allocated Dreybits at the beginning of the month which results in a total re-allocation across the investor population. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
 
 1. Sum the total of all deceased member's Dreybits in circulation at the end of the month.
 2. Sum the total of all surviving member's Dreybits in circulation at the end of the month.
@@ -121,7 +121,7 @@ $$p*\sum dec(btc) = percentage\, of\, \sum dec(btc)\, distributed$$
 
 ### New Dreybit Monthly Re-Allocation
 
-When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month following their deposit _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund.&#x20;
+When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month following _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund.&#x20;
 
 Therefor, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members.
 
@@ -134,3 +134,11 @@ $$\overline{W}=\frac{\sum}{s_(1-ith)}$$
 The formula for new Dreybit monthly allocation per individual investor (new and existing) is as before, the product of their investment and the calculated weighted average.
 
 $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
+
+### Summarising Steps
+
+1. At the initialisation of the fund, run the first Dreybit allocation step as described above.
+2. At the end of the month, tally the surviving member's share of deceased member's Dreybits.
+3. Use this number to determine the pro-rata percentage of deceased member's bitcoin to be allocated to survivors.
+4. Remove the deceased member's Dreybits from the total and remit the deceased member's bitcoin to survivors.
+5. On the first of the month, re-run the Dreybit allocation steps.
