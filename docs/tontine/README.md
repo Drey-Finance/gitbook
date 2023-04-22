@@ -37,19 +37,15 @@ Each JSON-LD document in the Bitcoin blockchain will contain an address to forwa
 
 A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at x block height to move the satoshi to a specific wallet address conveying acceptance or rejection.
 
-The Dreybit ledger contains each investors allocated bitcoin amounts to be received in the next distribution. Each Dreybit ledger alias ID is created for the user during signup which maps to their bitcoin address and amount of bitcoin to be received. The amount of bitcoin an investor gets depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
+The Dreybit ledger contains each investors allocated bitcoin amounts to be received in the next distribution as dictated by their allotment of Dreybits. Each Dreybit ledger alias ID is created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of bitcoin an investor gets depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
 
 At the end of every month, a new Dreybit ledger is created with updated Dreybits allocated to all investors. Ledgers must be updated to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, new investors were added during the month, amount invested as a pro-rata percentage of the entire value of the fund, etc.
-
-An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the assignees pass away. He/she continues to enjoy the benefit of holding those Dreybits month to month as long as they continuously (monthly) provide proof that you he/she is alive within a certain time limit.
-
-If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs—that is they are still alive. This is a type of tontine agreement.
 
 ## Fair Tontine Tontine Forfeiture Allocation
 
 Surviving members of a fair tontine do not receive equal allocations of each dying member’s forfeited balance.
 
-Rather, they receive unequal allocations that depend on their respective mortality rate, _q_, and account balance, _s_.
+Rather, they receive unequal allocations that depend on their respective mortality rate, _q_, and current account balance, _s_.
 
 One useful property of this method is that it promotes transparency by being easily decomposed into two simple components: (1) a nominal tontine (life credit) yield for each member, which is easily obtained from the tontine’s mortality table, and, (2) a common adjustment factor that accounts for the difference between the amount of forfeitures experienced by the pool during a given period and the amount that was nominally expected, plus the amount expected from the investment yield.
 
@@ -68,25 +64,25 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 
 ### Other Mechanics
 
-* Dreybits can be issued at any time, so people can continuously invest in the tontine and be assigned Dreybits.&#x20;
+* Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month.&#x20;
 * Dreybits ARE NOT transferrable by action of the owner.&#x20;
 * They are transferrable by action of the smart contracts only.
 * Dreybits are calculated using satoshi as units, not btc.
 
-Dreybit pricing is specific to each individual user, so the base price is modified based on the the investors probability of dying and their investment amount. For example, if an investor is 30 years old, a step-up in price to acquire Dreybits occurs because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via the nominal gain method.
+Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investors probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via the nominal gain method.
 
 SECTION FROM CFA PAPER HERE.
 
-## Dreybit Pricing
+## Dreybit Allocation Method
 
-The intuition behind the pricing scheme is to maintain the fairness of the tontine and properly price Dreybits for everyone using the nominal tontine yield formula mentioned earlier $$(r = q / (1 - q))$$ and apply it to calculate the required step-up or discount off the base rate for each investor.
+The intuition behind the pricing scheme is to maintain the fairness of the tontine and properly allocated Dreybits for everyone using the nominal tontine yield formula mentioned earlier $$(r = q / (1 - q))$$ and apply it to calculate the required step-up or discount off the base rate for each investor.
 
-To achieve fairness and accurate pricing, we first determine a weighted average on the product of mortality risk and investment in the fund by:
+The allocation formula is as follows:
 
 1. Determine the product of each individuals current balance in the fund in satoshi $$s$$ with their mortality rate $$q$$.
 2. Determine the sum all products for each individual together. &#x20;
 3. Divide the sum by the total balance in the fund to get the weighted average.
-4. The formula to determine the Dreybit price for an individual is the product of this weighted average and the individual's current balance.
+4. The formula to determine the Dreybits allocated to an individual is the product of this weighted average and the individual's current balance.
 
 $$p_{(1-ith)}= q_{(1-ith)} s_{(1-ith)}$$
 
@@ -98,11 +94,13 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
 ### New Dreybit Monthly Allocation
 
-When a new investor joins, Dreybits are allocated to the investor on the 1st of the month following their deposit.&#x20;
+When a new investor joins and makes a deposit in any month, Dreybits are allocated to the investor on the 1st of the month following their deposit.&#x20;
 
 Dreybits are not reallocated to existing investors, simply, new Dreybits are allocated new investors.
 
 The formula for new Dreybit monthly allocation per individual investor is as before, the product of their investment and the calculated weighted average.
+
+$$DB_{(new investor)}=\overline{W}s_{(new investor)}$$
 
 These additional Dreybits change the overall amount of Dreybits in circulation but do not change the amount of Dreybits already allocated to individuals.
 
