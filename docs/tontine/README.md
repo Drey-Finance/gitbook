@@ -92,21 +92,9 @@ $$\overline{W}=\frac{\sum}{s_(1-ith)}$$
 
 $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
-### New Dreybit Monthly Allocation
+### Allocating Deceased's Distributions
 
-When a new investor joins and makes a deposit in any month, Dreybits are allocated to the investor on the 1st of the month following their deposit.&#x20;
-
-Dreybits are not reallocated to existing investors, simply, new Dreybits are allocated new investors.
-
-The formula for new Dreybit monthly allocation per individual investor is as before, the product of their investment and the calculated weighted average.
-
-$$DB_{(new investor)}=\overline{W}s_{(new investor)}$$
-
-These additional Dreybits change the overall amount of Dreybits in circulation but do not change the amount of Dreybits already allocated to individuals.
-
-### Allocating Deceased Distributions
-
-When an existing investor passes away, Dreybits are re-allocated to the surviving investors. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
+When an existing investor passes away, Dreybits are re-allocated to the surviving investors. This step happens _BEFORE_ new investors are allocated Dreybits at the beginning of the month. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
 
 1. Sum the total of all deceased member's Dreybits in circulation at the end of the month.
 2. Sum the total of all surviving member's Dreybits in circulation at the end of the month.
@@ -121,14 +109,26 @@ $$x_{(1-ith)} =\frac{DB_{(1-i)}surviving}{\sum_{s}}$$
 
 $$DB_{new(1-ith)}=\sum_{d}x_{(1-ith)}$$
 
-The calculations are performed at the end of the month.&#x20;
+The calculations are performed at the end of the month prior to new investors being allocated new Dreybits.&#x20;
 
 These Dreybits are mapped to the sum of all the deceased's bitcoin by determining the pro-rata percentage allotment to be inherited of the total deceased's Dreybits for the period.
 
 $$p_{(1-ith)} = \frac{DBnew(1-ith)}{\sum_d}$$
 
-TBC describing this process.
+$$\sum dec(btc) = sum\, of\, decased's\, bitcoin$$
 
-### New Dreybit Monthly Re-Allocation
+$$p*\sum dec(btc) = percentage\, of\, \sum dec(btc)\, distributed$$
 
-At the beginning of the month, after the deceased Dreybits are distributed to survivors, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members.
+### New Dreybit Monthly Allocation
+
+When a new investor joins and makes a deposit in any month, Dreybits are allocated to the investor on the 1st of the month following their deposit _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and removed from the fund.&#x20;
+
+Therefor, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members.
+
+The process is simple in that Dreybits total allocation varies. So new Dreybits are allocated to new investors, while the existing investors Dreybit allocations do not change.
+
+The formula for new Dreybit monthly allocation per individual investor is as before, the product of their investment and the calculated weighted average.
+
+$$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
+
+Again, these additional Dreybits change the overall amount of Dreybits in circulation but do not change the amount of Dreybits already allocated to individuals.
