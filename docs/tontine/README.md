@@ -142,20 +142,3 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 7. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
 8. Obtain a positive vote on the re-allocation schedule.
 9. Go to Step 3.
-
-````mermaid
-
-```mermaid
-sequenceDiagram
-    participant dotcom
-    participant iframe
-    participant viewscreen
-    dotcom->>iframe: loads html w/ iframe url
-    iframe->>viewscreen: request template
-    viewscreen->>iframe: html & javascript
-    iframe->>dotcom: iframe ready
-    dotcom->>iframe: set mermaid data on iframe
-    iframe->>iframe: render mermaid
-```
-
-````
