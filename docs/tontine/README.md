@@ -61,9 +61,7 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 * They are transferrable by action of the smart contracts only.
 * Dreybits are calculated using satoshi as units, not btc.
 
-Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investors probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via the nominal gain method.
-
-SECTION FROM CFA PAPER HERE.
+Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investors probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via a formula inspired by the nominal gain method.
 
 ## Dreybit Allocation Method
 
