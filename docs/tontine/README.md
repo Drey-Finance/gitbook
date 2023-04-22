@@ -43,16 +43,6 @@ The Dreybit ledger contains each investors allocated Dreybits amounts to be rece
 
 At the beginning of every month, a new proposed Dreybit ledger is created with updated Dreybits re-allocated to all surviving investors. Ledgers must be re-updated monthly to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, new investors were added during the month, previous investors pass away, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc.
 
-### Fair Tontine Tontine Forfeiture Allocation
-
-Surviving members of a fair tontine do not receive equal allocations of each dying member’s forfeited balance.
-
-Rather, they receive unequal allocations that depend on their respective mortality rate, _q_, and current account balance, _s_.
-
-One useful property of this method is that it promotes transparency by being easily decomposed into two simple components: (1) a nominal tontine (life credit) yield for each member, which is easily obtained from the tontine’s mortality table, and, (2) a common adjustment factor that accounts for the difference between the amount of forfeitures experienced by the pool during a given period and the amount that was nominally expected, plus the amount expected from the investment yield.
-
-A “nominal-gain method” described in Sabin and Forman (2016), which is desirable for its relative simplicity and explanatory properties enables the realisation of fair tontine forfeiture.
-
 ### Terms and Conditions
 
 Drey creates a set of binding smart contracts and terms and conditions which reflect the following stipulations:
@@ -77,7 +67,13 @@ SECTION FROM CFA PAPER HERE.
 
 ## Dreybit Allocation Method
 
-The intuition behind the pricing scheme is to maintain the fairness of the tontine and properly allocated Dreybits for everyone using the nominal tontine yield formula mentioned earlier $$(r = q / (1 - q))$$ and apply it to calculate the required step-up or discount off the base rate for each investor.
+### Fair Tontine Tontine Forfeiture Allocation
+
+Surviving members of a fair tontine do not receive equal allocations of each dying member’s forfeited balance.
+
+Rather, they receive unequal allocations that depend on their respective mortality rate, _q_, and current account balance, _s_.
+
+The intuition behind Dreybits formula is to maintain the fairness of the tontine and properly allocate Dreybits for everyone.
 
 The allocation formula is as follows:
 
