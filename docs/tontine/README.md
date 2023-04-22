@@ -109,12 +109,17 @@ These additional Dreybits change the overall amount of Dreybits in circulation b
 When an existing investor passes away, Dreybits are re-allocated to the surviving investors. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
 
 1. Sum the total of all deceased member's Dreybits in circulation at the end of the month.
-2. Determine an individual's percentage of Dreybits allocated.
-3. Multiply the individual's percentage by the Sum to determine Dreybits allocated.
+2. Sum the total of all surviving member's Dreybits in circulation at the end of the month.
+3. Determine a surviving individual's percentage of Dreybits allocated to all survivors by dividing their allocated Dreybits by the Sum all surviving member's Dreybits in circulation at the end of the month.
+4. Multiply the individual's percentage by the Sum of all deceased member's Dreybits to determine Dreybits allocated.
 
-$$\sum=DB_{(1-ith)} deceased$$
+$$\sum_{d}=DB_{(1-ith)} deceased$$
 
-TBC
+$$\sum_{s}=DB_{(1-ith)} surviving$$
+
+$$x_{(1-ith)} =\frac{\sum_{s}}{DB_{(1-i)}surviving}$$
+
+$$DB_{new(1-ith)}=\sum_{d}x_{(1-ith)}$$
 
 The calculations are performed at the end of the month. These Dreybits will be converted into bitcoin and distributed to the surviving members at the beginning of each month, removing them from the monthly re-allocation process.
 
