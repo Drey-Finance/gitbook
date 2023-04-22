@@ -14,7 +14,7 @@ Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whi
 
 Bitcoin inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.&#x20;
 
-All manner of Mime types can be inserted into a bitcoin blob space intrinsically linked to a specific satoshi, making the data both immutable and transferable. Because Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if miners use a DHT, Drey will instead use bitcoin as the shared object storage, exploiting the ordinals system for the following use cases:
+All manner of Mime types can be inserted into a bitcoin blob space intrinsically linked to a specific satoshi, making the data both immutable and transferable. Because Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if miners use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases:
 
 * Monthly investor distributions schedule per fund to be agreed upon by the miners
 * DAO proposals to be voted on by the miners
@@ -31,19 +31,19 @@ The rest of this specification and will be broken out into its own section to be
 
 ### Voting
 
-Any Drey miner can call for a vote on any proposed distribution schedule or DAO proposal by generating the document, inscribing it at a particular satoshi, and relaying the satoshi ordinal value to any other miner over the [nostr protocol](https://nostr.com/). The voting request announcement and JSON-LD document should contain a block height of when the vote will occur. A supermajority of miners will be required to vote any proposal, distribution schedule or other material decision through.&#x20;
+Any Drey miner can call for a vote on any proposed distribution schedule or DAO proposal by generating the document, inscribing it at a particular satoshi, and relaying the satoshi ordinal value to any other miner over the [nostr protocol](https://nostr.com/). The voting request announcement and JSON-LD document should contain a block height of when the vote will occur. A supermajority of miners will be required to vote through any proposal, distribution schedule or other material decision.&#x20;
 
 Each JSON-LD document in the Bitcoin blockchain will contain an address to forward the satoshi to that represents a yes or no. The same will also be described in the nostr protocol vote request. The decentralised miner protocol will be used to create a transaction at x block height to move the satoshi to a specific wallet address denoting yes or no and declared in the nostr communication and the JSON-LD document, indicating whether an issue or schedule was agreed to or not.
 
-### Dreybits
+## Dreybits
 
 A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at x block height to move the satoshi to a specific wallet address conveying acceptance or rejection.
 
-The Dreybit ledger contains each investors allocated bitcoin amounts to be received in the next distribution as dictated by their allotment of Dreybits. Each Dreybit ledger alias ID is created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of bitcoin an investor gets depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
+The Dreybit ledger contains each investors allocated Dreybits amounts to be received in each re-allocation cycle that occurs on the beginning of each month (an initial cycle at the initialisation of the fun). Each Dreybit ledger contains an alias ID created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
 
-At the end of every month, a new Dreybit ledger is created with updated Dreybits allocated to all investors. Ledgers must be updated to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, new investors were added during the month, amount invested as a pro-rata percentage of the entire value of the fund, etc.
+At the beginning of every month, a new proposed Dreybit ledger is created with updated Dreybits re-allocated to all surviving investors. Ledgers must be re-updated monthly to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, new investors were added during the month, previous investors pass away, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc.
 
-## Fair Tontine Tontine Forfeiture Allocation
+### Fair Tontine Tontine Forfeiture Allocation
 
 Surviving members of a fair tontine do not receive equal allocations of each dying member’s forfeited balance.
 
