@@ -94,7 +94,7 @@ $$\sum=p_{1}+p_{2}+p_{..ith}$$
 
 $$\overline{W}=\frac{\sum}{s_(1-ith)}$$
 
-$$D_{bit}=\overline{W}s$$
+$$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
 ### New Dreybit Monthly Allocation
 
