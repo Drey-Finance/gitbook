@@ -143,8 +143,8 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 8. Obtain a positive vote on the re-allocation schedule.
 9. Go to Step 3.
 
-`````mermaid
-````
+````mermaid
+
 ```mermaid
 sequenceDiagram
     participant dotcom
@@ -157,5 +157,5 @@ sequenceDiagram
     dotcom->>iframe: set mermaid data on iframe
     iframe->>iframe: render mermaid
 ```
+
 ````
-`````
