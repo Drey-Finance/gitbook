@@ -125,6 +125,8 @@ The calculations are performed at the end of the month.&#x20;
 
 These Dreybits will be converted into bitcoin and distributed to the surviving members at the beginning of each month, removing them from the monthly re-allocation process.
 
+TBC describing this process.
+
 ### New Dreybit Monthly Re-Allocation
 
 At the beginning of the month, after the deceased Dreybits are distributed to survivors, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members.
