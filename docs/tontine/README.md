@@ -41,7 +41,7 @@ A Drey miner, selected by verifiable random function, proposes a monthly distrib
 
 The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month (an initial cycle at the initialisation of the fun) following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members. Each Dreybit ledger contains an alias ID created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
 
-Dreybit ledgers must be re-updated monthly to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, new investors were added during the month, previous investors pass away, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc.
+Dreybit ledgers must be re-updated monthly to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, previous investors pass away and are removed from the fund, new investors were added during the month, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc.
 
 ### Terms and Conditions
 
@@ -49,7 +49,7 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 
 * The investors in the fund agree that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
 * This gift passes in entirety to the living participants in the fund when the contributing investor passes away.
-* It is held in escrow in a smart contract until then, with the smart contract issuing monthly payments based on a fraction of principal calculated using the maximum life date based on actuarial data.
+* It is held in escrow in a smart contract.
 * An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away.&#x20;
 * He/she continues to enjoy the benefit of holding those Dreybits as long as they continuously (monthly) provide proof that you he/she is alive within a certain time limit.&#x20;
 * If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs—that is they are still alive. This is a type of [tontine agreement](https://en.wikipedia.org/wiki/Tontine).
