@@ -71,24 +71,22 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 * Dreybits can be issued at any time, so people can continuously invest in the tontine and be assigned Dreybits.&#x20;
 * Dreybits ARE NOT transferrable by action of the owner.&#x20;
 * They are transferrable by action of the smart contracts only.
-* Dreybits are issued at a base price of 1 Dreybit for 1 BTC, and are divisible down to the smallets unit of a bitcoin.
+* Dreybits are calculated using satoshi as units, not btc.
 
-**IMPORTANT: Rarely does an investor get 1 whole even Dreybit for 1 bitcoin. Why?**
-
-Dreybit pricing is specific to each individual user, so the base price is modified based on the the investors probability of dying relative to other investors. For example, if an investor is 30 years old, a step-up is applied to their Dreybit base price because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via the nominal gain method.
+Dreybit pricing is specific to each individual user, so the base price is modified based on the the investors probability of dying and their investment amount. For example, if an investor is 30 years old, a step-up in price to acquire Dreybits occurs because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via the nominal gain method.
 
 SECTION FROM CFA PAPER HERE.
 
 ## Dreybit Pricing
 
-The intuition behind the pricing scheme is to maintain the fairness of the tontine and properly price Dreybits for everyone still using the nominal tontine yield formula mentioned earlier (r = q / (1 - q)) and apply it to calculate the required step-up or discount off the base rate for each investor.
+The intuition behind the pricing scheme is to maintain the fairness of the tontine and properly price Dreybits for everyone using the nominal tontine yield formula mentioned earlier $$(r = q / (1 - q))$$ and apply it to calculate the required step-up or discount off the base rate for each investor.
 
 To achieve fairness and accurate pricing, we first determine a weighted average on the product of mortality risk and investment in the fund by:
 
 1. Sum the product of each individuals investment s by their mortality rate q.&#x20;
 2. Divide the sum by the total investment in the fund.
 
-The formulate to determine the Dreybit price for an individual is the product of this weighted average and their investment amount.
+The formula to determine the Dreybit price for an individual is the product of this weighted average and their investment amount.
 
 ### New Dreybit Monthly Allocation
 
