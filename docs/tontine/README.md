@@ -41,7 +41,7 @@ A Drey miner, selected by verifiable random function, proposes a monthly distrib
 
 The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month (an initial cycle at the initialisation of the fun) following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members. Each Dreybit ledger contains an alias ID created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
 
-At the beginning of every month, a new proposed Dreybit ledger is created with updated Dreybits re-allocated to all surviving investors. Ledgers must be re-updated monthly to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, new investors were added during the month, previous investors pass away, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc.
+Dreybit ledgers must be re-updated monthly to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, new investors were added during the month, previous investors pass away, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc.
 
 ### Terms and Conditions
 
