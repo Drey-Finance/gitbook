@@ -6,7 +6,9 @@ description: Draft 2.0
 
 ## How Drey Works
 
-To create a truly trustless bitcoin income plan, it is essential that our models reflect the actual way that Drey works from a technical perspective, and the way we ‘price’ participation in the fund is easily understood while preserving fairness using a nominal-gain methodology. We will also be utilising [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/), so that records are public, (identities are masked), durable and immutable. In other words, we will be using the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as monthly distributions for the fund.
+To create a truly trustless bitcoin income plan, it is essential that our models reflect the actual way that Drey works from a technical perspective, and the way we ‘price’ participation in the fund is easily understood while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).&#x20;
+
+Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/), so that records are public, (identities are masked), durable and immutable. In other words, Drey uses the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as monthly distributions for the fund.
 
 ### Bitcoin Ordinals and Inscriptions
 
