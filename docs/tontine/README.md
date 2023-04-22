@@ -119,7 +119,7 @@ $$p*\sum dec(btc) = percentage\, of\, \sum dec(btc)\, distributed$$
 
 ### New Dreybit Monthly Re-Allocation
 
-When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month following _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund.&#x20;
+When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund.&#x20;
 
 Therefor, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members.
 
@@ -136,7 +136,11 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 ### Summarising Steps
 
 1. At the initialisation of the fund, run the first Dreybit allocation step as described above.
-2. At the end of the month, tally the surviving member's share of deceased member's Dreybits.
-3. Use this number to determine the pro-rata percentage of deceased member's bitcoin to be allocated to survivors.
-4. Remove the deceased member's Dreybits from the total and remit the deceased member's bitcoin to survivors.
-5. On the first of the month, re-run the Dreybit allocation steps.
+2. Obtain a positive vote on the allocation schedule.
+3. At the end of the month, tally the surviving member's share of deceased member's Dreybits.
+4. Use this number to determine the pro-rata percentage of deceased member's bitcoin to be allocated to survivors.
+5. Obtain a positive vote on the distribution schedule.
+6. Remove the deceased member's Dreybits from the total and remit the deceased member's bitcoin to survivors.
+7. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
+8. Obtain a positive vote on the re-allocation schedule.
+9. Go to Step 3.
