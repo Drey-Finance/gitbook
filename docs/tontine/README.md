@@ -142,3 +142,13 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 7. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
 8. Obtain a positive vote on the re-allocation schedule.
 9. Go to Step 3.
+
+````
+```mermaid
+  graph TD;
+      A-->B;
+      A-->C;
+      B-->D;
+      C-->D;
+```
+````
