@@ -83,11 +83,18 @@ The intuition behind the pricing scheme is to maintain the fairness of the tonti
 
 To achieve fairness and accurate pricing, we first determine a weighted average on the product of mortality risk and investment in the fund by:
 
-1. Determine the product of each individuals current balance in the fund in satoshi $$s$$with their mortality rate $$q$$ and sum all individuals in the fund together. &#x20;
-2. Divide the sum by the total balance in the fund to get the weighted average.
-3. The formula to determine the Dreybit price for an individual is the product of this weighted average and their investment amount.
+1. Determine the product of each individuals current balance in the fund in satoshi $$s$$ with their mortality rate $$q$$.
+2. Determine the sum all products for each individual together. &#x20;
+3. Divide the sum by the total balance in the fund to get the weighted average.
+4. The formula to determine the Dreybit price for an individual is the product of this weighted average and the individual's current balance.
 
+$$p_{(1-ith)}= q_{(1-ith)} s_{(1-ith)}$$
 
+$$\sum=p_{1}+p_{2}+p_{..ith}$$
+
+$$\overline{W}=\frac{\sum}{s_(1-ith)}$$
+
+$$D_{bit}=\overline{W}s$$
 
 ### New Dreybit Monthly Allocation
 
