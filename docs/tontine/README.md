@@ -79,7 +79,7 @@ The intuition behind the pricing scheme is to maintain the fairness of the tonti
 
 The allocation formula is as follows:
 
-1. Determine the product of each individuals current balance in the fund in satoshi $$s$$ with their mortality rate $$q$$.
+1. Determine the product of each individuals current balance in the fund in satoshi s with their mortality rate q.
 2. Determine the sum all products for each individual together. &#x20;
 3. Divide the sum by the total balance in the fund to get the weighted average.
 4. The formula to determine the Dreybits allocated to an individual is the product of this weighted average and the individual's current balance.
@@ -117,11 +117,13 @@ $$\sum_{d}=DB_{(1-ith)} deceased$$
 
 $$\sum_{s}=DB_{(1-ith)} surviving$$
 
-$$x_{(1-ith)} =\frac{\sum_{s}}{DB_{(1-i)}surviving}$$
+$$x_{(1-ith)} =\frac{DB_{(1-i)}surviving}{\sum_{s}}$$
 
 $$DB_{new(1-ith)}=\sum_{d}x_{(1-ith)}$$
 
-The calculations are performed at the end of the month. These Dreybits will be converted into bitcoin and distributed to the surviving members at the beginning of each month, removing them from the monthly re-allocation process.
+The calculations are performed at the end of the month.&#x20;
+
+These Dreybits will be converted into bitcoin and distributed to the surviving members at the beginning of each month, removing them from the monthly re-allocation process.
 
 ### New Dreybit Monthly Re-Allocation
 
