@@ -19,3 +19,4 @@
 * [Token Objective](token-utility/token-objective.md)
 * [Token Journey](token-utility/token-journey.md)
 * [Value Capture](token-utility/value-capture.md)
+* [Token Distribution](token-utility/token-distribution.md)
