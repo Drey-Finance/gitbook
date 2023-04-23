@@ -68,8 +68,6 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 
 Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investor's probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data being used. This keeps the distributions fair via formulas inspired by the [nominal gain method](#user-content-fn-1)[^1].
 
-### Fair Tontine Tontine Forfeiture Allocation
-
 Surviving members of a fair tontine do not receive equal allocations of each dying member’s forfeited balance.
 
 Rather, they receive unequal allocations that depend on their respective mortality rate, _q_, and current account balance, _s_.
