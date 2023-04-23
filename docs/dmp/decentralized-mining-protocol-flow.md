@@ -1,0 +1,2 @@
+# Decentralized Mining Protocol Flow
+

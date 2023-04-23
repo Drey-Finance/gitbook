@@ -9,3 +9,4 @@
 ***
 
 * [Security and Communications](security-and-communications.md)
+* [Decentralized Mining Protocol Flow](decentralized-mining-protocol-flow.md)
