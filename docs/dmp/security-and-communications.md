@@ -47,7 +47,7 @@ Drey Miners will co-ordinate over nostr a _Distributed Verifiable Random Functio
 
 This DVRF protocol will enable Drey Miners to randomly and securely select the Drey Miner who will propose monthly distribution schedules and payouts.
 
-## Summary of Operations
+## Summary of Main Operations
 
 1. Operate nostr clients and relays with eventual privacy preserving extensions.
 2. Operate Decentralized Trust Authorities (DTAs) and issue type-3 pairing client and server key shares to Proof of Life Service, and backup to bitcoin blockchain.
