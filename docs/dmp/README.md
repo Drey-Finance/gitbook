@@ -1,8 +1,4 @@
----
-description: Decentralized Mining Protocol
----
-
-# Request for Quotation
+# Drey Finance
 
 ## About Drey Finance
 
