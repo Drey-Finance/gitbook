@@ -27,7 +27,7 @@ All manner of Mime types can be inserted into a bitcoin blob space intrinsically
 
 Documents generated for insertion into bitcoin storage will use a defined schema (TBC) on [JSON-LD documents](https://en.wikipedia.org/wiki/JSON-LD) compressed with [Briotli.](https://github.com/google/brotli) See the recommendations [here](https://www.lucidchart.com/techblog/2019/12/06/json-compression-alternative-binary-formats-and-compression-methods/).
 
-The rest of this specification and will be broken out into its own section to be completed.
+The rest of this specification is described **in another section to be completed**.
 
 ### Voting
 
@@ -37,15 +37,17 @@ Each JSON-LD document in the Bitcoin blockchain will contain an address to forwa
 
 ## Dreybits
 
-A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at x block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the Drey tokenomics section.
+A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at x block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the **Drey tokenomics section**.
 
-The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month (an initial cycle at the initialisation of the fun) following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members. Each Dreybit ledger contains an alias ID created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
+The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialisation of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.&#x20;
 
-Dreybit ledgers must be re-updated monthly to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, previous investors pass away and are removed from the fund, new investors were added during the month, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc.
+Each Dreybit ledger contains an alias ID created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
 
-### Terms and Conditions
+The reason Dreybit ledgers must be re-updated monthly is to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, previous investors pass away and are removed from the fund, new investors were added during the month, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc. These variables will change during the month, hence the allocated Dreybits to individual investor will change.
 
-Drey creates a set of binding smart contracts and terms and conditions which reflect the following stipulations:
+### Longevity Fund Terms and Conditions
+
+Drey creates a set of binding smart contracts and terms and conditions which reflect the following stipulations that a longevity risk pooling fund inherits:
 
 * The investors in the fund agree that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
 * This gift passes in entirety to the living participants in the fund when the contributing investor passes away.
@@ -59,7 +61,7 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 * Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month.&#x20;
 * Dreybits ARE NOT transferrable by action of the owner.&#x20;
 * They are transferrable by action of the smart contracts only.
-* Dreybits are calculated using satoshi as units, not btc.
+* Dreybits are calculated using satoshi as the base investment numbering system.
 
 Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investors probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via a formula inspired by the nominal gain method.
 
@@ -142,3 +144,37 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 7. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
 8. Obtain a positive vote on the re-allocation schedule.
 9. Go to Step 3.
+
+## References
+
+Donnelly, C. (2015). Actuarial fairness and solidarity in pooled annuity funds. ASTIN Bulletin, 45(01):49–74.&#x20;
+
+Donnelly, C., Guillén, M., and Nielsen, J. P. (2013). Exchanging uncertain mortality for a cost. Insurance: Mathematics and Economics, 52(1):65–76.&#x20;
+
+Donnelly, C., Guillén, M., and Nielsen, J. P. (2014). Bringing cost transparency to the life annuity market. Insurance: Mathematics and Economics, 56:14–27.&#x20;
+
+Forman, J. B. and Sabin, M. J. (2015). Tontine pensions. University of Pennsylvania Law Review, 173(3):755-831.&#x20;
+
+Forman, J. B. and Sabin, M. J. (2016). Survivor funds. Pace Law Review, 37(1).&#x20;
+
+Goldsticker, R. (2007). A Mutual Fund to Yield Annuity-Like Benefits. Financial Analysts Journal, 63(1):63–67.&#x20;
+
+Gründel, H. and Wandt, M. (July 6, 2017). The modern tontine: An innovative instrument for longevity risk management in an aging society. ICIR Working Paper Series No. 22/2016.&#x20;
+
+Kantorowicz, E. H. (1957). The King’s Two Bodies: A Study in Mediaeval Political Theology, Princeton University Press, Princeton, NJ, 411-412.&#x20;
+
+Milevsky, M. A. and Salisbury, T. S. (2015). Optimal Retirement Income Tontines. Insurance: Mathematics and Economics, 64:91–105.&#x20;
+
+Milevsky, M. A. and Salisbury, T. S. (2016). Equitable retirement income tontines: Mixing cohorts without discriminating. ASTIN Bulletin, 46(3):571-604.&#x20;
+
+NAIC (2013). NAIC model rule (regulation) for recognizing a new annuity mortality table for use in determining reserve liabilities for annuities. National Association of Insurance Commissioners.&#x20;
+
+Piggott, J., Valdez, E. A., and Detzel, B. (2005). The simple analytics of a pooled annuity fund. Journal of Risk and Insurance, 72(3):497–520.&#x20;
+
+Sabin, M. J. (March 26, 2010). Fair tontine annuity. Available at SSRN: https://ssrn.com/abstract=1579932 or https://dx.doi.org/10.2139/ssrn.1579932.&#x20;
+
+Sabin, M. J. and Forman, J. B. (November 9, 2016). The analytics of a single-period tontine. Available at SSRN: https://ssrn.com/abstract=2874160 or https://dx.doi.org/10.2139/ssrn.2874160.&#x20;
+
+Stamos, M. Z. (2008) Optimal consumption and portfolio choice for pooled annuity funds. Insurance: Mathematics and Economics, 43(1):56–68.&#x20;
+
+Waring, M. B. and Seigel, L. B. (2015). The Only Spending Rule Article You Will Ever Need. Financial Analysts Journal, 71(1):91–107.
