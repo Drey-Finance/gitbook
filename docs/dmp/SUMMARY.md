@@ -4,4 +4,4 @@
 
 ## 💸 Decentralized Actuaries
 
-* [Page 1](decentralized-actuaries/page-1.md)
+* [Actuary Operations](decentralized-actuaries/actuary-operations.md)
