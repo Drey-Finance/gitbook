@@ -1,0 +1,3 @@
+# Protocol Revenues
+
+Finally, the protocol revenues section describes the financial flows that accrue on a protocol or network level, as opposed to stakeholders directly. Often, there are usage fees that flow into the treasury of the project. Whether the fees are implemented from the beginning or only inserted at a more mature stage is a strategic decision that depends on many factors. In the case of inflationary models, there are also possible revenue flows from these new token emissions. Sometimes, destroyed tokens in a burn-and-mint model are also counted as indirect protocol revenues, since these value flows indirectly accrue to token holders.

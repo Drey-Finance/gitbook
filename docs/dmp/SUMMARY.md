@@ -20,3 +20,5 @@
 * [Token Journey](token-utility/token-journey.md)
 * [Value Capture](token-utility/value-capture.md)
 * [Token Distribution](token-utility/token-distribution.md)
+* [Protocol Costs](token-utility/protocol-costs.md)
+* [Protocol Revenues](token-utility/protocol-revenues.md)
