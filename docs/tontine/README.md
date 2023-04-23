@@ -62,10 +62,11 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 * Dreybits ARE NOT transferrable by action of the owner.&#x20;
 * They are transferrable by action of the smart contracts only.
 * Dreybits are calculated using satoshi as the base investment numbering system.
-
-Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investors probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data. This keeps the distributions fair via a formula inspired by the nominal gain method.
+* Mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
 
 ## Dreybit Allocation Method
+
+Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investor's probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data being used. This keeps the distributions fair via formulas inspired by the [nominal gain method](#user-content-fn-1)[^1].
 
 ### Fair Tontine Tontine Forfeiture Allocation
 
@@ -178,3 +179,5 @@ Sabin, M. J. and Forman, J. B. (November 9, 2016). The analytics of a single-per
 Stamos, M. Z. (2008) Optimal consumption and portfolio choice for pooled annuity funds. Insurance: Mathematics and Economics, 43(1):56–68.&#x20;
 
 Waring, M. B. and Seigel, L. B. (2015). The Only Spending Rule Article You Will Ever Need. Financial Analysts Journal, 71(1):91–107.
+
+[^1]: Forman, J. B. and Sabin, M. J. (2016). Survivor funds. Pace Law Review, 37(1).&#x20;
