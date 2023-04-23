@@ -4,7 +4,7 @@ Drey Miners utilize different cryptographic technology and communications protoc
 
 ## nostr Protocol
 
-Drey Miners coordinate operations over the [nostr protocol](https://nostr.com/), with each Drey Miner running their own private [relay](https://nostr.com/relays). Nostr was selected because of the client / relay architecture. Drey Miners operating their own private relays can tune their relays to accept messages from other Drey Miners as the medium for conducting communications for actuary operations, co-ordination on voting, cryptographic threshold signature and verifiable random function protocols, as well as in future accepting communications from other clients that Drey Miners may offer services to that are not yet in view.
+Drey Miners coordinate operations over the [nostr protocol](https://nostr.com/), with each Drey Miner running their own private [relay](https://nostr.com/relays). Nostr was selected because of the client / relay architecture and [asynchronous communication](https://bitcoinmagazine.com/technical/how-nostr-can-improve-bitcoin-privacy). Drey Miners operating their own private relays can tune their relays to accept messages from other Drey Miners as the medium for conducting communications for actuary operations, co-ordination on voting, cryptographic threshold signature and verifiable random function protocols, as well as in future accepting communications from other clients that Drey Miners may offer services to that are not yet in view.
 
 ## ROAST Protocol
 
@@ -39,4 +39,10 @@ Executive Summary:
 5. Privacy: M-Pin ensures user privacy through zero-knowledge proof techniques, which allow users to prove their identity without revealing sensitive information. In addition, the DTA model helps protect user privacy by preventing any single entity from having full control over the system.
 6. Use Cases: M-Pin can be employed in various applications requiring secure user authentication, such as online services, financial transactions, and access control systems.
 
-The M-Pin protocol from Apache Milagro provides a robust and secure alternative to traditional password-based authentication systems. By utilizing pairing-based cryptography, multi-factor authentication, and a decentralized trust model, M-Pin offers increased security and privacy for users and service providers alike
+The M-Pin protocol from Apache Milagro provides a robust and secure alternative to traditional password-based authentication systems. By utilizing pairing-based cryptography, multi-factor authentication, and a decentralized trust model, M-Pin offers increased security and privacy for users and service providers alike.
+
+## Distributed Verifiable Random Function
+
+Drey Miners will co-ordinate over nostr a _Distributed Verifiable Random Function_ which is a particular case of [secure multiparty computation](https://en.wikipedia.org/wiki/Secure\_multi-party\_computation) that allows a set of mutually distrustful servers to initialize and compute a [Verifiable Random Function](https://tools.ietf.org/html/draft-irtf-cfrg-vrf-05) _fsk(x)_ for strings _x_, with no trusted central party. A Verifiable Random Function can be seen as the public-key cryptography version of a keyed cryptographic hash. A prominent application for such protocols is in PoS-based consensus in distributed ledgers which require a reliable, unpredictable and unbiased source of entropy or [Decentralized](https://blog.cloudflare.com/league-of-entropy/) [Random Beacon](https://csrc.nist.gov/projects/interoperable-randomness-beacons) (DRB) to select block producers.
+
+This DVRF protocol will enable Drey Miners to select the leader who will propose monthly distributions schedules and payouts.
