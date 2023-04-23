@@ -62,7 +62,7 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 * Dreybits ARE NOT transferrable by action of the owner.&#x20;
 * They are transferrable by action of the smart contracts only.
 * Dreybits are calculated using satoshi as the base investment numbering system.
-* Mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
+* Yearly mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
 
 ## Dreybit Allocation Method
 
