@@ -18,7 +18,7 @@ Drey allocates Dreybits to participants in the fund, which is a method to price 
 
 Bitcoin inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.&#x20;
 
-All manner of Mime types can be inserted into a bitcoin blob space intrinsically linked to a specific satoshi, making the data both immutable and transferable. Because Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if miners use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases:
+All manner of Mime types can be inserted into a bitcoin blob space intrinsically linked to a specific satoshi, making the data both immutable and transferable. As Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if miners use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases:
 
 * Monthly investor distributions schedule per fund to be agreed upon by the miners
 * DAO proposals to be voted on by the miners
@@ -41,7 +41,7 @@ Each JSON-LD document in the Bitcoin blockchain will contain an address to forwa
 
 ## Dreybits
 
-A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at x block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the **Drey tokenomics section**.
+A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the **Drey tokenomics section**.
 
 The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialisation of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.&#x20;
 
@@ -54,18 +54,18 @@ The reason Dreybit ledgers must be re-updated monthly is to take into account va
 Drey creates a set of binding smart contracts and terms and conditions which reflect the following stipulations that a longevity risk pooling fund inherits:
 
 * The investors in the fund agree that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
-* This gift passes in entirety to the living participants in the fund when the contributing investor passes away.
-* It is held in escrow in a smart contract.
-* An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away.&#x20;
-* He/she continues to enjoy the benefit of holding those Dreybits as long as they continuously (monthly) provide proof that you he/she is alive within a certain time limit.&#x20;
+* This gift passes in entirety to the living participants in the fund when the contributing investor passes away
+* It is held in escrow in a smart contract
+* An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away
+* He/she continues to enjoy the benefit of holding those Dreybits as long as they continuously (monthly) provide proof that you he/she is alive within a certain time limit
 * If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs—that is they are still alive. This is a type of [tontine agreement](https://en.wikipedia.org/wiki/Tontine).
 
 ### Other Mechanics
 
-* Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month.&#x20;
-* Dreybits ARE NOT transferrable by action of the owner.&#x20;
-* They are transferrable by action of the smart contracts only.
-* Dreybits are calculated using satoshi as the base investment numbering system.
+* Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month&#x20;
+* Dreybits ARE NOT transferrable by action of the owner&#x20;
+* They are transferrable by action of the smart contracts only
+* Dreybits are calculated using satoshi as the base investment numbering system
 * Yearly mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
 
 ## Dreybit Allocation Method
@@ -126,7 +126,7 @@ Note that this operation _MUST_ remove the deceased's Dreybits and hence the und
 
 When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund.&#x20;
 
-Therefor, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members and optionally adding new investors (if there are any for the next month) into the fund.
+Therefore, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members and optionally adding new investors (if there are any for the next month) into the fund.
 
 $$p_{(1-ith)}= q_{(1-ith)} s_{(1-ith)}$$
 
