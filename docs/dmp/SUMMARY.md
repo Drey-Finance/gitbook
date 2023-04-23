@@ -8,7 +8,7 @@
 
 ***
 
-* [Security and Communications](security-and-communications.md)
+* [Cryptography and Communications](cryptography-and-communications.md)
 * [Mining Protocol Flow](mining-protocol-flow.md)
 
 ## 📈 Token Utility

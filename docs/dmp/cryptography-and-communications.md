@@ -1,4 +1,4 @@
-# Security and Communications
+# Cryptography and Communications
 
 Drey Miners utilize different cryptographic technology and communications protocols together to create a robust but methods for securing the network, processing proof of life claims, issuing DREY tokens and actuary operations (including voting).&#x20;
 
@@ -10,7 +10,9 @@ Drey Miners coordinate operations over the [nostr protocol](https://nostr.com/),
 
 Drey Miners will undertake operations to act signers using the [ROAST](https://eprint.iacr.org/2022/550) variant of the [FROST](https://eprint.iacr.org/2020/852) signature scheme.&#x20;
 
-From the research paper, "ROAST is a simple wrapper that turns a given threshold signature scheme into a scheme with a robust and asynchronous signing protocol, as long as the underlying signing protocol is semi-interactive (i.e., has one preprocessing round and one actual signing round), provides identifiable aborts, and is unforgeable under concurrent signing sessions. When applied to the state-of-the-art Schnorr threshold signature scheme FROST, which fulfils these requirements, we obtain a simple, efficient, and highly practical Schnorr threshold signature scheme."
+FROST ([Flexible Round Optimized Schnorr Threshold](https://eprint.iacr.org/2020/852.pdf)) is a powerful new kind of multisig that aggregates the key shares of federation members into a joint FROST key. To spend under this key, a threshold number of members must each produce a signature share. The shares are then combined to form a single signature that is valid under the joint FROST key. Members coordinate off chain. FROST transactions are indistinguishable from regular single-party Taproot spends.
+
+ROAST is a wrapper on top of FROST. From the research paper, "ROAST is a simple wrapper that turns a given threshold signature scheme into a scheme with a robust and asynchronous signing protocol, as long as the underlying signing protocol is semi-interactive (i.e., has one preprocessing round and one actual signing round), provides identifiable aborts, and is unforgeable under concurrent signing sessions. When applied to the state-of-the-art Schnorr threshold signature scheme FROST, which fulfils these requirements, we obtain a simple, efficient, and highly practical Schnorr threshold signature scheme."
 
 Drey's intention is to utilize the nostr protocol to structure communications for the ROAST protocol's wrapper protocol that runs 𝑡 FROST sessions concurrently, one session for each subset of 𝑡 signers.
 
@@ -25,6 +27,8 @@ See the figure below for Level 1 C4 diagram of the services in play.
 Drey Miners respond to a cryptographically secured request from the Drey Proof of Life Service (operated by Drey Finance) to generate a share of this identity based private key and encrypt it with a public key generated in the Drey Proof of Life App operated by the Drey Investor. The public key encryption is necessary to secure the share so that no party, including the Drey Proof of Life App, can obtain access to the share.
 
 Drey Miners will also provide shares of a server secret to the Drey Proof of Life Service so that it can run the [M-Pin zero-knowledge proof multi-factor identity verification protocol ](https://milagro.apache.org/docs/milagro-protocols)with the Drey Investors during the Proof of Life operation every month.
+
+Note the Drey Miners do not need to co-ordinate with each other to issue shares, a DTA simply responds to the request from the Drey Proof of Life service.
 
 ### About M-Pin
 
@@ -47,9 +51,9 @@ Drey Miners will co-ordinate over nostr a _Distributed Verifiable Random Functio
 
 This DVRF protocol will enable Drey Miners to randomly and securely select the Drey Miner who will propose monthly distribution schedules and payouts.
 
-## Summary of Main Operations
+## Summary of Main C\&C Operations
 
 1. Operate nostr clients and relays with eventual privacy preserving extensions.
 2. Operate Decentralized Trust Authorities (DTAs) and issue type-3 pairing client and server key shares to Proof of Life Service, and backup to bitcoin blockchain.
-3. Participate in the ROAST protocol to generate threshold signatures on bitcoin transactions over nostr.
+3. Participate in the ROAST protocol to generate P2TR wallet addresses and FROST generate Schnorr threshold signatures on bitcoin transactions over nostr.
 4. Participate in a DVRF protocol to randomly and securely select the Drey Miner who will propose monthly distribution schedules and payouts.
