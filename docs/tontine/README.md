@@ -2,9 +2,9 @@
 description: Draft 2.0
 ---
 
-# Fair Tontine Calculations/Operations
+# Drey Actuarial Operations
 
-## Dreybits and Fair Allocation
+## Introduction
 
 To create a truly trustless bitcoin income plan, it is essential that our models reflect the actual way that Drey works from a technical perspective, and the way we ‘price’ participation and rewards in the fund is easily understood if one were interrogating a block explorer while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).&#x20;
 
