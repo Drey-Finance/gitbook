@@ -45,4 +45,11 @@ The M-Pin protocol from Apache Milagro provides a robust and secure alternative 
 
 Drey Miners will co-ordinate over nostr a _Distributed Verifiable Random Function_ which is a particular case of [secure multiparty computation](https://en.wikipedia.org/wiki/Secure\_multi-party\_computation) that allows a set of mutually distrustful servers to initialize and compute a [Verifiable Random Function](https://tools.ietf.org/html/draft-irtf-cfrg-vrf-05) _fsk(x)_ for strings _x_, with no trusted central party. A Verifiable Random Function can be seen as the public-key cryptography version of a keyed cryptographic hash. A prominent application for such protocols is in PoS-based consensus in distributed ledgers which require a reliable, unpredictable and unbiased source of entropy or [Decentralized](https://blog.cloudflare.com/league-of-entropy/) [Random Beacon](https://csrc.nist.gov/projects/interoperable-randomness-beacons) (DRB) to select block producers.
 
-This DVRF protocol will enable Drey Miners to select the leader who will propose monthly distributions schedules and payouts.
+This DVRF protocol will enable Drey Miners to randomly and securely select the Drey Miner who will propose monthly distribution schedules and payouts.
+
+## Summary of Operations
+
+1. Operate nostr clients and relays with eventual privacy preserving extensions.
+2. Operate Decentralized Trust Authorities (DTAs) and issue type-3 pairing client and server key shares to Proof of Life Service, and backup to bitcoin blockchain.
+3. Participate in the ROAST protocol to generate threshold signatures on bitcoin transactions over nostr.
+4. Participate in a DVRF protocol to randomly and securely select the Drey Miner who will propose monthly distribution schedules and payouts.
