@@ -124,7 +124,7 @@ Note that this operation _MUST_ remove the deceased's Dreybits and hence the und
 
 When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund.&#x20;
 
-Therefor, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members.
+Therefor, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members and optionally adding new investors (if there are any for the next month) into the fund.
 
 $$p_{(1-ith)}= q_{(1-ith)} s_{(1-ith)}$$
 
