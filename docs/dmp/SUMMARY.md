@@ -15,3 +15,7 @@
 
 * [Stakeholders](token-utility/stakeholders.md)
 * [Mechanisms](token-utility/mechanisms.md)
+* [Incentives and Disincentives](token-utility/incentives-and-disincentives.md)
+* [Token Objective](token-utility/token-objective.md)
+* [Token Journey](token-utility/token-journey.md)
+* [Value Capture](token-utility/value-capture.md)
