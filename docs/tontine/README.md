@@ -4,11 +4,13 @@ description: Draft 2.0
 
 # Fair Tontine Calculations/Operations
 
-## How Drey Works
+## Dreybits and Fair Allocation
 
-To create a truly trustless bitcoin income plan, it is essential that our models reflect the actual way that Drey works from a technical perspective, and the way we ‘price’ participation in the fund is easily understood while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).&#x20;
+To create a truly trustless bitcoin income plan, it is essential that our models reflect the actual way that Drey works from a technical perspective, and the way we ‘price’ participation and rewards in the fund is easily understood if one were interrogating a block explorer while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).&#x20;
 
 Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/), so that records are public, (identities are masked), durable and immutable. In other words, Drey uses the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as monthly distributions for the fund.
+
+Drey allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent manner which preserves fairness for all participants.
 
 ### Bitcoin Ordinals and Inscriptions
 
