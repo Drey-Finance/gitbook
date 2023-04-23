@@ -2,10 +2,10 @@
 
 * [Drey Finance](README.md)
 
-## 💸 Decentralized Actuaries
+## 💸 Drey Miners
 
-* [Actuary Operations](decentralized-actuaries/actuary-operations.md)
+* [Actuary Operations](drey-miners/actuary-operations.md)
 
 ***
 
-* [Security Operations](security-operations.md)
+* [Security and Communications](security-and-communications.md)
