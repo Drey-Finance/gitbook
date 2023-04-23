@@ -106,17 +106,19 @@ $$\sum_{s}=DB_{(1-ith)} surviving$$
 
 $$x_{(1-ith)} =\frac{DB_{(1-i)}surviving}{\sum_{s}}$$
 
-$$DB_{new(1-ith)}=\sum_{d}x_{(1-ith)}$$
+$$DB_{alloc(1-ith)}=\sum_{d}x_{(1-ith)}$$
 
 The calculations are performed at the end of the month prior to new investors being allocated new Dreybits.&#x20;
 
 These Dreybits are mapped to the sum of all the deceased's bitcoin by determining the pro-rata percentage allotment to be inherited of the total deceased's Dreybits for the period.
 
-$$p_{(1-ith)} = \frac{DBnew(1-ith)}{\sum_d}$$
+$$p_{(1-ith)} = \frac{DBalloc(1-ith)}{\sum_d}$$
 
 $$\sum dec(btc) = sum\, of\, decased's\, bitcoin$$
 
 $$p*\sum dec(btc) = percentage\, of\, \sum dec(btc)\, distributed$$
+
+Note that this operation _MUST_ remove the deceased's Dreybits and hence the underlying bitcoin from the original fund and distribute the bitcoin to the survivors. However, the survivors have a choice of receiving this distribution directly to a wallet under their control, or, they can elect to deposit the receiving bitcoin (and monthly airdrop of Drey) into a Drey savings/staking account, where the bitcoin and DREY tokens are deposited into a two-sided liquidity pool (DREY/bitcoin). This is explained in detail in the section on **Drey Savings accounts**.
 
 ### New Dreybit Monthly Re-Allocation
 
