@@ -5,3 +5,7 @@
 ## 💸 Decentralized Actuaries
 
 * [Actuary Operations](decentralized-actuaries/actuary-operations.md)
+
+***
+
+* [Security Operations](security-operations.md)
