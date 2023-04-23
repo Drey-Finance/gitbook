@@ -78,7 +78,7 @@ The intuition behind Dreybits formula is to maintain the fairness of the tontine
 
 The allocation formula is as follows:
 
-1. Determine the product of each individuals current balance in the fund in satoshi s with their mortality rate q.
+1. Determine the product of each individuals current balance in the fund in satoshi s with their mortality rate q. Acclimate a yearly mortality rate into a monthly one by dividing the yearly rate by 12.
 2. Determine the sum all products for each individual together. &#x20;
 3. Divide the sum by the total balance in the fund to get the weighted average.
 4. The formula to determine the Dreybits allocated to an individual is the product of this weighted average and the individual's current balance.
