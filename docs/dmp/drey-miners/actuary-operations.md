@@ -29,7 +29,7 @@ Documents generated for insertion into bitcoin storage will use a defined schema
 
 The rest of this specification is described **in another section to be completed**.
 
-### Voting
+## Voting
 
 Any Drey miner can create a DAO proposal by generating the document, inscribing it at a particular satoshi, and relaying the satoshi ordinal value to any other miner over the [nostr protocol](https://nostr.com/). The voting request announcement and JSON-LD document should contain a block height of when the vote will occur. A supermajority of miners will be required to vote through any proposal, distribution schedule or other material decision. Distribution schedules are assigned tasks as described below.
 
