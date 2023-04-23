@@ -10,3 +10,8 @@
 
 * [Security and Communications](security-and-communications.md)
 * [Mining Protocol Flow](mining-protocol-flow.md)
+
+## 📈 Token Utility
+
+* [Stakeholders](token-utility/stakeholders.md)
+* [Mechanisms](token-utility/mechanisms.md)
