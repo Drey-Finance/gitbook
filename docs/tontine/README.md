@@ -93,7 +93,7 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
 ### Allocating Deceased's Distributions
 
-When an existing investor passes away, Dreybits are re-allocated to the surviving investors. This step happens _BEFORE_ new investors are allocated Dreybits at the beginning of the month which results in a total re-allocation across the investor population. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
+When an existing investor passes away, Dreybits are re-allocated to the surviving investors. This step happens _BEFORE_ new investors are allocated Dreybits at the beginning of the month which results in a total re-allocation across the investor population. Note that even if no new investors were added, a re-allocation exercise is still necessary to take into account the removal of deceased members. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
 
 1. Sum the total of all deceased member's Dreybits in circulation at the end of the month.
 2. Sum the total of all surviving member's Dreybits in circulation at the end of the month.
