@@ -72,7 +72,7 @@ Surviving members of a fair tontine do not receive equal allocations of each dyi
 
 Rather, they receive unequal allocations that depend on their respective mortality rate, _q_, and current account balance, _s_.
 
-The intuition behind Dreybits formula is to maintain the fairness of the tontine and properly allocate Dreybits for everyone.
+The intuition behind Dreybits and the allocation formulas are to maintain fairness on Dreybit distributions for everyone, regardless of your investment amount or life expectancy.
 
 The allocation formula is as follows:
 
