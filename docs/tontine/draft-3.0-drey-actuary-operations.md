@@ -1,11 +1,11 @@
 ---
 description: >-
-  Draft 2.0 describes a method that removes all inherited bitcoin from deceased
-  investors the fund by way of allocation to survivors. No annuity type monthly
-  payout, but staking/mining income pays out.
+  Draft 3.0 describes a system where bitcoin from deceased is layered into a
+  monthly annuity payment from principal, so deceased's bitcoin is not
+  immediately remove from fund.
 ---
 
-# Draft 2.0 - Drey Actuary Operations
+# Draft 3.0 - Drey Actuary Operations
 
 ## Introduction
 
