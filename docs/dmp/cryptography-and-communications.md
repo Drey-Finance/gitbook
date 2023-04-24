@@ -16,6 +16,8 @@ ROAST is a wrapper on top of FROST. From the research paper, "ROAST is a simple 
 
 Drey's intention is to utilize the nostr protocol to structure communications for the ROAST protocol's wrapper protocol that runs 𝑡 FROST sessions concurrently, one session for each subset of 𝑡 signers.
 
+A prototype open source implementation in Rust is [here.](https://github.com/nickfarrow/roast/tree/b7f64d7a70a421d6a5bfb10ccb765b091e8c0ca3)
+
 ## Distributed Trust Authority
 
 Drey Miners will act as [Distributed Trust Authorities](https://milagro.apache.org/docs/milagro-design), acting on requests from the Drey Proof of Life service to issue shares of a [Type-3 identity based private key](https://milagro.apache.org/docs/milagro-crypto) to randomised identities enrolling in the fund.&#x20;
