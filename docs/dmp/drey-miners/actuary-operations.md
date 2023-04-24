@@ -64,4 +64,4 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 * Dreybits are calculated using satoshi as the base investment numbering system
 * Yearly mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
 
-## Dreybit Allocation Method TBC
+## Dreybit Allocation Method - REVIEW/SIMULATIONS IN PROCESS
