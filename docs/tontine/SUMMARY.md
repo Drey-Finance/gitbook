@@ -1,3 +1,3 @@
 # Table of contents
 
-* [Drey Actuarial Operations](README.md)
+* [Drey Actuary Operations](README.md)
