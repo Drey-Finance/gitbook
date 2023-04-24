@@ -8,7 +8,7 @@ Two methods of operation are novel in this respect.
 
 Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/), so that records are public, (identities are masked), durable and immutable. In other words, Drey uses the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as monthly distributions for the fund.
 
-Drey allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants.
+Drey allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants. Dreybits are not DREY tokens. Dreybits are an accounting method to determine fair distributions and payouts internal the Drey accounting system but transparent and visible within the bitcoin blockchain.
 
 ### Bitcoin Ordinals and Inscriptions
 
