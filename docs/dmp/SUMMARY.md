@@ -10,7 +10,7 @@
 
 * [Cryptography and Communications](cryptography-and-communications.md)
 * [Blockchain Operations](blockchain-operations.md)
-* [Smart Contract](smart-contract.md)
+* [Smart Contracts](smart-contracts.md)
 * [Mining Protocol Flow](mining-protocol-flow.md)
 
 ## 📈 Token Utility
