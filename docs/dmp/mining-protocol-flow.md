@@ -18,6 +18,6 @@ Additionally, Drey Miners will also operate the BTC Vault to re-distribute BTC r
 
 Drey Miners will also deposit funds into and manage AMM liquidity pools on behalf of specific individual investors who opt to have the bitcoin survivor yields and DREY airdrops redeposited into AMMs on Stacks blockchain for additional yield.
 
-## DREY token minting
+## DREY token minting and other smart contracts
 
-## &#x20;
+Drey Miners will have the ability to update DREY token minting and other smart contracts with the Decentralized Mining Protocol.

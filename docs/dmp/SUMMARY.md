@@ -11,7 +11,7 @@
 * [Cryptography and Communications](cryptography-and-communications.md)
 * [Blockchain Operations](blockchain-operations.md)
 * [Smart Contracts](smart-contracts.md)
-* [Mining Protocol Uses](mining-protocol-uses.md)
+* [Mining Protocol Uses](mining-protocol-flow.md)
 
 ## 📈 Token Utility
 
