@@ -4,9 +4,9 @@ description: Steps describing wallet workflows and cryptographic requirements
 
 # Wallet Workflows
 
-This document attempts to lay out the wallet workflows between entities, list the cryptographic underpinning of each wallet (for example, P2TR/Schnorr) and point out where ideal wallet operations are not supported by the cryptographic underpinnings.
+This document attempts to lay out the wallet workflows between entities, list the cryptographic underpinning of each wallet (for example, P2TR/Schnorr) and point out where ideal wallet operations are not supported by the cryptographic capabilities of the decentralised mining pool. The decentralised mining pool only support P2TR transactions (as currently spec'd) and the underlying Stacks protocol only supports ECDSA, although verification of Schnoor signatures is planned for a future release.
 
-This exercise is necessary because not all wallets support P2TR wallet adresses. So moving funds into a P2TR address may necessitate the existing of an on-boarding wallet.
+This exercise is necessary because not all wallets support P2TR wallet adresses. So moving funds into a P2TR address may necessitate the existence of an on-boarding wallet undr.
 
 
 
