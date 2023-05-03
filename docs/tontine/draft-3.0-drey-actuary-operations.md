@@ -125,11 +125,25 @@ $$p*\sum dec(btc) = percentage\, of\, \sum dec(btc)\, distributed$$
 
 Note that this operation _MUST_ remove the deceased's Dreybits and hence the underlying bitcoin from the original fund and distribute the bitcoin to the survivors. However, the survivors have a choice of receiving this distribution directly to a wallet under their control, or, they can elect to deposit the received bitcoin (and monthly airdrop of Drey) into a Drey savings/staking account, where the bitcoin and DREY tokens are deposited into a two-sided liquidity pool (DREY/bitcoin). This is explained in detail in the section on **Drey Savings accounts**.
 
+### Monthly Annuity Payment
+
+In version 3.0 of the protocol, rather than returning all of the deceased’s bitcoin every month to the survivors and emptying the sum of all deceased’s bitcoin out of the fund, the fund should redistribute the ownership of the bitcoin to surviving members but KEEP the bitcoin in the fund. A back of an envelope calculation sees that by doing so we greatly increase the bitcoin in the fund which drives an ever-increasing yield from the staking and mining operations. The individual investor will still experience an increase in their monthly distribution by way of the pro-rata assignment of deceased’s bitcoin to them which will also increase their ‘annuity like’ payment (from the remaining principal since their principal increases) and should increase their overall Dreybits allocation (unless perhaps there was a huge jump in new investors that month).
+
+To determine the monthly payout, we use 120 as the age by which we expect all investors in the fund to live to for the USA, and for other locales we will use the last year by which mortality is expected to cease per that location's accepted mortality table. For the USA, we will use the 2012 IAM w/G2 scale for operations.
+
+$$1 + _{n}p_{x} / (1+i)^n + _{(n+1)}p_{x} / (1+i)^{(n+1) }+_{(n+2)}p_{x}$$
+
+$$_{n}p_{x}$$ where _x_ is the current age of the annuitant, _n_ is the time from the current age until projected death (in months), and _p_ is the probability of survival to the next payment, and _i_ represents the discount rate.
+
+As mentioned, for an annuity paid for life the formula continues until it is assumed the person cannot live longer (typically 120 or so).
+
+**NOTE: I am still unsure on how this is calculates the monthly payment.**
+
 ### New Dreybit Monthly Re-Allocation
 
-When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund.&#x20;
+When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund _AND AFTER_ monthly annuity payments are remitted over the bitcoin network.
 
-Therefore, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members and optionally adding new investors (if there are any for the next month) into the fund.
+Therefore, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members, paying monthly annuity payments, and optionally adding new investors (if there are any for the next month) into the fund.
 
 $$p_{(1-ith)}= q_{(1-ith)} s_{(1-ith)}$$
 
@@ -148,10 +162,12 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 3. At the end of the month, tally the surviving member's share of deceased member's Dreybits.
 4. Use this number to determine the pro-rata percentage of deceased member's bitcoin to be allocated to survivors.
 5. Obtain a positive vote on the distribution schedule.
-6. Remove the deceased member's Dreybits from the total and remit the deceased member's bitcoin to survivors.
-7. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
-8. Obtain a positive vote on the re-allocation schedule.
-9. Go to Step 3.
+6. Remove the deceased member's Dreybits from the total and allocate the deceased member's bitcoin to survivor's balances.
+7. Perform the APV of an Immediate Annuity formula to determine all fund investors' monthly payments.
+8. Distribute the monthly payments to all fund investors via bitcoin network.
+9. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
+10. Obtain a positive vote on the re-allocation schedule.
+11. Go to Step 3.
 
 ## References
 
