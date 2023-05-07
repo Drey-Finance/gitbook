@@ -1,15 +1,16 @@
 ---
 description: >-
-  Draft 3.0 describes a system where bitcoin from deceased is layered into a
-  monthly annuity payment from principal, so deceased's bitcoin is not
-  immediately remove from fund.
+  Drey is a decentralised actuarial protocol designed to delivery trustless
+  bitcoin income streams for life.
 ---
 
-# Drey Actuary Operations
+# Actuary Operations
 
 ## Introduction
 
-To create a truly trustless bitcoin income plan, it is essential that Drey's actuarial models reflect the technical underpinnings that arise from operating in a decentralised manner from a technical perspective. The most critical point is the mechanics to ‘price’ participation and rewards in the fund, that they are easily understood if one were interrogating with a block explorer, while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).&#x20;
+The Drey network can be thought of as a collection of decentralised Drey actuaries that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin income streams that offer an alternative to 3rd party intermediated annuities and pensions denominated in fiat.
+
+To create a truly trustless bitcoin income plan, it is essential that Drey's actuarial models reflect the technical underpinnings that arise from operating in a decentralised manner from a technical perspective. The most critical point is the mechanics to ‘price’ participation and rewards in the fund, that they are easily understood if one were interrogating with a block explorer, while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).
 
 Two methods of operation are novel in this respect.
 
@@ -19,7 +20,7 @@ Drey allocates Dreybits to participants in the fund, which is a method to price 
 
 ### Bitcoin Ordinals and Inscriptions
 
-Bitcoin inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.&#x20;
+Bitcoin inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.
 
 All manner of Mime types can be inserted into a bitcoin blob space intrinsically linked to a specific satoshi, making the data both immutable and transferable. As Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if miners use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases:
 
@@ -44,9 +45,9 @@ Each JSON-LD document in the Bitcoin blockchain will contain an address to forwa
 
 ## Dreybits
 
-A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the **Drey tokenomics section**.
+A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the **Drey Economics**.
 
-The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialisation of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.&#x20;
+The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialisation of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.
 
 Each Dreybit ledger contains an alias ID created for the user during signup which maps to their bitcoin address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investment in the fund.
 
@@ -65,8 +66,8 @@ Drey creates a set of binding smart contracts and terms and conditions which ref
 
 ### Other Mechanics
 
-* Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month&#x20;
-* Dreybits ARE NOT transferrable by action of the owner&#x20;
+* Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month
+* Dreybits ARE NOT transferrable by action of the owner
 * They are transferrable by action of the smart contracts only
 * Dreybits are calculated using satoshi as the base investment numbering system
 * Yearly mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
@@ -84,7 +85,7 @@ The intuition behind Dreybits and the allocation formulas are to maintain fairne
 The allocation formula is as follows:
 
 1. Determine the product of each individuals current balance in the fund in satoshi s with their mortality rate q. Acclimate a yearly mortality rate into a monthly one by dividing the yearly rate by 12.
-2. Determine the sum all products for each individual together. &#x20;
+2. Determine the sum all products for each individual together.
 3. Divide the sum by the total balance in the fund to get the weighted average.
 4. The formula to determine the Dreybits allocated to an individual is the product of this weighted average and the individual's current balance.
 
@@ -113,7 +114,7 @@ $$x_{(1-ith)} =\frac{DB_{(1-i)}surviving}{\sum_{s}}$$
 
 $$DB_{alloc(1-ith)}=\sum_{d}x_{(1-ith)}$$
 
-The calculations are performed at the end of the month prior to new re-allocation exercise being performed.&#x20;
+The calculations are performed at the end of the month prior to new re-allocation exercise being performed.
 
 These Dreybits are mapped to the sum of all the deceased's bitcoin by determining the pro-rata percentage allotment to be inherited of the total deceased's Dreybits for the period.
 
@@ -136,8 +137,6 @@ $$1 + _{n}p_{x} / (1+i)^n + _{(n+1)}p_{x} / (1+i)^{(n+1) }+_{(n+2)}p_{x}$$
 $$_{n}p_{x}$$ where _x_ is the current age of the annuitant, _n_ is the time from the current age until projected death (in months), and _p_ is the probability of survival to the next payment, and _i_ represents the discount rate.
 
 As mentioned, for an annuity paid for life the formula continues until it is assumed the person cannot live longer (typically 120 or so).
-
-**NOTE: I am still unsure on how this is calculates the monthly payment.**
 
 ### New Dreybit Monthly Re-Allocation
 
@@ -171,36 +170,36 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
 ## References
 
-Donnelly, C. (2015). Actuarial fairness and solidarity in pooled annuity funds. ASTIN Bulletin, 45(01):49–74.&#x20;
+Donnelly, C. (2015). Actuarial fairness and solidarity in pooled annuity funds. ASTIN Bulletin, 45(01):49–74.
 
-Donnelly, C., Guillén, M., and Nielsen, J. P. (2013). Exchanging uncertain mortality for a cost. Insurance: Mathematics and Economics, 52(1):65–76.&#x20;
+Donnelly, C., Guillén, M., and Nielsen, J. P. (2013). Exchanging uncertain mortality for a cost. Insurance: Mathematics and Economics, 52(1):65–76.
 
-Donnelly, C., Guillén, M., and Nielsen, J. P. (2014). Bringing cost transparency to the life annuity market. Insurance: Mathematics and Economics, 56:14–27.&#x20;
+Donnelly, C., Guillén, M., and Nielsen, J. P. (2014). Bringing cost transparency to the life annuity market. Insurance: Mathematics and Economics, 56:14–27.
 
-Forman, J. B. and Sabin, M. J. (2015). Tontine pensions. University of Pennsylvania Law Review, 173(3):755-831.&#x20;
+Forman, J. B. and Sabin, M. J. (2015). Tontine pensions. University of Pennsylvania Law Review, 173(3):755-831.
 
-Forman, J. B. and Sabin, M. J. (2016). Survivor funds. Pace Law Review, 37(1).&#x20;
+Forman, J. B. and Sabin, M. J. (2016). Survivor funds. Pace Law Review, 37(1).
 
-Goldsticker, R. (2007). A Mutual Fund to Yield Annuity-Like Benefits. Financial Analysts Journal, 63(1):63–67.&#x20;
+Goldsticker, R. (2007). A Mutual Fund to Yield Annuity-Like Benefits. Financial Analysts Journal, 63(1):63–67.
 
-Gründel, H. and Wandt, M. (July 6, 2017). The modern tontine: An innovative instrument for longevity risk management in an aging society. ICIR Working Paper Series No. 22/2016.&#x20;
+Gründel, H. and Wandt, M. (July 6, 2017). The modern tontine: An innovative instrument for longevity risk management in an aging society. ICIR Working Paper Series No. 22/2016.
 
-Kantorowicz, E. H. (1957). The King’s Two Bodies: A Study in Mediaeval Political Theology, Princeton University Press, Princeton, NJ, 411-412.&#x20;
+Kantorowicz, E. H. (1957). The King’s Two Bodies: A Study in Mediaeval Political Theology, Princeton University Press, Princeton, NJ, 411-412.
 
-Milevsky, M. A. and Salisbury, T. S. (2015). Optimal Retirement Income Tontines. Insurance: Mathematics and Economics, 64:91–105.&#x20;
+Milevsky, M. A. and Salisbury, T. S. (2015). Optimal Retirement Income Tontines. Insurance: Mathematics and Economics, 64:91–105.
 
-Milevsky, M. A. and Salisbury, T. S. (2016). Equitable retirement income tontines: Mixing cohorts without discriminating. ASTIN Bulletin, 46(3):571-604.&#x20;
+Milevsky, M. A. and Salisbury, T. S. (2016). Equitable retirement income tontines: Mixing cohorts without discriminating. ASTIN Bulletin, 46(3):571-604.
 
-NAIC (2013). NAIC model rule (regulation) for recognizing a new annuity mortality table for use in determining reserve liabilities for annuities. National Association of Insurance Commissioners.&#x20;
+NAIC (2013). NAIC model rule (regulation) for recognizing a new annuity mortality table for use in determining reserve liabilities for annuities. National Association of Insurance Commissioners.
 
-Piggott, J., Valdez, E. A., and Detzel, B. (2005). The simple analytics of a pooled annuity fund. Journal of Risk and Insurance, 72(3):497–520.&#x20;
+Piggott, J., Valdez, E. A., and Detzel, B. (2005). The simple analytics of a pooled annuity fund. Journal of Risk and Insurance, 72(3):497–520.
 
-Sabin, M. J. (March 26, 2010). Fair tontine annuity. Available at SSRN: https://ssrn.com/abstract=1579932 or https://dx.doi.org/10.2139/ssrn.1579932.&#x20;
+Sabin, M. J. (March 26, 2010). Fair tontine annuity. Available at SSRN: https://ssrn.com/abstract=1579932 or https://dx.doi.org/10.2139/ssrn.1579932.
 
-Sabin, M. J. and Forman, J. B. (November 9, 2016). The analytics of a single-period tontine. Available at SSRN: https://ssrn.com/abstract=2874160 or https://dx.doi.org/10.2139/ssrn.2874160.&#x20;
+Sabin, M. J. and Forman, J. B. (November 9, 2016). The analytics of a single-period tontine. Available at SSRN: https://ssrn.com/abstract=2874160 or https://dx.doi.org/10.2139/ssrn.2874160.
 
-Stamos, M. Z. (2008) Optimal consumption and portfolio choice for pooled annuity funds. Insurance: Mathematics and Economics, 43(1):56–68.&#x20;
+Stamos, M. Z. (2008) Optimal consumption and portfolio choice for pooled annuity funds. Insurance: Mathematics and Economics, 43(1):56–68.
 
 Waring, M. B. and Seigel, L. B. (2015). The Only Spending Rule Article You Will Ever Need. Financial Analysts Journal, 71(1):91–107.
 
-[^1]: Forman, J. B. and Sabin, M. J. (2016). Survivor funds. Pace Law Review, 37(1).&#x20;
+[^1]: Forman, J. B. and Sabin, M. J. (2016). Survivor funds. Pace Law Review, 37(1).
