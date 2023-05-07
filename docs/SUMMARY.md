@@ -1,3 +1,3 @@
 # Table of contents
 
-* [About Drey Finance](README.md)
+* [Overview](README.md)
