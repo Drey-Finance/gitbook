@@ -1,5 +1,8 @@
 ---
 description: An overview on Drey Finance
+cover: >-
+  https://images.unsplash.com/photo-1607599193024-de4a7601aefc?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw3fHxzcXVpcnJlbHxlbnwwfHx8fDE2ODM1MDI2NDU&ixlib=rb-4.0.3&q=85
+coverY: 102
 ---
 
 # Overview
