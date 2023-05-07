@@ -5,7 +5,7 @@ description: >-
   immediately remove from fund.
 ---
 
-# Draft 3.0 - Drey Actuary Operations
+# Drey Actuary Operations
 
 ## Introduction
 
