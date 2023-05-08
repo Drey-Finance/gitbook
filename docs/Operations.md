@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-The Drey network can be thought of as a collection of decentralised Drey actuaries that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin income streams that offer an alternative to 3rd party intermediated annuities and pensions denominated in fiat.
+The Drey network can be thought of as a collection of decentralised Drey Actuaries (miners) that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin income streams that offer an alternative to 3rd party intermediated annuities and pensions denominated in fiat.
 
 To create a truly trustless bitcoin income plan, it is essential that Drey's actuarial models reflect the technical underpinnings that arise from operating in a decentralised manner from a technical perspective. The most critical point is the mechanics to ‘price’ participation and rewards in the fund, that they are easily understood if one were interrogating with a block explorer, while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).
 
@@ -33,9 +33,9 @@ All manner of Mime types can be inserted into a bitcoin blob space intrinsically
 * New or updated actuarial models to be deployed
 * New or updated R software models to be used in distribution calculations (TBD)
 
-Documents generated for insertion into bitcoin storage will use a defined schema (TBC) on [JSON-LD documents](https://en.wikipedia.org/wiki/JSON-LD) compressed with [Briotli.](https://github.com/google/brotli) See the recommendations [here](https://www.lucidchart.com/techblog/2019/12/06/json-compression-alternative-binary-formats-and-compression-methods/).
+Documents generated for insertion into bitcoin storage will use a defined schema (TBC) on [JSON-LD documents](https://en.wikipedia.org/wiki/JSON-LD) compressed with [Briotli.](https://github.com/google/brotli) See the recommendations [here](https://www.lucidchart.com/techblog/2019/12/06/json-compression-alternative-binary-formats-and-compression-methods/). See also [BRC-20](https://domo-2.gitbook.io/brc-20-experiment/).
 
-The rest of this specification is described **in another section to be completed**.
+The rest of this specification is described **in another technical section to be completed**.
 
 ### Voting
 
@@ -45,7 +45,7 @@ Each JSON-LD document in the Bitcoin blockchain will contain an address to forwa
 
 ## Dreybits
 
-A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the **Drey Economics**.
+A Drey miner, selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the R software packages each miner runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the miner population over nostr. The decentralised miner protocol will be asked to create a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the [**Drey Economics**](dreyconomics/stakeholders.md).
 
 The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialisation of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.
 
