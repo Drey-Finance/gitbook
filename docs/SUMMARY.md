@@ -12,3 +12,6 @@
 
 * [Mechanisms](mechanisms.md)
 * [Incentives and Disincentives](incentives-and-disincentives.md)
+* [Token Objective](token-objective.md)
+* [Token Journey](token-journey.md)
+* [Value Capture](value-capture.md)
