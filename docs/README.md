@@ -21,7 +21,7 @@ Key features of Drey income and retirement plans include:
 
 ### Why Drey Now?
 
-The market opportunity for Drey is substantial, with over $50 trillion in global pension assets and a CAGR of 6%. As 10,000 baby boomers retire daily, the demand for alternative retirement solutions continues to grow. A staggering 68% of Americans lack confidence in their current retirement plans, further highlighting the need for innovative solutions like Drey.
+The market opportunity for Drey Finance is substantial, with over $50 trillion in global pension assets and a CAGR of 6%. As 10,000 baby boomers retire daily, the demand for alternative retirement solutions continues to grow. A staggering 68% of Americans lack confidence in their current retirement plans, further highlighting the need for innovative solutions like Drey.
 
 The increasing adoption of digital assets and blockchain technology, coupled with the growing awareness of the drawbacks of traditional financial products, creates a perfect environment for Drey to thrive. By offering a secure, transparent, and efficient solution for generating passive income with Bitcoin, Drey is poised to capture a significant share of the market and empower individuals, couples, and families to achieve financial freedom and peace of mind through the transformative power of decentralized finance.
 
