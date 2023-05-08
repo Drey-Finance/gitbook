@@ -1,5 +1,32 @@
 # Protocol Revenues
 
+Drey Tokens will be distributed to depositors only after the Drey protocol is up and running, and miners have already staked bitcoin into a Drey Fund wallet as qualification for being a Drey Miner. When the airdrop program is ready, Drey Tokens will be airdropped in an equivalent amount with their monthly bitcoin distributions.
+
+The amount of DREY Tokens required for Drey Miner staking will be determined at a later date. Initially, all that is necessary to become a Drey Miner is a reasonably powered computer to run the Drey Miner software, a bitcoin client, a Stacks client, an internet connection and some amount of bitcoin to stake.
+
+Revenue flows to the Drey Protocol by capture of administration fees taken 1) as a percentage of the monthly distributions made to Drey depositors and 2) taken as a de-minimus amount based on all assets under management, taken on a monthly basis. For now, we are modelling administration fees at 2% on distributions and 0.25% per annum management fees on (assets under management) AUM (or 0.000208333333333% monthly).
+
+As an example, if monthly distributions total $5M USD worth of bitcoin, then Drey Protocol's capture is $100,000 USD worth of bitcoin from distributions. If AUM = $1B USD of bitcoin for that month, then Drey Protocol's capture from monthly management fees is $208,333.33 (0.000208333333333% of $1B) for gross revenue amount of $308,333.33 worth of bitcoin for that month.
+
+After expenses and fees are paid to Drey Finance Corp. for running the Drey Proof of Life app and service, DREY token holders who are staking DREY tokens and running continuous Drey Mining operations will receive incoming bitcoin flows based on a pro-rata percentage of DREY token holdings. In other words, only Drey Miners are eligible to receive a share of the Drey Protocol's bitcoin revenue flows.
+
+DREY token holders not running Drey Mining operations have two options to get liquid on their DREY tokens:
+
+1. They can deposit both DREY tokens and bitcoin (BTC) into a two-sided liquidity pool run by Alex Automated Market Maker Protocol on Stacks. https://docs.alexlab.co/ Liquidity Providers obtain yield by way of trading fees obtained by the AMM protocol. They can elect to lock up their Liquidity Provider tokens for a fixed amount of time and receive higher yields (yield farming). NOTE: This is the financing mechanism behind "Drey Save", which enables Drey fund depositors to divert their monthly DREY token airdrops and monthly bitcoin remittances as deposits into the AMM liquidity pools, becoming liquidity providers for the DREY/BTC Automated Market Maker, and obtaining additional yield over an above the Drey Fund's gains. This is an automated, opt-in mechanism available to all Drey fund investors from Day 1 of DREY token airdrops.
+2. They can elect not to divert their bitcoin and DREY tokens into Drey Save and receive these tokens into their Drey Wallet. Once the DREY tokens are in their Drey Wallet, the users can elect to sell their DREY tokens for bitcoin using the DREY/BTC Automated Market Maker exchange. This is not an automated process, but can be done manually using the Drey Wallet or any other supporting wallet.
+
+Once Drey token airdrops start to Drey Depositors, Drey Miners MUST hold and stake DREY tokens in an ever increasing amount relative to the distributions made to the Drey Fund Depositors. This creates demand generation for DREY tokens. The Drey Miners must keep pace with obtaining DREY tokens relative to the ever increasing amount airdropped to Drey Fund depositors on a monthly basis.
+
+Note that Drey Fund Miners will have an allotment of DREY tokens granted to them at the beginning of protocol operations, relative to the amount of bitcoin they have stacked in order to become a Drey Miner.
+
+For an easy math example, suppose the network starts off with 100 Drey Miners, who have each staked a minimum of 1 bitcoin. At the start of network operations, Drey Miners will have each staked into a collective Drey Fund wallet 1 bitcoin for a total of 100 bitcoin in the wallet. Each Miner receives 1 DREY token for each bitcoin deposited. Until the DREY/BTC AMM is operational, there is no market for DREY tokens and they cannot be disposed of by a Drey Miner while they are performing Drey Mining operations. Each Drey Miner is therefore entitled to 1% of the Drey Protocol revenue flow after expenses.
+
+Further, DREY tokens are never airdropped to Drey Miners for running Drey Mining operations past this initial airdrop. Once Drey airdrops to Drey fund depositors start, the only way for a Drey Miner to maintain or increase their share of the Drey Protocol flows is to increase their holdings of DREY tokens relative to other Drey Miners.
+
+As an example, let's assume that total monthly bitcoin distributions were 10 bitcoin across all Drey fund depositors for the month. This being the first month of Drey airdrops, 10 DREY tokens in total would be airdropped in this first month of airdrop operations across to all Drey fund depositors.
+
+### For Discussion
+
 The Drey Finance ecosystem is designed to create a range of revenue streams at the protocol and network level, ensuring the long-term sustainability and growth of the project. In this section, we will outline five key revenue sources generated by the Drey protocol and network.
 
 1. Transaction Fees: As users interact with the Drey Finance ecosystem, they may incur transaction fees for various actions, such as executing smart contracts, swapping assets, or utilizing other financial services provided by the platform. A portion of these fees is collected and redistributed to the protocol, creating a recurring revenue stream that can be used to fund future developments, security measures, or additional incentives.
