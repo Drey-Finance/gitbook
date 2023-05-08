@@ -54,4 +54,4 @@ This DVRF protocol will enable Drey Actuaries to randomly and securely select th
 1. Operate nostr clients and relays with eventual privacy preserving extensions.
 2. Operate Decentralized Trust Authorities (DTAs) and issue type-3 pairing client and server key shares to Proof of Life Service, and backup to bitcoin blockchain.
 3. Participate in the ROAST protocol to generate P2TR wallet addresses and FROST generated Schnorr threshold signatures on bitcoin transactions over nostr.
-4. Participate in a DVRF protocol to randomly and securely select the Drey Miner who will propose monthly distribution schedules and payouts.
+4. Participate in a DVRF protocol to randomly and securely select the Drey Actuaries who will propose monthly distribution schedules and payouts.
