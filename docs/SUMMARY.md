@@ -6,4 +6,8 @@
 
 ## 💪 Drey Economics
 
-* [Page 1](drey-economics/page-1.md)
+* [Stakeholders](drey-economics/stakeholders.md)
+
+***
+
+* [Mechanisms](mechanisms.md)
