@@ -1,6 +1,6 @@
 ---
 description: >-
-  Drey is a decentralised actuarial protocol designed to delivery trustless
+  Drey is a decentralised actuarial protocol designed to deliver trustless
   bitcoin income streams for life.
 ---
 
@@ -8,7 +8,7 @@ description: >-
 
 ## Introduction
 
-The Drey network can be thought of as a collection of decentralised Drey Actuaries (miners) that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin income streams that offer an alternative to 3rd party intermediated annuities and pensions denominated in fiat.
+The Drey network can be thought of as a collection of decentralised Drey Actuaries (miners) that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin structured income streams that offer an alternative to 3rd party intermediated annuities and pensions denominated in fiat.
 
 To create a truly trustless bitcoin income plan, it is essential that Drey's actuarial models reflect the technical underpinnings that arise from operating in a decentralised manner from a technical perspective. The most critical point is the mechanics to ‘price’ participation and rewards in the fund, that they are easily understood if one were interrogating with a block explorer, while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).
 
