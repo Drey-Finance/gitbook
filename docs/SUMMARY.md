@@ -4,9 +4,9 @@
 * [Actuary Operations](Operations.md)
 * [Cryptography Overview](cryptography-overview.md)
 
-## 💪 Drey Economics
+## 💪 Dreyconomics
 
-* [Stakeholders](drey-economics/stakeholders.md)
+* [Stakeholders](dreyconomics/stakeholders.md)
 
 ***
 
