@@ -11,3 +11,4 @@
 ***
 
 * [Mechanisms](mechanisms.md)
+* [Incentives and Disincentives](incentives-and-disincentives.md)
