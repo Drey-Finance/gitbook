@@ -6,11 +6,11 @@ description: Describing the various cryptographic protocols underpinning the Dre
 
 ## Cryptography and Communications
 
-Drey Miners utilize different cryptographic technology and communications protocols together to create a robust but methods for securing the network, processing proof of life claims, issuing DREY tokens and actuary operations (including voting).
+Drey Actuaries (miners) utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, processing proof of life claims, issuing DREY tokens and actuarial operations (including voting).
 
 #### nostr Protocol <a href="#nostr-protocol" id="nostr-protocol"></a>
 
-Drey Miners coordinate operations over the [nostr protocol](https://nostr.com/), with each Drey Miner running their own private [relay](https://nostr.com/relays). Nostr was selected because of the client / relay architecture and eventual private [asynchronous communication](https://bitcoinmagazine.com/technical/how-nostr-can-improve-bitcoin-privacy). Drey Miners operating their own private relays can tune their relays to accept messages from other Drey Miners as the medium for conducting communications for actuary operations, co-ordination on voting, cryptographic threshold signature and verifiable random function protocols, as well as in future accepting communications from other clients that Drey Miners may offer services to that are not yet in view.
+Drey Actuaries (miners) coordinate operations over the [nostr protocol](https://nostr.com/), with each Drey Actuary running their own private [relay](https://nostr.com/relays). Nostr was selected because of the client / relay architecture and eventual private [asynchronous communication](https://bitcoinmagazine.com/technical/how-nostr-can-improve-bitcoin-privacy). Drey Actuaries operating their own private relays can tune their relays to accept messages from other Drey Actuaries as the medium for conducting communications for actuary operations, co-ordination on voting, cryptographic threshold signature and verifiable random function protocols, as well as in future accepting communications from other clients that Drey Actuaries may offer services to that are not yet in view.
 
 #### ROAST Protocol <a href="#roast-protocol" id="roast-protocol"></a>
 
