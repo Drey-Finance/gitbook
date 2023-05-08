@@ -1,6 +1,6 @@
 # Protocol Revenues
 
-Drey Tokens will be distributed to depositors only after the Drey protocol is up and running, and miners have already staked bitcoin into a Drey Fund wallet as qualification for being a Drey Miner. When the airdrop program is ready, Drey Tokens will be airdropped in an equivalent amount with their monthly bitcoin distributions.
+DREY tokens will be distributed to depositors only after the Drey protocol is up and running after a period of time, and miners have already staked bitcoin into a Drey Fund wallet as qualification for being a Drey Miner. When the airdrop program is ready, Drey Tokens will be airdropped in an equivalent amount with their monthly bitcoin distributions.
 
 The amount of DREY Tokens required for Drey Miner staking will be determined at a later date. Initially, all that is necessary to become a Drey Miner is a reasonably powered computer to run the Drey Miner software, a bitcoin client, a Stacks client, an internet connection and some amount of bitcoin to stake.
 
