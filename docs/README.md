@@ -14,7 +14,7 @@ Our groundbreaking platform combines the pooling of gifted mortality-based life 
 Key features of Drey income and retirement plans include:
 
 1. Monthly distributions in BTC and airdrops of DREY tokens
-2. Transparent and auditable smart contracts (powered by Stacks)
+2. Transparent and auditable smart contracts (powered by [Stacks](https://www.stacks.co/))
 3. Low-cost setup and administration fees compared to traditional financial products
 4. Tax-efficient gifting mechanism that preserves all income
 5. High returns via combined mining, staking, and life-credit pooling
