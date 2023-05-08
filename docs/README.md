@@ -25,7 +25,7 @@ The market opportunity for Drey Finance is substantial, with over $50 trillion i
 
 The increasing adoption of digital assets and blockchain technology, coupled with the growing awareness of the drawbacks of traditional financial products, creates a perfect environment for Drey to thrive. By offering a secure, transparent, and efficient solution for generating passive income with Bitcoin, Drey is poised to capture a significant share of the market and empower individuals, couples, and families to achieve financial freedom and peace of mind through the transformative power of decentralized finance.
 
-As the first-to-market blockchain native income and pension plan, Drey stands out from competitors by providing a truly unique alternative to traditional retirement planning. Our commitment to security, transparency, and user empowerment positions us as a disruptive force in the DeFi landscape, ready to redefine the way people think about income and retirement in the digital age.
+As the first-to-market bitcoin native structured income and pension plan, Drey stands out from competitors by providing a truly unique alternative to traditional retirement planning. Our commitment to security, transparency, and user empowerment positions us as a disruptive force in the DeFi landscape, ready to redefine the way people think about income and retirement in the digital age.
 
 ### Our Mission
 
