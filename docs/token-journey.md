@@ -1,6 +1,6 @@
 # Token Journey
 
-The DREY token journey begins with its acquisition by various stakeholders, including investors, miners, and liquidity providers. Investors seeking exposure to Bitcoin mining investments can acquire DREY tokens through exchanges, initial offerings, or other distribution events. Miners and liquidity providers may receive DREY tokens as rewards for their contributions to the ecosystem. This initial phase highlights how the different stakeholders can acquire tokens and gain access to the Drey Finance ecosystem.
+The DREY token journey begins with its acquisition by various stakeholders, including investors, Drey Actuaries, and liquidity providers. Investors seeking exposure to Bitcoin life-pooling protocol returns can acquire DREY tokens through exchanges, initial offerings, or other distribution events. Drey Actuaries and liquidity providers may receive DREY tokens as rewards for their contributions to the ecosystem. This initial phase highlights how the different stakeholders can acquire tokens and gain access to the Drey Finance ecosystem.
 
 Once stakeholders have acquired DREY tokens, they can use them to participate in the core functions of the ecosystem. Investors can utilize their tokens to gain access to Bitcoin mining investment opportunities in the Drey Fund, while miners can stake their tokens as collateral to participate in the mining process and earn additional rewards. Liquidity providers can also employ their tokens in yield farming strategies, further enhancing their returns and benefiting from the growth of the platform.
 
