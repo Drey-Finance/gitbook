@@ -131,13 +131,20 @@ In version 3.0 of the protocol, rather than returning all of the deceased’s bi
 
 To determine the monthly payout, we use 120 as the age by which we expect all investors in the fund to live to for the USA, and for other locales we will use the last year by which mortality is expected to cease per that location's accepted mortality table. For the USA, we will use the 2012 IAM w/G2 scale for operations.
 
-$$1 + _{n}p_{x} / (1+i)^n + _{(n+1)}p_{x} / (1+i)^{(n+1) }+_{(n+2)}p_{x}$$
+$$Annuity Factor = \sum [1 + _{n}p_{x} / (1+i)^n + _{(n+1)}p_{x} / (1+i)^{(n+1) }+_{(n+2)}p_{x} + ...]$$
 
-$$_{n}p_{x}$$ where _x_ is the current age of the annuitant, _n_ is the time from the current age until projected death (in months), and _p_ is the probability of survival to the next payment, and _i_ represents the discount rate.
+$$_{n}p_{x}$$ where _x_ is the current age of the annuitant, _n_ is the time from the current age until projected death (in months), and _p_ is the probability of survival from the current age to the payment age, and _i_ represents the discount rate.
 
 As mentioned, for an annuity paid for life the formula continues until it is assumed the person cannot live longer (typically 120 or so).
 
-**NOTE: I am still unsure on how this is calculates the monthly payment.**
+The payout of accumulated principal (after allocating mortality credits) at the end of the month is then to divide the principal by the annuity factor pay that amount out and reduce the principal accordingly. For example, assume an investor who starts the month with 100 BTC invested, earns an allocation of 2 BTC due to mortality credits to have 102 BTC in principal before the end of month payout. Also assume the investor is age 65 in 2024 and the discount rate is 5%. The corresponding monthly annuity factor is 160.773. The payout is then 0.634 (102 / 160.773) BTC and the remaining principal for the new month is 101.366 BTC.&#x20;
+
+The nature of this methodology is all else being equal:
+
+1. Higher assumed mortality rates (i.e., people expected to die sooner) means a greater payout rate.
+2. Higher discount rates result in greater payouts as higher discount rates produce smaller annuity factors.
+3. Older participants receive greater payouts than younger as their annuity factors are smaller.
+4. Under typical mortality assumptions, men receive larger payouts than women of the same age as they are expected to die sooner.
 
 ### New Dreybit Monthly Re-Allocation
 
@@ -163,8 +170,8 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 4. Use this number to determine the pro-rata percentage of deceased member's bitcoin to be allocated to survivors.
 5. Obtain a positive vote on the distribution schedule.
 6. Remove the deceased member's Dreybits from the total and allocate the deceased member's bitcoin to survivor's balances.
-7. Perform the APV of an Immediate Annuity formula to determine all fund investors' monthly payments.
-8. Distribute the monthly payments to all fund investors via bitcoin network.
+7. Perform the APV of an Immediate Annuity formula to determine all fund investors' monthly payments by dividing the investors' principal by their annuity factor.
+8. Distribute the monthly payments to all fund investors via bitcoin network and then remove that payment from the investors' tracked principal.
 9. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
 10. Obtain a positive vote on the re-allocation schedule.
 11. Go to Step 3.
