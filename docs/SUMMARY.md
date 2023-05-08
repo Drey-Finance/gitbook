@@ -15,3 +15,4 @@
 * [Token Objective](token-objective.md)
 * [Token Journey](token-journey.md)
 * [Value Capture](value-capture.md)
+* [Token Distribution](token-distribution.md)
