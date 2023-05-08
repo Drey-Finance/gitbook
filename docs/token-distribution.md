@@ -1,8 +1,8 @@
 # Token Distribution
 
-The DREY token's distribution begins with an initial allocation to investors and insiders within the Drey Finance corporation, as well as to Drey Miners based on their initial stake in Bitcoin. This approach helps align the interests of these key stakeholders and ensures their commitment to the platform's long-term success. By granting tokens to Drey Miners, the network also recognizes and rewards their early support and involvement in the ecosystem.
+The DREY token's distribution begins with an initial allocation to investors and insiders within the Drey Finance corporation, as well as to Drey Actuaries (miners) based on their initial stake in bitcoin. This approach helps align the interests of these key stakeholders and ensures their commitment to the platform's long-term success. By granting tokens to Drey Actuaries, the network also recognises and rewards their early support and involvement in the ecosystem.
 
-As the Drey Finance protocol gains traction, the token distribution expands to include Drey Fund investors. These investors will receive DREY token airdrops in conjunction with their monthly Bitcoin remunerations. This approach ensures that Drey Fund investors are rewarded for their contributions and have an incentive to participate in the ecosystem's growth.
+As the Drey Finance protocol gains traction, the token distribution expands to include Drey Fund Investors. These investors will receive DREY token airdrops in conjunction with their monthly bitcoin remunerations. This approach ensures that Drey Fund investors are rewarded for their contributions and have an incentive to participate in the ecosystem's growth.
 
 In addition to the initial allocations and airdrops, the DREY token distribution may involve various other mechanisms. These can include pre-sales to private investors, public sales with different pricing mechanisms, or direct listings on exchanges. By employing a range of token launch mechanisms, the Drey Finance ecosystem can attract a diverse set of stakeholders and encourage broader participation in the platform.
 
