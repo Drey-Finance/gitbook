@@ -1,22 +1,22 @@
 ---
 description: >-
-  Drey is a decentralised actuarial protocol designed to deliver trustless
-  bitcoin income streams for life.
+  Drey is a decentralised actuarial operating system designed to deliver
+  trustless bitcoin income streams for life.
 ---
 
 # Actuary Operations
 
 ## Introduction
 
-The Drey network can be thought of as a collection of decentralised Drey Actuaries (miners) that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin structured income streams that offer an alternative to 3rd party intermediated annuities and pensions denominated in fiat.
+The Drey network can be thought of as a collection of decentralised Drey Actuaries (miners) that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin structured income streams that offer an alternative to third party intermediated annuities and pensions denominated in fiat.
 
 To create a truly trustless bitcoin income plan, it is essential that Drey's actuarial models reflect the technical underpinnings that arise from operating in a decentralised manner from a technical perspective. The most critical point is the mechanics to ‘price’ participation and rewards in the fund, that they are easily understood if one were interrogating with a block explorer, while preserving fairness inspired by the nominal-gain methodology in Sabin and Forman (2016).
 
 Two methods of operation are novel in this respect.
 
-Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/), so that records are public, durable and immutable. Identities are masked using zero-knowledge proof technology. Drey uses the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as monthly distributions for the fund.
+Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/), so that records are public, durable and immutable. The operating system 'works out loud' for transparency and confidence. Identities are masked using zero-knowledge proof identity technology. Drey uses the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as actuarial tables in use and monthly distributions for the fund.
 
-Drey allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants. Dreybits are not DREY tokens, they are a formalised accounting method that is designed to be an easily understood accounting convention designed to be relevant across lifetimes.
+Drey employs an accounting method called Dreybits. The system allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants. Dreybits are not DREY tokens, they are a formalised accounting method that is designed to be an easily understood accounting convention designed to be relevant across lifetimes.
 
 ### Bitcoin Ordinals and Inscriptions
 
