@@ -7,13 +7,13 @@ coverY: 102
 
 # Overview
 
-Drey Finance is a pioneering startup offering a blockchain-powered income platform for the 21st century that provides "Bitcoin income for life" through our decentralized actuary and income protocol. Our innovative solution addresses the shortcomings of traditional annuities and pensions, such as low interest rates, inflationary fiat payments, opaque solvency issues, and the lack of transparency that hinders effective retirement planning. By 2050, the public pension funding gap is projected to reach $400 trillion, demonstrating the urgent need for alternative retirement solutions.
+Drey Finance is a pioneering startup offering a blockchain-powered income platform for the 21st century that provides "Bitcoin income for life" through our decentralized actuarial operating system. Our innovative solution addresses the shortcomings of traditional annuities and pensions, such as low interest rates, inflationary fiat payments, opaque solvency issues, and the lack of transparency that hinders effective retirement planning. By 2050, the public pension funding gap is projected to reach $400 trillion, demonstrating the urgent need for alternative retirement solutions.
 
 Our groundbreaking platform combines the pooling of gifted mortality-based life credits (tontine) with the growth and income potential of digital assets (mining/staking), delivering stable high income returns in Bitcoin. Drey's income and retirement plans for individuals, couples, and families eliminate longevity risk, underfunding risk, and inflationary risk.
 
 Key features of Drey income and retirement plans include:
 
-1. Monthly distributions in BTC and airdrops of DREY tokens
+1. Monthly distributions in BTC and DREY tokens
 2. Transparent and auditable smart contracts (powered by [Stacks](https://www.stacks.co/))
 3. Low-cost setup and administration fees compared to traditional financial products
 4. Tax-efficient gifting mechanism that preserves all income
