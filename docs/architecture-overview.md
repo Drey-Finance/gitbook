@@ -75,4 +75,4 @@ The Drey Proof of Life app also enables distributions to be automatically conver
 
 The app will enable the user to setup their own remittance information with the exchange partner's database through an integration into their API. It is envisioned that a number of exchange partners will be utilized and enabled based on geography and regulatory requirements.
 
-This same infrastructure will be utilized for fiat on-ramps&#x20;
+This same infrastructure will be utilized for fiat on-ramps. The Drey Proof of Life app will enable, post identity verification and enrolment, a user to utilize bank accounts and/or debit cards to fund their account to the best extent possible for that user's given geography and jurisdiction. The app's emphasis on user experience and design for on-boarding (and use of AI) will prompt the user the best/easiest way to fund their account as a main design objective.
