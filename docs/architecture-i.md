@@ -16,20 +16,32 @@ As described in following sections, Drey Finance leverages Bitcoin as a universa
 
 ## Stacks
 
-Stacks is a comprehensive platform that extends the functionality of Bitcoin to enable decentralized applications (dApps) and smart contracts. It is designed to leverage the security and capital of Bitcoin while adding new features and capabilities. Here's a summary of the key components and features of Stacks:
+[Stacks](https://www.stacks.co/) is a comprehensive platform that extends the functionality of Bitcoin to enable decentralized applications (dApps) and smart contracts. It is designed to leverage the security and capital of Bitcoin while adding new features and capabilities. Here's a summary of the key components and features of Stacks:
 
 1. **Stacks Blockchain**: Stacks is a layer on top of Bitcoin, linked by a consensus mechanism called Proof of Transfer (PoX). This allows Stacks to inherit Bitcoin's security and enables Stacks apps to use Bitcoin's state. Stacks is an open network with contributions from individuals and companies worldwide.
 2. **Decentralized Apps (dApps)**: Stacks powers decentralized apps that run on the Stacks blockchain instead of a centralized server. This opens up new use cases that were not possible before.
 3. **Clarity Smart Contracts**: Clarity is a smart contract language designed to prevent bugs and common exploits, thereby protecting users. Smart contracts are the logic behind decentralized apps.
 4. **Proof of Transfer (PoX)**: PoX is the consensus mechanism that links Bitcoin and Stacks. It recycles Bitcoin's Proof of Work to achieve high levels of decentralization and scalability without additional environmental impact.
 5. **Stacking**: Stacking is a mechanism that allows holders of Stacks Token to earn Bitcoin. By locking up STX tokens on the network, users provide valuable security benefits to the network and earn a Bitcoin yield as a reward.
-6. **sBTC**: sBTC functionality allows Bitcoin to become a fully programmable, productive asset. It enables the creation of applications and experiences, such as DeFi and NFTs, backed by the security and stability of Bitcoin.
+6. **sBTC**: sBTC functionality allows Bitcoin to become a fully programmable, productive asset. It enables the creation of applications and experiences, such as DeFi and NFTs, backed by the security and stability of Bitcoin using a novel Bitcoin peg mechanism.
 7. **Non-Fungible Tokens (NFTs)**: Stacks supports the creation of NFTs on the Bitcoin network. These unique tokens can represent ownership of a unique item or piece of content.
 8. **Decentralized Finance (DeFi)**: Stacks enables true Bitcoin DeFi, given Stacks contracts' visibility into the Bitcoin state and Stacks’ inherent ability to leverage Bitcoin’s security and settlement assurances.
 9. **Blockchain Naming System (BNS)**: BNS is a network system that binds Stacks usernames to off-chain state without relying on any central points of control.
 10. **STX Token**: The Stacks token (STX) is used for executing smart contracts on the Stacks network. It also plays a key role in incentivizing open mining.
 
 The Stacks ecosystem is vast and offers a wide range of features and possibilities for developers and users alike. It aims to build a better internet on Bitcoin, providing a platform for decentralized apps and smart contracts, while leveraging the security and robustness of the Bitcoin network.
+
+### sBTC
+
+The white paper titled "[sBTC: Design of a Trustless Two-way Peg for Bitcoin](https://stacks-network.github.io/stacks/sbtc.pdf)" discusses a novel decentralized Bitcoin peg mechanism. This mechanism allows for the issuance of a BTC-pegged asset on Bitcoin layers that is 1:1 pegged to BTC and does not rely on centralized or predetermined actors for its functionality. Instead, the peg mechanism operates in a decentralized manner using an open-membership group of dynamic actors that are economically incentivized and can start or stop contributing to the peg functionality.
+
+The paper highlights the unique properties of the sBTC peg design, such as its open and decentralized nature, censorship resistance, cheap peg in/out, on-chain Bitcoin oracle, Bitcoin security, and commercial viability. The design allows for easy movement of BTC in and out of layers, and also allows smart contracts on the layers to write to Bitcoin in a trustless way. This Bitcoin write functionality is a major unlock for developers enabling them to build smart contracts that can programmatically send BTC to Bitcoin addresses through the decentralized peg.
+
+The sBTC system is designed to be incentive-compatible with mining on the canonical Stacks fork, and to ensure that Stackers' most profitable course of action is always to faithfully maintain the peg. The system has two modes of operation: the Normal Mode, and the Recovery Mode. In Normal Mode, users send BTC to a peg wallet/script on the Bitcoin chain that is controlled by a threshold fraction of stackers, maintaining a 1:1 peg. If the Normal mode encounters a liveness failure for any reason, the system transitions to a Recovery Mode until enough stackers come back online to resume signing peg-out requests.
+
+The paper also discusses the design details of sBTC, including the Threshold Signature Wallet, sBTC Circulating Supply, and the interaction with the PoX consensus algorithm. The sBTC design is commercially viable because it can scale to a sBTC circulating supply of hundreds of millions of dollars worth of BTC today and potentially to tens of billions of dollars worth of sBTC circulating supply in the future. The upper limit on sBTC supply is determined by a configurable parameter called the Liveness Ratio and is tied to the economic size of STX capital locked.
+
+Drey Finance utilizes Stacks and sBTC to peg-in Drey Finance deposits to the Stacks blockchain. Once there, Drey Actuaries can process distributions to customers rapidly in an automated fashion using [Clarity language based smart contracts](https://docs.stacks.co/docs/clarity/), secured by a supermajority of Drey Actuaries operation a Schnorr based threshold signature scheme.
 
 ## Architecture
 
