@@ -29,4 +29,4 @@ As the first-to-market bitcoin native structured income and pension plan, Drey s
 
 ### Our Mission
 
-Helping individuals and families attain financial freedom through the transformative power of decentralized finance.
+To deliver financial security in an insecure world.
