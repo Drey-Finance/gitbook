@@ -67,3 +67,6 @@ The Proof of Life app will also enable users to configure their settings for:
 * Alerts, notifications&#x20;
 * Opt-in to yield generation programs, or stay opt-out in order to remain [Sharia compliant](https://www.bankofengland.co.uk/explainers/what-is-islamic-finance)
 * Fiat-off ramps
+* Setup additional accounts (for couples or children)
+
+#### Fiat on-ramps/off-ramps
