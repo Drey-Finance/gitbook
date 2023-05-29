@@ -3,6 +3,7 @@
 * [Overview](README.md)
 * [Architecture I](architecture-i.md)
 * [Architecture II](architecture-ii.md)
+* [Architecture III](architecture-iii.md)
 * [Cryptography](cryptography-overview.md)
 * [Actuary Operations](Operations.md)
 

@@ -12,7 +12,7 @@ Second, the Drey Decentralized Actuary Network is a federation consisting of ind
 
 <figure><img src=".gitbook/assets/Drey Finance - Diagram 2.png" alt=""><figcaption><p>Figure 1. Drey Finance Architecture Overview</p></figcaption></figure>
 
-### Proof of Life App
+## Proof of Life App
 
 Drey's Proof of Life app delivers more functionality that just verifying the liveliness of customer. It is the primary method of interacting with the Drey Finance decentralized actuarial operating system. The Proof of Life App's main functions include the following:
 
