@@ -28,8 +28,6 @@ An open source FROST implementation in Rust is [here](https://github.com/LLFourn
 
 Drey Actuaries will act as [Distributed Trust Authorities](https://milagro.apache.org/docs/milagro-design), acting on requests from the Drey Proof of Life app to issue shares of a [Type-3 identity based private key](https://milagro.apache.org/docs/milagro-crypto) to randomised identities enrolling in the fund. See the figure below for Level 1 C4 diagram of the services in play.
 
-{% embed url="https://s.icepanel.io/GCDG3OFGyF6DnX/qqQl" %}
-
 Drey Actuaries respond to a cryptographically secured request from the Drey Proof of Life App to generate a share of this identity based private key and encrypt it with a public key generated in the Drey Proof of Life App operated by the Drey Investor. The public key encryption is necessary to secure the share so that no party, including any intermediary relay, can obtain access to the share. Drey Actuaries will also provide shares of a server secret to each other Drey Actuary so individually each will be enabled to run the [M-Pin zero-knowledge proof multi-factor identity verification protocol ](https://milagro.apache.org/docs/milagro-protocols)with the Drey Investors during the Proof of Life operation every month. Note the Drey Actuaries do not need to co-ordinate with each other to issue shares, a DTA simply responds to the request from the Drey Proof of Life App or other Drey Actuaries for a share.
 
 **About M-Pin**
