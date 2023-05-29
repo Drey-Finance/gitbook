@@ -35,4 +35,17 @@ The Proof of Life App's main functions include the following:
 
 #### Demographic Verification
 
-The app verifies the age, sex and geography of Drey Fund investors during enrollment. This information is obtained via third parties contracted to Drey Finance&#x20;
+The app verifies the age, sex and geography of Drey Fund investors during enrolment. This information is obtained via third party identity and KYC service providers contracted to Drey Finance. The user experience will be akin to signing up to any centralised exchange or finance institution, and should be less painful, as the amount of information necessary to obtain and verify is small:
+
+* Age
+* Birth Month and Year
+* Citizenship
+* Country of Residence
+
+Note that name, address or any other personally identifying information IS NOT required to be stored on an ongoing basis, and none is. Instead, a content-based GUID ([RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) describes the conventions) is created from the obtained information and this applies as the unique identifier for the Drey Fund investor. Drey Actuaries are never party to, and will never know, any personally identifying information of a Drey Fund investor.
+
+The Drey Proof of Life App is configured to comply with U.S. State Department terrorism watch list and EU sanctions list, so any identities from these geographies (North Korea, Iran, Syria, etc.) are not eligible to create Drey Fund accounts and will not be serviced.
+
+#### Proof of Life Verification
+
+Drey utilizes zero knowledge proof technology to authenticate a user to the Drey Actuary network without revealing any personally identifying details. As described in [following sections](cryptography-overview.md),&#x20;
