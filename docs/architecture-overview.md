@@ -70,3 +70,9 @@ The Proof of Life app will also enable users to configure their settings for:
 * Setup additional accounts (for couples or children)
 
 #### Fiat on-ramps/off-ramps
+
+The Drey Proof of Life app also enables distributions to be automatically converted to fiat, with distributions directed to Drey Finance's exchange partners over the [lightning network](https://lightning.network/). Drey Finance will negotiate the best exchange rate by volume with partners on behalf of the Drey customer, and utilize the lightning network to make instant payments to the exchange partner.&#x20;
+
+The app will enable the user to setup their own remittance information with the exchange partner's database through an integration into their API. It is envisioned that a number of exchange partners will be utilized and enabled based on geography and regulatory requirements.
+
+This same infrastructure will be utilized for fiat on-ramps&#x20;
