@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Architecture Overview I](architecture-overview-i.md)
+* [Architecture I](architecture-i.md)
+* [Architecture II](architecture-ii.md)
 * [Cryptography Overview](cryptography-overview.md)
 * [Actuary Operations](Operations.md)
 
