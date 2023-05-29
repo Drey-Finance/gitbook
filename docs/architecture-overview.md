@@ -26,7 +26,7 @@ Second, the Drey Decentralized Actuary Network is a federation consisting of ind
 
 ### Proof of Life App
 
-The Proof of Life App's main functions include the following:
+Drey's Proof of Life app delivers more functionality that just verifying the liveliness of customer. It is the primary method of interacting with the Drey Finance decentralized actuarial operating system. The Proof of Life App's main functions include the following:
 
 * Demographic Verification
 * Proof of Life Verification
@@ -62,3 +62,8 @@ After the initial enrolment workflow is completed for identity verification, eac
 
 #### Account Settings and Information
 
+The Proof of Life app will also enable users to configure their settings for:
+
+* Alerts, notifications&#x20;
+* Opt-in to yield generation programs, or stay opt-out in order to remain [Sharia compliant](https://www.bankofengland.co.uk/explainers/what-is-islamic-finance)
+* Fiat-off ramps
