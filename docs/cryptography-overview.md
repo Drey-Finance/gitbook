@@ -6,7 +6,7 @@ description: Describing the various cryptographic protocols underpinning the Dre
 
 ## Cryptography and Communications
 
-Drey Actuaries (miners) utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, processing proof of life claims, issuing DREY tokens and all actuarial operations, including voting, wallet operations and distribution calculations.
+Drey Actuaries (miners) utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, validating and processing proof of life claims, issuing DREY tokens and all actuarial operations, including voting, wallet operations and distribution calculations.
 
 #### nostr Protocol <a href="#nostr-protocol" id="nostr-protocol"></a>
 
@@ -14,7 +14,7 @@ Drey Actuaries (miners) coordinate operations over the [nostr protocol](https://
 
 #### ROAST Protocol <a href="#roast-protocol" id="roast-protocol"></a>
 
-Drey Actuaries will undertake operations to act signers using the [ROAST](https://eprint.iacr.org/2022/550) variant of the [FROST](https://eprint.iacr.org/2020/852) signature scheme. FROST ([Flexible Round Optimized Schnorr Threshold](https://eprint.iacr.org/2020/852.pdf)) is a powerful new kind of multisig that aggregates the key shares of federation members into a joint FROST key. To spend under this key, a threshold number of members must each produce a signature share. The shares are then combined to form a single signature that is valid under the joint FROST key. Members coordinate off chain. FROST transactions are indistinguishable from regular single-party Taproot spends. ROAST is a wrapper on top of FROST. From the research paper, "ROAST is a simple wrapper that turns a given threshold signature scheme into a scheme with a robust and asynchronous signing protocol, as long as the underlying signing protocol is semi-interactive (i.e., has one preprocessing round and one actual signing round), provides identifiable aborts, and is unforgeable under concurrent signing sessions. When applied to the state-of-the-art Schnorr threshold signature scheme FROST, which fulfils these requirements, we obtain a simple, efficient, and highly practical Schnorr threshold signature scheme."
+Drey Actuaries will undertake operations to act Schnorr signature co-signers using the [ROAST](https://eprint.iacr.org/2022/550) variant of the [FROST](https://eprint.iacr.org/2020/852) signature scheme. FROST ([Flexible Round Optimized Schnorr Threshold](https://eprint.iacr.org/2020/852.pdf)) is a powerful new kind of multisig that aggregates the key shares of federation members into a joint FROST key. To spend under this key, a threshold number of members must each produce a signature share. The shares are then combined to form a single signature that is valid under the joint FROST key. Members coordinate off chain over the nostr protocol. FROST transactions are indistinguishable from regular single-party Taproot spends. ROAST is a wrapper on top of FROST. From the research paper, "ROAST is a simple wrapper that turns a given threshold signature scheme into a scheme with a robust and asynchronous signing protocol, as long as the underlying signing protocol is semi-interactive (i.e., has one preprocessing round and one actual signing round), provides identifiable aborts, and is unforgeable under concurrent signing sessions. When applied to the state-of-the-art Schnorr threshold signature scheme FROST, which fulfils these requirements, we obtain a simple, efficient, and highly practical Schnorr threshold signature scheme."
 
 Drey's intention is to utilize the nostr protocol to structure communications for the ROAST protocol's wrapper protocol that runs 𝑡 FROST sessions concurrently, one session for each subset of 𝑡 signers.
 
@@ -26,11 +26,11 @@ An open source FROST implementation in Rust is [here](https://github.com/LLFourn
 
 #### Distributed Trust Authority <a href="#distributed-trust-authority" id="distributed-trust-authority"></a>
 
-Drey Actuaries will act as [Distributed Trust Authorities](https://milagro.apache.org/docs/milagro-design), acting on requests from the Drey Proof of Life service to issue shares of a [Type-3 identity based private key](https://milagro.apache.org/docs/milagro-crypto) to randomised identities enrolling in the fund. See the figure below for Level 1 C4 diagram of the services in play.
+Drey Actuaries will act as [Distributed Trust Authorities](https://milagro.apache.org/docs/milagro-design), acting on requests from the Drey Proof of Life app to issue shares of a [Type-3 identity based private key](https://milagro.apache.org/docs/milagro-crypto) to randomised identities enrolling in the fund. See the figure below for Level 1 C4 diagram of the services in play.
 
 {% embed url="https://s.icepanel.io/GCDG3OFGyF6DnX/qqQl" %}
 
-Drey Actuaries respond to a cryptographically secured request from the Drey Proof of Life Service (operated by Drey Finance) to generate a share of this identity based private key and encrypt it with a public key generated in the Drey Proof of Life App operated by the Drey Investor. The public key encryption is necessary to secure the share so that no party, including the Drey Proof of Life Service, can obtain access to the share. Drey Miners will also provide shares of a server secret to the Drey Proof of Life Service so that it can run the [M-Pin zero-knowledge proof multi-factor identity verification protocol ](https://milagro.apache.org/docs/milagro-protocols)with the Drey Investors during the Proof of Life operation every month. Note the Drey Actuaries do not need to co-ordinate with each other to issue shares, a DTA simply responds to the request from the Drey Proof of Life service for a share.
+Drey Actuaries respond to a cryptographically secured request from the Drey Proof of Life App to generate a share of this identity based private key and encrypt it with a public key generated in the Drey Proof of Life App operated by the Drey Investor. The public key encryption is necessary to secure the share so that no party, including any intermediary relay, can obtain access to the share. Drey Actuaries will also provide shares of a server secret to each other Drey Actuary so individually each will be enabled to run the [M-Pin zero-knowledge proof multi-factor identity verification protocol ](https://milagro.apache.org/docs/milagro-protocols)with the Drey Investors during the Proof of Life operation every month. Note the Drey Actuaries do not need to co-ordinate with each other to issue shares, a DTA simply responds to the request from the Drey Proof of Life App or other Drey Actuaries for a share.
 
 **About M-Pin**
 
@@ -52,6 +52,6 @@ This DVRF protocol will enable Drey Actuaries to randomly and securely select th
 ### Summary of Main C\&C Operations
 
 1. Operate nostr clients and relays with eventual privacy preserving extensions.
-2. Operate Decentralized Trust Authorities (DTAs) and issue type-3 pairing client and server key shares to Proof of Life Service, and backup to bitcoin blockchain.
-3. Participate in the ROAST protocol to generate P2TR wallet addresses and FROST generated Schnorr threshold signatures on bitcoin transactions over nostr.
+2. Operate Decentralized Trust Authorities (DTAs) and issue type-3 pairing client key shares to Proof of Life App and server key shares to each other, and backup to bitcoin blockchain.
+3. Participate in the ROAST protocol to generate P2TR wallet addresses and FROST generated Schnorr threshold signatures on bitcoin transactions over nostr, enabling fund wallet operations.
 4. Participate in a DVRF protocol to randomly and securely select the Drey Actuaries who will propose monthly distribution schedules and payouts.
