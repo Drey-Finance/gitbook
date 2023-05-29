@@ -41,7 +41,7 @@ The sBTC system is designed to be incentive-compatible with mining on the canoni
 
 The paper also discusses the design details of sBTC, including the Threshold Signature Wallet, sBTC Circulating Supply, and the interaction with the PoX consensus algorithm. The sBTC design is commercially viable because it can scale to a sBTC circulating supply of hundreds of millions of dollars worth of BTC today and potentially to tens of billions of dollars worth of sBTC circulating supply in the future. The upper limit on sBTC supply is determined by a configurable parameter called the Liveness Ratio and is tied to the economic size of STX capital locked.
 
-Drey Finance utilizes Stacks and sBTC to peg-in Drey Finance deposits to the Stacks blockchain. Once there, Drey Actuaries can process distributions to customers rapidly in an automated fashion using [Clarity language based smart contracts](https://docs.stacks.co/docs/clarity/), secured by a supermajority of Drey Actuaries operation a Schnorr based threshold signature scheme.
+Drey Finance utilizes Stacks and sBTC to peg-in Drey Finance deposits to the Stacks blockchain. Once there, Drey Actuaries can process distributions to customers rapidly in an automated fashion using [Clarity language based smart contracts](https://docs.stacks.co/docs/clarity/), secured by a supermajority of Drey Actuaries operation a [Schnorr based threshold signature scheme](https://eprint.iacr.org/2022/550).
 
 ## Architecture
 

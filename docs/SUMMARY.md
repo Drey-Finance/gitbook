@@ -3,7 +3,7 @@
 * [Overview](README.md)
 * [Architecture I](architecture-i.md)
 * [Architecture II](architecture-ii.md)
-* [Cryptography Overview](cryptography-overview.md)
+* [Cryptography](cryptography-overview.md)
 * [Actuary Operations](Operations.md)
 
 ## 💪 Dreyconomics
