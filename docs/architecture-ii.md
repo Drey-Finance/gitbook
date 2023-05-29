@@ -21,7 +21,7 @@ Drey's Proof of Life app delivers more functionality that just verifying the liv
 * Account Settings & Information
 * Fiat on-ramp / off-ramp
 
-#### Demographic Verification
+### Demographic Verification
 
 The app verifies the age, sex and geography of Drey Fund investors during enrolment. This information is obtained via third party identity and KYC service providers contracted to Drey Finance. The user experience will be akin to signing up to any centralised exchange or finance institution, and should be less painful, as the amount of information necessary to obtain and verify is small:
 
@@ -34,7 +34,7 @@ Note that name, address or any other personally identifying information IS NOT r
 
 The Drey Proof of Life App is configured to comply with U.S. State Department terrorism watch list and EU sanctions list, so any identities from these geographies (North Korea, Iran, Syria, etc.) are not eligible to create Drey Fund accounts and will not be serviced.
 
-#### Proof of Life Verification
+### Proof of Life Verification
 
 Drey utilizes zero knowledge proof technology to authenticate a user to the Drey Actuary network without revealing any personally identifying details. As described in [following sections](cryptography-overview.md), zero-knowledge proof technology is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that they know a specific piece of information without revealing that information itself. This technology is particularly useful for authentication processes where the goal is to verify an identity without revealing any personally identifiable information.
 
@@ -48,7 +48,7 @@ In certain use cases, this technology can make systems easier to scale and manag
 
 After the initial enrolment workflow is completed for identity verification, each month, when the customer's Drey distribution is ready to obtained, the customer simply opens their Drey app, authenticates with FaceID, inputs a six digit pin, and the process of Proof of Life is complete. The experience is seamless and frictionless. Once authenticated into the app the Drey customer can obtain principal balances, opt-in/out of yield generation programs, view expected portfolio returns,   and/or select fiat off-ramps for their distributions, among other actions.
 
-#### Account Settings and Information
+### Account Settings and Information
 
 The Proof of Life app will also enable users to configure their settings for:
 
@@ -57,7 +57,7 @@ The Proof of Life app will also enable users to configure their settings for:
 * Fiat-off ramps
 * Setup additional accounts (for couples or children)
 
-#### Fiat on-ramps/off-ramps
+### Fiat on-ramps/off-ramps
 
 The Drey Proof of Life app also enables distributions to be automatically converted to fiat, with distributions directed to Drey Finance's exchange partners over the [lightning network](https://lightning.network/). Drey Finance will negotiate the best exchange rate by volume with partners on behalf of the Drey customer, and utilize the lightning network to make instant payments to the exchange partner.&#x20;
 
@@ -65,5 +65,5 @@ The app will enable the user to setup their own remittance information with the 
 
 This same infrastructure will be utilized for fiat on-ramps. The Drey Proof of Life app will enable, post identity verification and enrolment, a user to utilize bank accounts and/or debit cards to fund their account to the best extent possible for that user's given geography and jurisdiction. The app's emphasis on user experience and design for on-boarding (and use of AI) will prompt the user the best/easiest way to fund their account as a main design objective.
 
-### Drey Actuary Network
+
 
