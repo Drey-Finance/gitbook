@@ -32,6 +32,7 @@ The Proof of Life App's main functions include the following:
 * Proof of Life Verification
 * Account Information
 * Accounts Settings
+* Fiat on-ramp / off-ramp
 
 #### Demographic Verification
 
@@ -48,4 +49,14 @@ The Drey Proof of Life App is configured to comply with U.S. State Department te
 
 #### Proof of Life Verification
 
-Drey utilizes zero knowledge proof technology to authenticate a user to the Drey Actuary network without revealing any personally identifying details. As described in [following sections](cryptography-overview.md),&#x20;
+Drey utilizes zero knowledge proof technology to authenticate a user to the Drey Actuary network without revealing any personally identifying details. As described in [following sections](cryptography-overview.md), zero-knowledge proof technology is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that they know a specific piece of information without revealing that information itself. This technology is particularly useful for authentication processes where the goal is to verify an identity without revealing any personally identifiable information.
+
+In the context of the technology used in Drey Finance, the zero-knowledge proof technology works by using a multi-factor authentication protocol built upon zero-knowledge proofs. When a user wants to authenticate themselves, they create a proof that shows they know how to re-create their secret information (like a password or a private key) from something they have (a device), something they know (a pin) and something they are (a biometric) without actually revealing that secret information. This proof is then sent to the verifier.
+
+The verifier, having the public information corresponding to the user's secret, can verify the proof without learning anything about the user's secret. This is the "zero-knowledge" aspect of the protocol. If the proof is valid, the verifier can be sure that the user knows their secret, and thus the user's identity is authenticated.
+
+This process removes the need for a traditional Public Key Infrastructure (PKI) system, where certificates are issued to bind a public/private key pair to an identity. Instead, the identity management and key lifecycle can take place within the decentralized actuarial operating system itself.
+
+In certain use cases, this technology can make systems easier to scale and manage than traditional PKI, eliminate root key 'single point of compromise' weaknesses, and provide a seamless fit for today's decentralized networks and distributed systems.
+
+After the initial enrolment workflow is completed for identity verification, each month, when the customer's Drey distribution is ready to obtained, the customer simply opens their Drey app, authenticates with FaceID, inputs a six digit pin, and the process of Proof of Life is complete. The experience is seamless and frictionless. Once authenticated into the app the Drey customer can obtain principal balances, opt-in/out of yield generation program's, view expected portfolio returns,   select fiat off-ramps for&#x20;
