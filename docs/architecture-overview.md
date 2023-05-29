@@ -30,8 +30,7 @@ The Proof of Life App's main functions include the following:
 
 * Demographic Verification
 * Proof of Life Verification
-* Account Information
-* Accounts Settings
+* Account Settings & Information
 * Fiat on-ramp / off-ramp
 
 #### Demographic Verification
@@ -59,4 +58,7 @@ This process removes the need for a traditional Public Key Infrastructure (PKI) 
 
 In certain use cases, this technology can make systems easier to scale and manage than traditional PKI, eliminate root key 'single point of compromise' weaknesses, and provide a seamless fit for today's decentralized networks and distributed systems.
 
-After the initial enrolment workflow is completed for identity verification, each month, when the customer's Drey distribution is ready to obtained, the customer simply opens their Drey app, authenticates with FaceID, inputs a six digit pin, and the process of Proof of Life is complete. The experience is seamless and frictionless. Once authenticated into the app the Drey customer can obtain principal balances, opt-in/out of yield generation program's, view expected portfolio returns,   select fiat off-ramps for&#x20;
+After the initial enrolment workflow is completed for identity verification, each month, when the customer's Drey distribution is ready to obtained, the customer simply opens their Drey app, authenticates with FaceID, inputs a six digit pin, and the process of Proof of Life is complete. The experience is seamless and frictionless. Once authenticated into the app the Drey customer can obtain principal balances, opt-in/out of yield generation programs, view expected portfolio returns,   and/or select fiat off-ramps for their distributions, among other actions.
+
+#### Account Settings and Information
+
