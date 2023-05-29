@@ -4,7 +4,7 @@ description: Drey's decentralised actuarial operating system explained.
 
 # Architecture Overview
 
-## Bitcoin as a Universal Ledger
+## Bitcoin's Universal Ledger
 
 The advent of Taproot-type transactions has ushered in a new era for the Bitcoin Blockchain, fundamentally transforming its capabilities. Previously, the Bitcoin network was primarily used as a decentralized digital currency, with its data format being somewhat limited. However, with Taproot-type transactions, it is now possible to embed any type of data into the Bitcoin Blockchain. This means that the Bitcoin network can now serve as a universal ledger, capable of storing a wide variety of data types, not just transactional information. This opens up a plethora of new possibilities for developers and users alike, extending the utility of the Bitcoin network beyond its original purpose.
 
@@ -16,3 +16,8 @@ As described below, Drey Finance leverages Bitcoin as a universal ledger, storin
 
 ## Architecture
 
+### Overview
+
+Drey Finance consists of two major components. First, there is a Proof of Life app for iOS and Android whose main function is to verify the liveliness of the Drey Fund investor so that they can receive their monthly annuity payment. Second, the Drey decentralized actuarial network consists of independent parties co-ordinating over the Nostr client/relay network to action actuarial processes and wallet operations for the benefit of the Drey Fund investors.
+
+<figure><img src=".gitbook/assets/Drey Finance - Diagram 1.png" alt=""><figcaption><p>Figure 1. Drey Architecture</p></figcaption></figure>
