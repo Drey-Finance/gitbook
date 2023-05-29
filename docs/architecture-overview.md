@@ -22,7 +22,7 @@ Drey Finance consists of two major components. First, there is a Proof of Life a
 
 Second, the Drey Decentralized Actuary Network is a federation consisting of independent parties co-ordinating over the Nostr client/relay network to action actuarial processes and wallet operations for the benefit of the Drey Fund investors.
 
-<figure><img src=".gitbook/assets/Drey Finance - Diagram 1.png" alt=""><figcaption><p>Figure 1. Drey Architecture</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Drey Finance - Diagram 2.png" alt=""><figcaption></figcaption></figure>
 
 ### Proof of Life App
 
