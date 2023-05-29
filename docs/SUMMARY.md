@@ -1,9 +1,9 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Actuary Operations](Operations.md)
-* [Cryptography Overview](cryptography-overview.md)
 * [Architecture Overview](architecture-overview.md)
+* [Cryptography Overview](cryptography-overview.md)
+* [Actuary Operations](Operations.md)
 
 ## 💪 Dreyconomics
 

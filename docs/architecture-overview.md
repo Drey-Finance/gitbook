@@ -18,6 +18,15 @@ As described below, Drey Finance leverages Bitcoin as a universal ledger, storin
 
 ### Overview
 
-Drey Finance consists of two major components. First, there is a Proof of Life app for iOS and Android whose main function is to verify the liveliness of the Drey Fund investor so that they can receive their monthly annuity payment. Second, the Drey decentralized actuarial network consists of independent parties co-ordinating over the Nostr client/relay network to action actuarial processes and wallet operations for the benefit of the Drey Fund investors.
+Drey Finance consists of two major components. First, there is a Proof of Life app for iOS and Android whose main function is to verify the liveliness of the Drey Fund investor so that they can receive their monthly annuity payment. In addition, the app enables a fund investor to get up to the second accurate information on payout, yield income generated, opt-in co-ordination for those wishing to be Sharia compliant, etc. Second, the Drey Decentralized Actuary Network consists of independent parties co-ordinating over the Nostr client/relay network to action actuarial processes and wallet operations for the benefit of the Drey Fund investors.
 
 <figure><img src=".gitbook/assets/Drey Finance - Diagram 1.png" alt=""><figcaption><p>Figure 1. Drey Architecture</p></figcaption></figure>
+
+### Proof of Life App
+
+The Proof of Life App's functions include the following:
+
+* Demographic Verification
+* Proof of Life
+
+Verify the age, sex and geography of Drey Fund investors during enrollment. This information i
