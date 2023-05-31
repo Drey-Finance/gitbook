@@ -8,9 +8,11 @@ Drey Finance consists of two major components.&#x20;
 
 First, there is a [Proof of Life app](architecture-ii.md#proof-of-life-app) for iOS and Android whose main function is to verify the liveliness of the Drey Fund investor so that they can receive their monthly annuity payment. In addition, the app enables a fund investor to get up to the second accurate information on payout, yield income generated, opt-in co-ordination for those wishing to be [Sharia compliant](https://www.bankofengland.co.uk/explainers/what-is-islamic-finance), and other operations.&#x20;
 
-Second, the Drey Decentralized Actuary Network is a federation consisting of independent parties using their instance of [Drey's Actuary Client software](architecture-iii.md#drey-actuary-client), with communication conducted using the [Nostr protocol](https://nostr.com/). Drey Actuary Clients coordinate over the Nostr to action actuarial processes and wallet operations for the benefit of the Drey Fund investors. Drey Actuary Clients also serve information to Drey customer's on their instances of the Drey Proof of Life App.
+Second, the Drey Decentralized Actuary Network is a federation consisting of independent parties using their instance of [Drey's Actuary Client software](architecture-iii.md#drey-actuary-client), with communication conducted using the [Nostr protocol](https://nostr.com/). Drey Actuary Clients coordinate over the Nostr to action actuarial processes and wallet operations for the benefit of the Drey Fund investors. Drey Actuary Clients also serve information to Drey customer's on their instances of the Drey Proof of Life App
 
-<figure><img src=".gitbook/assets/Drey Finance - Diagram 2.png" alt=""><figcaption><p>Figure 1. Drey Finance Architecture Overview</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Drey Finance - Diagram 1 (Latest)[53].png" alt=""><figcaption><p>Figure 1. Drey Finance Architecture</p></figcaption></figure>
+
+
 
 ## Proof of Life App
 
