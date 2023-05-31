@@ -65,7 +65,7 @@ Drey creates a set of binding smart contracts with terms and conditions which re
 
 * The investors in the fund agree that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
 * This gift passes in entirety to the living participants in the fund when the contributing investor passes away
-* It is held in escrow in a smart contract controlled by a super majority of Drey Actuaries (miners)
+* It is held in escrow in a smart contract controlled by a super majority of Drey Actuaries&#x20;
 * An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away
 * He/she continues to enjoy the benefit of holding those Dreybits as long as they continuously (monthly) provide proof that he/she/they/them is/are alive within a certain time limit using the Drey Proof of Life app
 * If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs — i.e., proof of life. This is a type of [tontine agreement](https://en.wikipedia.org/wiki/Tontine).
@@ -74,7 +74,7 @@ Drey creates a set of binding smart contracts with terms and conditions which re
 
 * Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month
 * Dreybits ARE NOT transferrable by action of the owner
-* They are transferrable by action of the smart contracts only under control of the supermajority of Drey Actuaries (miners)
+* They are transferrable by action of the smart contracts only under control of the supermajority of Drey Actuaries
 * Dreybits are calculated using satoshi as the base investment numbering system
 * Yearly mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
 
