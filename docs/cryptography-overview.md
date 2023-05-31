@@ -2,27 +2,21 @@
 description: Describing the various cryptographic protocols underpinning the Drey Network.
 ---
 
-# Cryptography Overview
+# Cryptography
 
 ## Cryptography and Communications
 
-Drey Actuaries (miners) utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, validating and processing proof of life claims, issuing DREY tokens and all actuarial operations, including voting, wallet operations and distribution calculations.
+Drey Actuaries utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, validating and processing proof of life claims, issuing DREY tokens and all actuarial operations, including voting, wallet operations and distribution calculations.
 
 #### nostr Protocol <a href="#nostr-protocol" id="nostr-protocol"></a>
 
-Drey Actuaries (miners) coordinate operations over the [nostr protocol](https://nostr.com/), with each Drey Actuary running their own private [relay](https://nostr.com/relays). Nostr was selected because of the client / relay architecture and eventual private [asynchronous communication](https://bitcoinmagazine.com/technical/how-nostr-can-improve-bitcoin-privacy). Drey Actuaries operating their own private relays can tune their relays to accept messages from other Drey Actuaries as the medium for conducting communications for actuary operations, co-ordination on voting, cryptographic threshold signature and verifiable random function protocols, as well as in future accepting communications from other clients that Drey Actuaries may offer services to that are not yet in view.
+Drey Actuaries coordinate operations over the [nostr protocol](https://nostr.com/), with each Drey Actuary running their own private client and [relay](https://nostr.com/relays). Nostr was selected because of the client / relay architecture and eventual private [asynchronous communication](https://bitcoinmagazine.com/technical/how-nostr-can-improve-bitcoin-privacy). Drey Actuaries operating their own private relays can tune their relays to accept messages from other Drey Actuaries as the medium for conducting communications for actuary operations, co-ordination on voting, cryptographic threshold signature and verifiable random function protocols, as well as in future accepting communications from other clients that Drey Actuaries may offer services to that are not yet in view.
 
 #### ROAST Protocol <a href="#roast-protocol" id="roast-protocol"></a>
 
 Drey Actuaries will undertake operations to act Schnorr signature co-signers using the [ROAST](https://eprint.iacr.org/2022/550) variant of the [FROST](https://eprint.iacr.org/2020/852) signature scheme. FROST ([Flexible Round Optimized Schnorr Threshold](https://eprint.iacr.org/2020/852.pdf)) is a powerful new kind of multisig that aggregates the key shares of federation members into a joint FROST key. To spend under this key, a threshold number of members must each produce a signature share. The shares are then combined to form a single signature that is valid under the joint FROST key. Members coordinate off chain over the nostr protocol. FROST transactions are indistinguishable from regular single-party Taproot spends. ROAST is a wrapper on top of FROST. From the research paper, "ROAST is a simple wrapper that turns a given threshold signature scheme into a scheme with a robust and asynchronous signing protocol, as long as the underlying signing protocol is semi-interactive (i.e., has one preprocessing round and one actual signing round), provides identifiable aborts, and is unforgeable under concurrent signing sessions. When applied to the state-of-the-art Schnorr threshold signature scheme FROST, which fulfils these requirements, we obtain a simple, efficient, and highly practical Schnorr threshold signature scheme."
 
-Drey's intention is to utilize the nostr protocol to structure communications for the ROAST protocol's wrapper protocol that runs 𝑡 FROST sessions concurrently, one session for each subset of 𝑡 signers.
-
-A prototype open source implementation of ROAST in Rust is [here.](https://github.com/nickfarrow/roast/tree/b7f64d7a70a421d6a5bfb10ccb765b091e8c0ca3)
-
-A prototype open source implementation of ​FROST signing a nostr post is [here](https://github.com/nickfarrow/frostr).
-
-An open source FROST implementation in Rust is [here](https://github.com/LLFourn/secp256kfun/blob/master/schnorr\_fun/src/frost.rs).
+Drey utilizes the nostr protocol to structure communications for the ROAST protocol's wrapper protocol that runs 𝑡 FROST sessions concurrently, one session for each subset of 𝑡 signers.
 
 #### Distributed Trust Authority <a href="#distributed-trust-authority" id="distributed-trust-authority"></a>
 
@@ -47,7 +41,7 @@ Drey Actuaries will co-ordinate over nostr a _Distributed Verifiable Random Func
 
 This DVRF protocol will enable Drey Actuaries to randomly and securely select the Drey Miner who will propose monthly distribution schedules and payouts.
 
-### Summary of Main C\&C Operations
+### Summary of Operations
 
 1. Operate nostr clients and relays with eventual privacy preserving extensions.
 2. Operate Decentralized Trust Authorities (DTAs) and issue type-3 pairing client key shares to Proof of Life App and server key shares to each other, and backup to bitcoin blockchain.
