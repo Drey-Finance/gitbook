@@ -6,12 +6,12 @@ In the Drey Finance ecosystem, various incentives and disincentives have been es
 
 1. **Drey Fund Investors:**
    * Monthly airdrops of DREY tokens in addition to Bitcoin remuneration.
-   * Potential to earn additional yield through participation in Drey Save (BTC/DREY liquidity pool).
+   * Potential to earn additional yield through participation in Drey Save (sBTC/DREY liquidity pool).
 2. **Drey Actuaries (Miners):**
    * Revenue share from the Drey Protocol's bitcoin revenue flow based on their pro-rata percentage of DREY token holdings.
    * Increased revenue share as they stake more DREY tokens and run continuous actuarial operations.
 3. **Liquidity Providers in Drey Save:**
-   * Earning trading fees from the DREY/BTC Automated Market Maker.
+   * Earning trading fees from the DREY/sBTC Automated Market Maker.
    * Additional yield farming rewards for providing liquidity.
 
 **Disincentives:**
