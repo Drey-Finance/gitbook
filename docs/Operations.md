@@ -8,17 +8,17 @@ description: >-
 
 ## Introduction
 
-As previously described, Drey can be thought of as a collection of decentralised Drey Actuaries (miners) that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin structured income streams that offer an alternative to third party intermediated annuities and pensions denominated in fiat.
+As previously described, Drey can be thought of as a collection of decentralised Drey Actuaries that achieve agreement and consensus and collectively take action on day to day operations that enable the achievement of its purpose: to deliver trustless bitcoin structured income streams that offer an alternative to third party intermediated annuities and pensions denominated in fiat.
 
 To create a truly trustless bitcoin income plan, it is essential that Drey's actuarial models reflect the technical underpinnings that arise from operating in a decentralised manner from a technical perspective. The most critical point is the mechanics to ‘price’ participation and rewards in the fund, that they are easily understood if one were interrogating the [Clarity language smart contracts](https://docs.stacks.co/docs/clarity/) with a block explorer, while preserving a particular aspect called 'fairness,' inspired by the nominal-gain methodology in Sabin and Forman (2016).
 
 Two methods of operation are novel in this respect.
 
-Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/) and Clarity smart contracts so that records are public, durable and immutable. The operating system 'works out loud' for transparency and confidence. Identities are masked using zero-knowledge proof identity technology. Drey uses the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as actuarial tables in use and monthly distributions for the fund.
+First, Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/research/whitepapers/bitcoin-ordinals-inscriptions-5-billion-nft-market/) and Clarity smart contracts so that records are public, durable and immutable. The operating system 'works out loud' for transparency and confidence. Identities are masked using zero-knowledge proof identity technology. Drey uses the bitcoin blockchain itself to store data decentralised actuaries will come to a consensus on, such as actuarial tables in use and monthly distributions for the fund.
 
-Drey employs an accounting allocation method called Dreybits. The system allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants. Dreybits are not DREY tokens, they are a formalised accounting method that is designed to be an easily understood accounting convention designed to be relevant across lifetimes.
+Second, Drey employs an accounting allocation method called Dreybits. The system allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants. Dreybits are not DREY tokens, they are a formalised accounting method that is designed to be an easily understood accounting convention designed to be relevant across lifetimes.
 
-### Bitcoin Ordinals and Inscriptions
+## Bitcoin Ordinals and Inscriptions
 
 Bitcoin inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.
 
@@ -36,22 +36,22 @@ Documents generated for insertion into bitcoin storage will use a defined schema
 
 The rest of this specification is described **in another technical section to be completed**.
 
-### Voting
+## Drey Voting Protocol
 
-Any Drey Actuary (miner) can create a DAO proposal by generating the document, inscribing it at a particular satoshi, and relaying the satoshi ordinal value to other Drey Actuaries (miner) over the [nostr protocol](https://nostr.com/). The voting request announcement and JSON-LD document should contain a block height of when the vote will occur. A supermajority of Drey Actuaries (miners) will be required to vote through any proposal, distribution schedule or other material decision. Distribution schedules are assigned tasks as described below.
+Any Drey Actuary can create a DAO proposal by generating the a draft document within the Drey Actuary client which is broadcast to other members, seeking comment, inscribing the final draft at a particular satoshi, and relaying the satoshi ordinal value to other Drey Actuaries over the [Nostr protocol](https://nostr.com/) (built-in). The voting request announcement and JSON-LD document should contain a block height of when the vote will occur. A supermajority of Drey Actuaries will be required to vote through any proposal, distribution schedule or other material decision. Distribution schedules are assigned tasks as described below.
 
-Each JSON-LD document in the Bitcoin blockchain will contain an address to forward the satoshi to that represents a yes or no. The same will also be described in the nostr protocol vote request. The decentralised actuarial protocol embeds capability to create a transaction at x block height to move the satoshi to a specific wallet address denoting yes or no and declared in the nostr communication and the JSON-LD document, indicating whether an issue or schedule was agreed to or not.&#x20;
+Each JSON-LD document in the Bitcoin blockchain will contain an address to forward the satoshi to that represents a yes or no. The same will also be described in the Nostr protocol vote request. The decentralised actuarial protocol embeds capability to create a transaction at x block height to move the satoshi to a specific wallet address denoting yes or no and declared in the Nostr communication and the JSON-LD document, indicating whether an issue or schedule was agreed to or not.&#x20;
 
 This is accomplished by way of a Schnorr based threshold signature scheme, [ROAST](https://eprint.iacr.org/2022/550), using decentralized Nostr networks as a communication layer for a secure and encrypted method of transporting and digitally signing bitcoin transactions. This end-to-end solution solves issues with encrypted communication, coordination, optimization, and increased privacy for an enhanced threshold signature experience.
 
 Each vote requires each Drey Actuaries to confirm their stance by engaging or ignoring the requested participation in the threshold signature scheme which results in a signed bitcoin transaction, moving the inscribed satoshi into a 'yes' wallet using funds which the Drey Actuaries control, creating a permanent records of vote confirmation.&#x20;
 
-Using ROAST, Drey Actuaries have the ability to determine among themselves which Drey Actuaries voted for or against the proposal. However, To anyone observing the blockchain, transactions generated by using the Schnorr threshold scheme enabled by the ROAST protocol look like any Pay-to-Taproot (P2TR) spend, thus preserving vote privacy outside of the Drey Actuary circle.\
+Using ROAST, Drey Actuaries have the ability to determine among themselves which Drey Actuaries voted for or against the proposal. However, to anyone observing the bitcoin blockchain, transactions generated by using the Schnorr threshold scheme enabled by the ROAST protocol look like any Pay-to-Taproot (P2TR) spend, thus preserving vote privacy outside of the Drey Actuary circle.\
 
 
 ## Dreybits
 
-A Drey Actuary (miner), selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the WASM software packages each Drey Actuary (miner) runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the Drey Actuary (miner) population over nostr. The decentralised actuary system summons a vote by creating a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the [**Drey Economics**](dreyconomics/stakeholders.md).
+A Drey Actuary selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the WASM software packages each Drey Actuary runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the Drey Actuary population over Nostr. The decentralised actuary system summons a vote by creating a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection. Incentives for good behaviour and disincentives for bad behaviour are discussed in the [**Drey Economics**](dreyconomics/stakeholders.md).
 
 The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialisation of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.
 
