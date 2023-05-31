@@ -41,3 +41,10 @@ The voting process itself is facilitated by the ROAST protocol's Schnorr thresho
 With the vote cast, the result is then permanently stored on the Bitcoin blockchain. This represents the final step in the seamless transition from a collaborative, mutable workspace to a secure, immutable record of consensus. The newly-updated mortality table, now validated by the Actuaries' vote, becomes an unalterable part of the blockchain.
 
 In this way, the Drey Finance Actuary Client successfully integrates the flexible, collaborative environment provided by Nostr and CRDTs with the security and permanence of the Bitcoin blockchain. This unique architecture empowers Drey Actuaries to effectively collaborate, deliberate, and reach consensus on key decisions, all while ensuring the results of their efforts are securely recorded for posterity, transparency and trust. The result is a blockchain-powered income platform that is as innovative as it is reliable, redefining retirement planning for the digital age.
+
+## References
+
+Martin Kleppmann, Adam Wiggins, Peter van Hardenberg, and Mark McGranaghan. Local-first software: you own your data, in spite of the cloud. 2019 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software (Onward!), October 2019, pages 154–178. [doi:10.1145/3359591.3359737](https://doi.org/10.1145/3359591.3359737)
+
+Victor B. F. Gomes, Martin Kleppmann, Dominic P. Mulligan, and Alastair R. Beresford. 2017. Verifying strong eventual consistency in distributed systems. Proc. ACM Program. Lang. 1, OOPSLA, Article 109 (October 2017), 28 pages. https://doi.org/10.1145/3133933
+
