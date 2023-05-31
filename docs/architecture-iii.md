@@ -4,6 +4,18 @@ description: Drey's decentralised actuarial operating system explained.
 
 # Architecture III
 
+## Drey Actuary Client
+
+The Drey Actuary Client is a software component developed in Rust, which interfaces with the Drey Finance system and the underlying blockchains, Bitcoin and Stacks. This open-source project, licensed under Apache 2.0, ensures reliable access to the Bitcoin and Stacks blockchains, essential for the Drey Finance system's operations.
+
+The client's functionality includes integration with the Bitcoin client RPC-API and the Stacks API. This integration allows direct interaction with the blockchains for operations such as transaction submission and data retrieval. The ability to interact with these APIs provides necessary infrastructure for the Drey Finance system to operate efficiently on these blockchains.
+
+The Nostr protocol, a decentralized communication protocol, is a key feature of the Drey Actuary Client. It ensures secure and efficient communication between different instances of the software, providing the synchronous communication required for the coordination of operations within the Drey Finance system.
+
+For data synchronization and replication, the Drey Actuary Client uses Conflict-free Replicated Data Types (CRDTs). CRDTs are data structures that permit independent and concurrent updates of multiple replicas without data conflicts. The implementation of CRDTs ensures that all instances of the Drey Actuary Client maintain consistent data, contributing to the integrity and reliability of the Drey Finance system.
+
+Finally, the Drey Actuary Client is equipped with an event observer. This feature allows the software to respond programmatically to events on the Bitcoin and Stacks blockchains. It enables the Drey Actuary Client to monitor these blockchains for specific occurrences and initiate predefined actions in response. This capability is crucial for the real-time, automated processes within the Drey Finance system. Further details and opportunities for contribution can be found on the Drey Actuary Client project's GitHub page at [https://github.com/Drey-Finance/actuary-client](https://github.com/Drey-Finance/actuary-client).
+
 ## CRDTs
 
 CRDTs, or [Conflict-Free Replicated Data Types](https://en.wikipedia.org/wiki/Conflict-free\_replicated\_data\_type), are a class of data structures that are uniquely designed for multi-user applications. They were introduced in [2011 in academic computer science research](https://pages.lip6.fr/Marc.Shapiro/papers/RR-7687.pdf). Like standard data structures such as hash maps and lists, CRDTs can store document state, but with the added feature of handling multi-user interactions right from the ground up. They are designed to tolerate concurrent updates from different users and to resolve conflicting updates without requiring any central authority or consensus mechanism. Essentially, CRDTs allow multiple replicas of the same data to be updated independently and concurrently, and yet eventually converge to a consistent state.
