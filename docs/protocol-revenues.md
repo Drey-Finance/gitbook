@@ -2,13 +2,13 @@
 
 DREY tokens will be distributed to depositors only after the Drey Actuaries are up and running after a period of time, and Drey Actuaries have already staked bitcoin into a Drey Fund wallet as qualification for being a Drey Actuary. When the airdrop program is ready, Drey Tokens will be airdropped in an equivalent amount to Drey Fund Investors in line with their monthly bitcoin distributions.
 
-The amount of DREY Tokens required for Drey Actuary staking will be determined at a later date. Initially, all that is necessary to become a Drey Actuary is a reasonably powered computer to run the Drey Actuary software, a bitcoin client, a Stacks client, an internet connection and some amount of bitcoin to stake.
+The amount of DREY Tokens required for Drey Actuary staking will be determined at a later date. Initially, all that is necessary to become a Drey Actuary is a reasonably powered computer to run the Drey Actuary Client software, a bitcoin client, a Stacks client, an internet connection and some amount of bitcoin to stake.
 
 Revenue flows to the Drey Protocol by capture of administration fees taken 1) as a percentage of the monthly distributions made to Drey depositors and 2) taken as a de-minimus amount based on all assets under management, taken on a monthly basis. For now, we are modelling administration fees at 2% on distributions and 0.25% per annum management fees on (assets under management) AUM (or 0.00020833% monthly). There are no setup or initiation fees.
 
 As an example, if monthly distributions total $20M USD worth of bitcoin, then Drey Protocol's capture is $400,000 USD worth of bitcoin from distributions. If AUM = $1B USD of bitcoin for that month, then Drey Protocol's capture from monthly management fees is $208,333.33 (0.00020833% of $1B) for gross revenue amount of $708,333.33 worth of bitcoin for that month.
 
-After expenses and fees are paid to Drey Finance Corp. for running the Drey Proof of Life app and service, Drey Actuaries who are staking DREY tokens and running continuous operations will receive incoming bitcoin flows based on a pro-rata percentage of DREY token holdings. In other words, only Drey Actuaries are eligible to receive a share of the Drey Protocol's bitcoin revenue flows.
+After expenses and fees are paid to Drey Finance Corp. for building/maintaining the Drey Proof of Life app, Drey Actuaries who are staking DREY tokens and running continuous operations will receive incoming bitcoin flows based on a pro-rata percentage of DREY token holdings. In other words, only Drey Actuaries are eligible to receive a share of the Drey Protocol's bitcoin revenue flows.
 
 DREY token holders not running Drey Mining operations have two options to get liquid on their DREY tokens:
 
