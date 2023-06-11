@@ -1,8 +1,10 @@
 ---
-description: Describing the various cryptographic protocols underpinning the Drey Network.
+description: >-
+  Describing the various cryptographic and communications protocols underpinning
+  the Drey Network.
 ---
 
-# Cryptography
+# Cryptography & Communications
 
 ## Cryptography and Communications
 
