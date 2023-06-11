@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Tontines explained](about-tontines.md)
+* [Tontines](tontines.md)
 * [Architecture I](architecture-i.md)
 * [Architecture II](architecture-ii.md)
 * [Architecture III](architecture-iii.md)

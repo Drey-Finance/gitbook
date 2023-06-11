@@ -2,11 +2,13 @@
 description: Tontines - why an ancient financial construct is making a comeback.
 ---
 
-# Tontines explained
+# Tontines
 
 ## Tontines Explained
 
-[Tontines](https://en.wikipedia.org/wiki/Tontine), a financial product with a rich history dating back to the 17th century, have recently been the subject of [much academic research](https://www.brookings.edu/research/retirement-tontines-using-a-classical-finance-mechanism-as-an-alternative-source-of-retirement-income/) due to their unique structure and potential benefits. Named after Lorenzo de Tonti, who popularized the concept in France, tontines pool the funds of participants and distribute the returns among the surviving members. This structure provides a lifetime income for participants and can potentially offer higher returns compared to other types of retirement savings plans.
+[Tontines](https://en.wikipedia.org/wiki/Tontine), a financial product with a rich history dating back to the 17th century, have recently been the subject of [much academic research](https://www.brookings.edu/research/retirement-tontines-using-a-classical-finance-mechanism-as-an-alternative-source-of-retirement-income/) due to their unique structure and potential benefits. Named after Lorenzo de Tonti, who popularized the concept in France, tontines pool the funds of participants and distribute the returns among the surviving members. This structure provides a lifetime income for participants and can potentially offer higher returns compared to other types of retirement savings plans. Originally designed as a strategy for government borrowing and financing, tontines have evolved over time and have recently seen a resurgence of interest due to their potential to address the underfunded pension crisis.
+
+A tontine agreement involves investors contributing a lump sum to a pool, in exchange for ongoing payments or "dividends" as a return on their investment. These payments are typically made for life and end only at death. _However, the unique aspect of a tontine is that the payments that cease at the death of one investor are redistributed to the other investor participants, increasing their subsequent payouts_. This redistribution of shares from those who pass away to the survivors, known as "mortality credits", is a core aspect of any lifetime annuity product. However, unlike annuities, tontines do not guarantee when mortality credits will be paid, reducing the reserve requirements for companies that offer a tontine and potentially improving pricing for consumers.
 
 The resurgence of interest in tontines is largely due to the growing public pension funding gap, projected to reach $400 trillion by 2050. Traditional annuities and pensions, with their low interest rates, inflationary fiat payments, and opaque solvency issues, are increasingly seen as inadequate for addressing this gap. Tontines, with their inherent longevity risk pooling and potential for higher returns, offer a promising alternative.
 
