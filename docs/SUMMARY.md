@@ -5,7 +5,7 @@
 * [Architecture I](architecture-i.md)
 * [Architecture II](architecture-ii.md)
 * [Architecture III](architecture-iii.md)
-* [Cryptography](cryptography-overview.md)
+* [Cryptography & Communications](cryptography-overview.md)
 * [Actuary Operations](Operations.md)
 * [AI Powered Fund Administration](ai-powered-fund-administration.md)
 * [AI and Dreybits Allocation](ai-and-dreybits-allocation.md)
