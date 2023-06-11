@@ -4,7 +4,7 @@
 * [Architecture I](architecture-i.md)
 * [Architecture II](architecture-ii.md)
 * [Architecture III](architecture-iii.md)
-* [Architecture IV](architecture-iv.md)
+* [AI Powered Fund Administration](ai-powered-fund-administration.md)
 * [Cryptography](cryptography-overview.md)
 * [Actuary Operations](Operations.md)
 
