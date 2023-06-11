@@ -2,7 +2,9 @@
 description: Tontines - why an ancient financial construct is making a comeback.
 ---
 
-# About Tontines
+# Tontines explained
+
+## Tontines Explained
 
 [Tontines](https://en.wikipedia.org/wiki/Tontine), a financial product with a rich history dating back to the 17th century, have recently been the subject of [much academic research](https://www.brookings.edu/research/retirement-tontines-using-a-classical-finance-mechanism-as-an-alternative-source-of-retirement-income/) due to their unique structure and potential benefits. Named after Lorenzo de Tonti, who popularized the concept in France, tontines pool the funds of participants and distribute the returns among the surviving members. This structure provides a lifetime income for participants and can potentially offer higher returns compared to other types of retirement savings plans.
 
@@ -10,9 +12,19 @@ The resurgence of interest in tontines is largely due to the growing public pens
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>Figure 1. Tontine with 6% APY</p></figcaption></figure>
 
-Administering tontines on the blockchain is a revolutionary idea that brings numerous benefits. Blockchain's transparency, security, and immutability make it an ideal platform for tontines. All transactions are recorded on the blockchain, making the operations of the tontine transparent and auditable. This eliminates the potential for manipulation or fraud, a problem that has plagued traditional tontines.
+Administering tontines on the blockchain is a revolutionary idea that brings numerous benefits. Blockchain's transparency, security, and immutability make it an ideal platform for tontines. All transactions are recorded on the blockchain, making the operations of the tontine transparent and auditable. This eliminates the potential for manipulation or fraud, a problem that has plagued traditional tontine administration.
 
-Moreover, blockchain enables the decentralization of tontine administration, further reducing the potential for abuse. In a decentralized tontine, no single entity has control over the funds or the allocation of payouts. Instead, these tasks are governed by smart contracts—self-executing contracts with the terms of the agreement directly written into code. This ensures that the rules of the tontine are followed faithfully, enhancing trust and participation.
+### Brief History of Tontines
+
+Tontines, a form of pooled investment fund, have a rich history dating back to the late 1600s. Originally designed as a strategy for government borrowing and financing, tontines have evolved over time and have recently seen a resurgence of interest due to their potential to address the underfunded pension crisis.
+
+A tontine agreement involves investors contributing a lump sum to a pool, in exchange for ongoing payments or "dividends" as a return on their investment. These payments are typically made for life and end only at death. However, the unique aspect of a tontine is that the payments that cease at the death of one investor are redistributed to the other investor participants, increasing their subsequent payouts. This redistribution of shares from those who pass away to the survivors, known as "mortality credits", is a core aspect of any lifetime annuity product. However, unlike annuities, tontines do not guarantee when mortality credits will be paid, reducing the reserve requirements for companies that offer a tontine and potentially improving pricing for consumers.
+
+The use of tontines in the U.S. for retirement savings was popular in the late 1800s, with companies like Equitable Life Insurance Company leading the way. However, due to issues with loss-through-lapse and under-regulation of insurance companies, tontines fell out of favor in the early 1900s. Despite this, retirement researcher Moshe Milevsky argues that tontines are an idea worth resurrecting for the modern retirement era. He suggests that because tontines do not pay mortality credits in advance of the deaths occurring, there's no risk of a tontine provider defaulting on its promised payments. This could potentially provide a better dollar-for-dollar return than what an annuity provides for a similar premium contribution.
+
+## Blockchain Powered Tontines
+
+Drey Finance's use of the Bitcoin and Stacks' blockchains enables the decentralization of tontine administration, eliminating the potential for abuse in fund administration. **In a decentralized tontine, no single entity has control over the funds or the allocation of payouts**. Instead, these tasks are governed by smart contracts—self-executing contracts with the terms of the agreement directly written into code. This ensures that the rules of the tontine are followed faithfully, enhancing trust and participation.
 
 Drey Finance leverages the power of blockchain to offer a modern, transparent, and secure tontine. By combining the pooling of mortality-based life credits with the growth and income potential of digital assets, Drey Finance delivers stable high income returns with low risk. The integration of artificial intelligence into Drey Finance's operations further enhances efficiency, accuracy, and user experience, making Drey Finance's tontine a truly innovative solution for the 21st century.
 
