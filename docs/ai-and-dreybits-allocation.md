@@ -1,4 +1,4 @@
-# AI and Dreybits Accounting
+# AI and Dreybits Allocation
 
 Artificial Intelligence (AI) can be used by Drey Finance to automate and optimize the process of determining Dreybits accounting allocations in fund administration operations. Below provides a description of how this will work:
 

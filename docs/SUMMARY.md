@@ -7,7 +7,7 @@
 * [Cryptography](cryptography-overview.md)
 * [Actuary Operations](Operations.md)
 * [AI Powered Fund Administration](ai-powered-fund-administration.md)
-* [AI and Dreybits Accounting](ai-and-dreybits-accounting.md)
+* [AI and Dreybits Allocation](ai-and-dreybits-allocation.md)
 * [Additional AI Operations](additional-ai-operations.md)
 
 ## 💪 Dreyconomics
