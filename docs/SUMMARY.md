@@ -4,10 +4,10 @@
 * [Architecture I](architecture-i.md)
 * [Architecture II](architecture-ii.md)
 * [Architecture III](architecture-iii.md)
-* [AI Powered Fund Administration](ai-powered-fund-administration.md)
-* [AI Operational Cornerstones](ai-operational-cornerstones.md)
 * [Cryptography](cryptography-overview.md)
 * [Actuary Operations](Operations.md)
+* [AI Powered Fund Administration](ai-powered-fund-administration.md)
+* [Additional AI Operations](additional-ai-operations.md)
 
 ## 💪 Dreyconomics
 
