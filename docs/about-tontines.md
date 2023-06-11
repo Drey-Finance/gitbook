@@ -1,3 +1,7 @@
+---
+description: Tontines - why an ancient financial construct is making a comeback.
+---
+
 # About Tontines
 
 [Tontines](https://en.wikipedia.org/wiki/Tontine), a financial product with a rich history dating back to the 17th century, have recently been the subject of [much academic research](https://www.brookings.edu/research/retirement-tontines-using-a-classical-finance-mechanism-as-an-alternative-source-of-retirement-income/) due to their unique structure and potential benefits. Named after Lorenzo de Tonti, who popularized the concept in France, tontines pool the funds of participants and distribute the returns among the surviving members. This structure provides a lifetime income for participants and can potentially offer higher returns compared to other types of retirement savings plans.
