@@ -18,9 +18,7 @@ The resurgence of interest in tontines is largely due to the growing public pens
 
 ### Brief History of Tontines
 
-Tontines, a form of pooled investment fund, have a rich history dating back to the late 1600s. Originally designed as a strategy for government borrowing and financing, tontines have evolved over time and have recently seen a resurgence of interest due to their potential to address the underfunded pension crisis.
-
-A tontine agreement involves investors contributing a lump sum to a pool, in exchange for ongoing payments or "dividends" as a return on their investment. These payments are typically made for life and end only at death. As stated previously, _the unique aspect of a tontine is that the payments that cease at the death of one investor are redistributed to the other investor participants, increasing their subsequent payouts._&#x20;
+Tontines, a form of pooled investment fund, have a rich history dating back to the late 1600s. The Italian Lorenzo de Tonti invented a product to consolidate the French public-sector deficit in the early 1650s, which was introduced in 1689. His ideas were based on the pooling of persons by considering their mortality risk. The innovation was that, in exchange for a lump sum payment to the French government, one received the right to a yearly, lifelong pension, which increased over time because the yields were distributed among a lower number of surviving beneficiaries. The last survivor thus received the pensions of all others who died before.&#x20;
 
 The use of tontines in the U.S. for retirement savings was popular in the late 1800s, with companies like Equitable Life Insurance Company leading the way. The explosive popularity of the tontine built the company into a behemoth. Soon thereafter, other insurance companies joined in, and by the early 1900s a whopping 9 million individuals in the U.S. owned tontine policies, the value of which amounted to an incredible 7.5% of _total_ national wealth at the time (roughly akin to the amount of U.S. national wealth in all IRAs today).
 
