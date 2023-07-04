@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Overview](../docs/README.md)
+* [Overview](README.md)
 * [Drey Fund Primer](../docs/drey-fund-primer.md)
 * [Architecture I](../docs/architecture-i.md)
 * [Architecture II](../docs/architecture-ii.md)

@@ -6,13 +6,13 @@ description: Drey's decentralised actuarial operating system explained.
 
 Drey Finance consists of two major components.&#x20;
 
-First, there is a [Proof of Life app](architecture-ii.md#proof-of-life-app) for iOS and Android whose main function is to verify the liveliness of the Drey Fund investor so that they can receive their monthly annuity payment. In addition, the app enables a fund investor to get up to the second accurate information on payout, yield income generated, opt-in co-ordination for those wishing to be [Sharia compliant](https://www.bankofengland.co.uk/explainers/what-is-islamic-finance), and other operations.&#x20;
+First, there is a [Proof of Life app](architecture-ii.md#proof-of-life-app) for iOS and Android whose main function is to verify the liveliness of the Drey Fund investor so that they can receive their monthly annuity payment. In addition, the app enables a fund investor to get up to the second accurate information on payout, yield income generated and other operations.&#x20;
 
 Second, the Drey Decentralized Actuary Network is a federation consisting of independent parties using their instance of [Drey's Actuary Client software](architecture-iii.md#drey-actuary-client), with communication conducted using the [Nostr protocol](https://nostr.com/). Drey Actuary Clients coordinate over the Nostr to action actuarial processes and wallet operations for the benefit of the Drey Fund investors. Drey Actuary Clients also serve information to Drey customer's on their instances of the Drey Proof of Life App
 
-<figure><img src=".gitbook/assets/Drey Finance - Diagram 1 (Latest)[53].png" alt=""><figcaption><p>Figure 1. Drey Finance Architecture</p></figcaption></figure>
 
 
+<figure><img src="../docs2/.gitbook/assets/image.png" alt=""><figcaption><p>Figure 3. Drey Finance Actuary Network</p></figcaption></figure>
 
 ## Proof of Life App
 
@@ -32,13 +32,13 @@ The app verifies the age, sex and geography of Drey Fund investors during enrolm
 * Citizenship
 * Country of Residence
 
-Note that name, address or any other personally identifying information IS NOT required to be stored on an ongoing basis, and none is. Instead, a content-based GUID ([RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) describes the conventions) is created from the obtained information and this applies as the unique identifier for the Drey Fund investor. Drey Actuaries are never party to, and will never know, any personally identifying information of a Drey Fund investor.
+Note that name, address or any other personally identifying information IS NOT required to be stored on an ongoing basis, and none is. Instead, a content-based GUID ([RFC 4122](http://www.ietf.org/rfc/rfc4122.txt) describes the conventions) is created from the obtained information and this applies as the unique identifier for the Drey Fund investor. Drey Actuaries are never party to, and will never know, any personally identifying information of a Drey Fund investor (such as name or address).
 
 The Drey Proof of Life App is configured to comply with U.S. State Department terrorism watch list and EU sanctions list, so any identities from these geographies (North Korea, Iran, Syria, etc.) are not eligible to create Drey Fund accounts and will not be serviced.
 
 ### Proof of Life Verification
 
-Drey utilizes [zero knowledge proof technology](https://en.wikipedia.org/wiki/Zero-knowledge\_proof) to authenticate a user to the Drey Actuary network without revealing any personally identifying details. As described in [following sections](cryptography-overview.md), zero-knowledge proof technology is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that they know a specific piece of information without revealing that information itself. This technology is particularly useful for authentication processes where the goal is to verify an identity without revealing any personally identifiable information.
+Here again, Drey utilizes [zero knowledge proof technology](https://en.wikipedia.org/wiki/Zero-knowledge\_proof) to authenticate a user to the Drey Actuary network without revealing any personally identifying details. As described in [following sections](cryptography-overview.md), zero-knowledge proof technology is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that they know a specific piece of information without revealing that information itself. Not only is this useful to verify correct computation, this technology is particularly useful for authentication processes where the goal is to verify an identity without revealing any personally identifiable information.
 
 In the context of the technology used in Drey Finance, the zero-knowledge proof technology works by using a [multi-factor authentication protocol](https://milagro.apache.org/docs/milagro-protocols/) built upon zero-knowledge proofs. When a user wants to authenticate themselves, they create a proof that shows they know how to re-create their secret information (like a password or a private key) from something they have (a device), something they know (a pin) and something they are (a biometric) without actually revealing that secret information. This proof is then sent to the verifier.
 
@@ -48,14 +48,14 @@ This process removes the need for a traditional Public Key Infrastructure (PKI) 
 
 In certain use cases, this technology can make systems easier to scale and manage than traditional PKI, eliminate root key 'single point of compromise' weaknesses, and provide a seamless fit for today's decentralized networks and distributed systems.
 
-After the initial enrolment workflow is completed for identity verification, each month, when the customer's Drey distribution is ready to obtained, the customer simply opens their Drey app, authenticates with FaceID, inputs a six digit pin, and the process of Proof of Life is complete. The experience is seamless and frictionless. Once authenticated into the app the Drey customer can obtain principal balances, opt-in/out of yield generation programs, view expected portfolio returns,   and/or select fiat off-ramps for their distributions, among other actions.
+After the initial enrolment workflow is completed for identity verification, each month, when the customer's Drey distribution is ready to obtained, the customer simply opens their Drey app, authenticates with FaceID, inputs a six digit pin, and the Proof of Life process is complete. The experience is seamless and frictionless. Once authenticated into the app the Drey customer can obtain principal balances, opt-in/out of yield generation programs, view expected portfolio returns,   and/or select fiat off-ramps for their distributions, among other actions.
 
 ### Account Settings and Information
 
 The Proof of Life app will also enable users to configure their settings for:
 
 * Alerts, notifications&#x20;
-* Opt-in to yield generation programs, or stay opt-out in order to remain [Sharia compliant](https://www.bankofengland.co.uk/explainers/what-is-islamic-finance)
+* Opt-in to other yield generation programs
 * Fiat-off ramps
 * Setup additional accounts (for couples or children)
 
