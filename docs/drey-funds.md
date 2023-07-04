@@ -1,8 +1,8 @@
 ---
-description: Tontines - why an ancient financial construct is making a comeback.
+description: An actuarially-fair, non-insured annuity denominated in bitcoin
 ---
 
-# Tontines
+# Drey Funds
 
 ## Tontines Explained
 
@@ -34,7 +34,23 @@ Drey Finance leverages the power of Bitcoin to offer a modern, transparent, and 
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Figure 2. Lifetime Annuity vs Tontine Agreement</p></figcaption></figure>
 
-In conclusion, tontines, when administered on the Bitcoin blockchain, offer a promising solution to the public pension funding gap. They provide a secure, transparent, and efficient way to generate a lifetime income, making them an attractive option for individuals, couples, and families seeking financial security in retirement. With its blockchain-based tontine, Drey Finance is at the forefront of this financial revolution, ready to redefine income and retirement in the digital age.
+## Drey Funds: Better By Design
+
+A Drey Fund combines a tax efficient gifting mechanism with a pay-out scheme. The customer's deposit into the Drey Fund is a gift to all present and future members within the fund. The customer agrees that upon his/her passing away, the bitcoin balances are transferred to all other customers in the Drey Fund, split according to an allocation formula that is published on the bitcoin blockchain. As long as the customer is alive, he/she will collect a longevity yield like the kind shown in Figures 1 and 2 above.
+
+Closed pool tontines, as shows in Figure 1 and 2, are a bit like lotteries. The last survivors win big. However, lottery-like payoffs are not ideal for retirement or inheritance planning, where a smoother distribution curve is more attractive.&#x20;
+
+A Drey Fund is different to a closed pool tontine, by design, and improves upon the tontine's structure in a number of ways. First, it is an open-ended tontine, able to continually accept new participants and running in perpetuity. Second, payouts self-adjust so that the fund is naturally funded at all times, 100% of the time. The self-adjustment mechanism happens monthly through an allocation formula called [Dreybits monthly allocation](Operations.md#dreybits), covered in detail in a following section.
+
+A Drey Fund pools and diversifies individual longevity risk that forces insurers and annuity providers to maintain large risk reserves, the cost of which they pass on to their customers. A Drey Fund is substantially less expensive from a fee standpoint that your traditional annuity or pension because there is no guaranteed premium or reserve. The other benefit being that since there is no reserve to depend on, there is no counterparty risk. In industry technical terms, a **Drey Fund is an actuarially-fair, non-insured annuity denominated in bitcoin.**
+
+## Drey Funds: Actuarially Fair
+
+
+
+
+
+In conclusion, tontines, when administered on the Bitcoin blockchain, offer a promising solution to the public pension funding gap. They provide a secure, transparent, and efficient way to generate a lifetime income, making them an attractive option for individuals, couples, and families seeking financial security in retirement on inheritance planning. With its blockchain-based tontine, Drey Finance is at the forefront of this financial revolution, ready to redefine income and retirement in the digital age.
 
 ## References
 
