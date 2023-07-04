@@ -46,11 +46,13 @@ A Drey Fund pools and diversifies individual longevity risk that forces insurers
 
 ## Drey Funds: Actuarially Fair
 
+A tontine is fair when the expected value of each member’s “tontine gains/losses” is zero at all times. In other words, the gains are longevity credits they receive while living, and the loss is the balance forfeited at death. How is this fairness maintained? Simple. There are no intergenerational transfers of bitcoin from one party to the other. The strictness comes from customers continually 'checking in' with the fund, on a monthly basis, to prove that they are still living and entitled to their distribution. Why is this important?
 
+Well, for one, by maintaining strict actuarial fairness and a strict fully-funded budget constraint a Drey Fund is sustainable forever. Secondly, it enables the mixing of different cohorts within the fund, so that a Drey Fund can support different ages, sexes, investment amounts and even geographies (as long as there is industry accepted accurate actuarial data for that geography). Third, it enables the 'open-ended' aspect of the fund, ever increasing the deposit base.
 
+Lastly, a Drey Fund is denominated in bitcoin. Assuming bitcoin continues its performance this decade nearly to what it did last decade, then a Drey Fund is potentially a hedge against inflation risk as well.
 
-
-In conclusion, tontines, when administered on the Bitcoin blockchain, offer a promising solution to the public pension funding gap. They provide a secure, transparent, and efficient way to generate a lifetime income, making them an attractive option for individuals, couples, and families seeking financial security in retirement on inheritance planning. With its blockchain-based tontine, Drey Finance is at the forefront of this financial revolution, ready to redefine income and retirement in the digital age.
+A Drey Fund provides a secure, transparent, and efficient way to generate a lifetime income, making them an attractive option for individuals, couples, and families seeking financial security in retirement on inheritance planning. With its blockchain-based annuity, Drey Finance is at the forefront of this financial revolution, ready to redefine income and retirement in the digital age.
 
 ## References
 
