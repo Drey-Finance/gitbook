@@ -14,7 +14,7 @@ Our groundbreaking platform combines the pooling of gifted mortality-based life 
 Key features of Drey income and retirement plans include:
 
 1. Monthly distributions in BTC over the [Lightning Network](https://trustmachines.co/learn/what-is-lightning-network/), convertible to fiat on distribution
-2. Transparent and auditable off-chain smart contracts secured by zero-knowledge proofs (powered by [zkWASM](https://github.com/DelphinusLab/zkWasm) and [bitcoin recursive inscriptions](https://protos.com/what-are-recursive-inscriptions-on-bitcoin/)) ensure correct distribution allocations
+2. Transparent and auditable off-chain smart contracts secured by [zero-knowledge proofs](https://www.horizen.io/academy/zero-knowledge-proofs-zkp/) (powered by [zkWASM](https://github.com/DelphinusLab/zkWasm) and [bitcoin recursive inscriptions](https://protos.com/what-are-recursive-inscriptions-on-bitcoin/)) ensure correct distribution allocations
 3. Low-cost setup and administration fees compared to traditional financial products
 4. Tax-efficient gifting mechanism that preserves all income
 5. High returns via combined life-credit pooling and lightning channel operation fees
