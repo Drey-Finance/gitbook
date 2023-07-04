@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Drey Funds](drey-funds.md)
+* [Drey Fund Explained](drey-fund-explained.md)
 * [Architecture I](architecture-i.md)
 * [Architecture II](architecture-ii.md)
 * [Architecture III](architecture-iii.md)

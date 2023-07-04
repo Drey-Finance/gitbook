@@ -2,7 +2,7 @@
 description: An actuarially-fair, non-insured annuity denominated in bitcoin
 ---
 
-# Drey Funds
+# Drey Fund Explained
 
 ## Tontines Explained
 
