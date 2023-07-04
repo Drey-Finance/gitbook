@@ -1,26 +1,27 @@
 # Table of contents
 
 * [Overview](README.md)
-* [Drey Fund Primer](drey-fund-primer.md)
-* [Architecture I](architecture-i.md)
-* [Architecture II](architecture-ii.md)
-* [Architecture III](architecture-iii.md)
-* [Cryptography & Communications](cryptography-overview.md)
-* [Actuary Operations](operations.md)
-* [AI Powered Fund Administration](ai-powered-fund-administration.md)
-* [AI and Dreybits Allocation](ai-and-dreybits-allocation.md)
+* [Drey Fund Primer](../docs/drey-fund-primer.md)
+* [Architecture I](../docs/architecture-i.md)
+* [Architecture II](../docs/architecture-ii.md)
+* [Architecture III](../docs/architecture-iii.md)
+* [Architecture IV](architecture-iv.md)
+* [Cryptography & Communications](../docs/cryptography-overview.md)
+* [Actuary Operations](../docs/Operations.md)
+* [AI Powered Fund Administration](../docs/ai-powered-fund-administration.md)
+* [AI and Dreybits Allocation](../docs/ai-and-dreybits-allocation.md)
 
 ## 💪 Dreyconomics
 
-* [Stakeholders](dreyconomics/stakeholders.md)
+* [Stakeholders](../docs/dreyconomics/stakeholders.md)
 
 ***
 
-* [Mechanisms](mechanisms.md)
-* [Incentives and Disincentives](incentives-and-disincentives.md)
-* [Token Objective](token-objective.md)
-* [Token Journey](token-journey.md)
-* [Value Capture](value-capture.md)
-* [Token Distribution](token-distribution.md)
-* [Protocol Costs](protocol-costs.md)
-* [Protocol Revenues](protocol-revenues.md)
+* [Mechanisms](../docs/mechanisms.md)
+* [Incentives and Disincentives](../docs/incentives-and-disincentives.md)
+* [Token Objective](../docs/token-objective.md)
+* [Token Journey](../docs/token-journey.md)
+* [Value Capture](../docs/value-capture.md)
+* [Token Distribution](../docs/token-distribution.md)
+* [Protocol Costs](../docs/protocol-costs.md)
+* [Protocol Revenues](../docs/protocol-revenues.md)
