@@ -1,8 +1,8 @@
 ---
-description: An actuarially-fair, non-insured annuity denominated in bitcoin
+description: An actuarially-fair, non-insured annuity denominated in bitcoin.
 ---
 
-# Drey Fund Explained
+# Drey Fund Primer
 
 ## Tontines Explained
 
