@@ -61,11 +61,11 @@ The reason Dreybit ledgers must be re-updated monthly is to take into account va
 
 ### Longevity Fund Terms and Conditions
 
-Drey creates a set of binding smart contracts with terms and conditions which reflect the following stipulations that a longevity risk pooling fund naturally inherits:
+Drey creates a set of binding off-chain smart contracts with terms and conditions which reflect the following stipulations that a longevity risk pooling fund naturally inherits:
 
 * The investors in the fund agree that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
 * This gift passes in entirety to the living participants in the fund when the contributing investor passes away
-* It is held in escrow in a smart contract controlled by a super majority of Drey Actuaries&#x20;
+* It is held in escrow in a vault controlled by a super majority of Drey Actuaries&#x20;
 * An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away
 * He/she continues to enjoy the benefit of holding those Dreybits as long as they continuously (monthly) provide proof that he/she/they/them is/are alive within a certain time limit using the Drey Proof of Life app
 * If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs — i.e., proof of life. This is a type of [tontine agreement](https://en.wikipedia.org/wiki/Tontine).
