@@ -50,8 +50,6 @@ A tontine is fair when the expected value of each member’s “tontine gains/lo
 
 Well, for one, by maintaining strict actuarial fairness and a strict fully-funded budget constraint a Drey Fund is sustainable forever. Secondly, it enables the mixing of different cohorts within the fund, so that a Drey Fund can support different ages, sexes, investment amounts and even geographies (as long as there is industry accepted accurate actuarial data for that geography). Third, it enables the 'open-ended' aspect of the fund, ever increasing the deposit base.
 
-Lastly, a Drey Fund is denominated in bitcoin. Assuming bitcoin continues its performance this decade nearly to what it did last decade, then a Drey Fund is potentially a hedge against inflation risk as well.
-
 A Drey Fund provides a secure, transparent, and efficient way to generate a lifetime income, making them an attractive option for individuals, couples, and families seeking financial security in retirement on inheritance planning. With its blockchain-based annuity, Drey Finance is at the forefront of this financial revolution, ready to redefine inheritance and retirement income and in the digital age.
 
 ## References
