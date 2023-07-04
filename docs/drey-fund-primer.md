@@ -36,7 +36,7 @@ Drey Finance leverages the power of Bitcoin to offer a modern, transparent, and 
 
 ## Drey Funds: Better By Design
 
-A Drey Fund combines a tax efficient gifting mechanism with a pay-out scheme. The customer's deposit into the Drey Fund is a gift to all present and future members within the fund. The customer agrees that upon his/her passing away, the bitcoin balances are transferred to all other customers in the Drey Fund, split according to an allocation formula that is published on the bitcoin blockchain. As long as the customer is alive, he/she will collect a longevity yield like the kind shown in Figures 1 and 2 above.
+A Drey Fund combines a tax efficient gifting mechanism with a pay-out scheme. Like a tontine, a customer's deposit into the Drey Fund is a gift to all present and future members within the fund and is irrevocable. The customer agrees that upon his/her passing away, the bitcoin balances are transferred to all other customers in the Drey Fund, split according to an allocation formula that is published on the bitcoin blockchain. As long as the customer is alive, he/she will collect a longevity yield like the kind shown in Figures 1 and 2 above.
 
 Closed pool tontines, as shows in Figure 1 and 2, are a bit like lotteries. The last survivors win big. However, lottery-like payoffs are not ideal for retirement or inheritance planning, where a smoother distribution curve is more attractive.&#x20;
 
