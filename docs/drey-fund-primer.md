@@ -52,7 +52,7 @@ Well, for one, by maintaining strict actuarial fairness and a strict fully-funde
 
 Lastly, a Drey Fund is denominated in bitcoin. Assuming bitcoin continues its performance this decade nearly to what it did last decade, then a Drey Fund is potentially a hedge against inflation risk as well.
 
-A Drey Fund provides a secure, transparent, and efficient way to generate a lifetime income, making them an attractive option for individuals, couples, and families seeking financial security in retirement on inheritance planning. With its blockchain-based annuity, Drey Finance is at the forefront of this financial revolution, ready to redefine income and retirement in the digital age.
+A Drey Fund provides a secure, transparent, and efficient way to generate a lifetime income, making them an attractive option for individuals, couples, and families seeking financial security in retirement on inheritance planning. With its blockchain-based annuity, Drey Finance is at the forefront of this financial revolution, ready to redefine inheritance and retirement income and in the digital age.
 
 ## References
 
