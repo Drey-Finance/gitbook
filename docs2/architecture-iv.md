@@ -14,119 +14,69 @@ Drey Finance has in inbuilt server-side proof network. Proof networks are prover
 
 In addition, by Drey Finance having its own on-board prover network it obtains greater sovereignty than outsourcing the proof generation and verification, so rather than creating an external point of failure it removes it.
 
-Introducing multiple provers to a protocol creates additional complexity for the network. It is the tradeoff for censorship resistance, liveliness and generating market pressure to create fast proofs and verifications. A primary challenge being the protocol must decide which prover is assigned to perform the Dreybit allocation formula for the time period, and how to de-risk relying on one zero knowledge prover or verifier. Thanks to Figment Capital for creating a taxonomy around 3 main approaches:
+Introducing multiple provers to a protocol creates additional complexity for the network. It is the tradeoff for censorship resistance, liveliness and generating market pressure to create fast proofs and verifications. A primary challenge being the protocol must decide which prover is assigned to perform the Dreybit allocation formula for the time period, and how to de-risk relying on one zero knowledge prover or verifier. Thanks go to [Figment Capital](https://figmentcapital.medium.com/decentralized-proving-proof-markets-and-zk-infrastructure-f4cce2c58596) for creating a taxonomy around 3 main approaches:
 
 * Stake-based prover selection — Provers stake assets to participate in the network. At each proving slot, a prover is selected at random, weighed by their value of staked tokens, and computes the output. Provers are compensated for producing a proof when chosen. Specific slashing conditions and leader selection can be different for each protocol. This model is similar to Proof of Stake.
 * Proof mining — Provers are tasked with repeatedly generating ZKPs until they generate a proof with a sufficiently rare hash. Doing so earns them the right to prove at the next slot and earn the slot reward. Provers that can generate more ZKPs are more likely to win the slot. This type of proving closely mirrors PoW mining — it is energy and hardware intensive. A key difference with traditional mining is that in PoW, hashing is merely a means to an end. Being able to produce SHA-256 hashes in Bitcoin has no value beyond increasing the network’s security. In proof mining however, the network provides incentives to miners to accelerate ZKP generation.
 * Proof racing — At each slot, provers compete to produce a proof as quickly as possible. Whoever generates the proof first receives the slot reward. This approach is vulnerable to winner-takes-all dynamics. If a single operator is able to generate proofs faster than anyone else, they should win every slot. [Centralization can be reduced](https://ethresear.ch/t/proof-of-efficiency-a-new-consensus-mechanism-for-zk-rollups/11988/6) by splitting up the proof reward across the first _n_ operators who generate a valid proof or introducing some randomness into which proof is accepted. Yet even in this case, the fastest operator can simply run multiple machines to capture the other revenue.
 
-\
-
-
 Drey Finance incorporates elements of both Stake-based prover selection and Proof racing, accentuating the benefits of both but limiting the downside of proof racing’s centralisation.
 
-\
-
+### Network Operations&#x20;
 
 Drey Actuary clients, to qualify as an eligible client to participate in the Dreybits allocation formula protocol must have a minimum amount of bitcoin staked within the system. Every month, from the available pool of Actuary Clients, a distributed verifiable random function protocol is run between all Actuary Clients who meet the levels of bitcoin staking necessary to become active Actuary Client helping to secure the network. Running the distributed verifiable random function protocol selects the Lead Actuary at random for the monthly period but draws the Lead Actuary from a qualified pool of Actuary Clients based on the level of bitcoin deposits they have staked within the main Vault wallet itself.&#x20;
 
-\
+Additionally, there is a role for all Actuary Clients who meet the minimum bitcoin staking threshold to participate in the protocol as ‘Secondary’ Actuary Clients, de-risking a possibility that a malicious Actuary Client could be chosen for the Dreybits allocation formula protocol. Further, there are in place incentives and disincentives for collusion between Actuary Clients to achieve anything but a proper result.
 
-
-Additionally, there is a role for all Actuary Clients who meet the minimum bitcoin staking threshold to participate in the protocol as ‘secondary’ Actuary Clients, de-risking a possibility that a malicious Actuary Client could be chosen for the Dreybits allocation formula protocol. Further, there are in place incentives and disincentives for collusion between Actuary Clients to achieve anything but a proper result.
-
-\
-
-
-How the Lead Actuary calculates the new monthly Dreybits allocation is covered in the section Dreybits Allocation method. Dreybits monthly allocation tables are built and stored in the bitcoin blockchain as Parquet files. Parquet is a columnar data format that is designed for efficient data storage and retrieval. Parquet files are smaller than CSV files, and they can be read and written much faster. Parquet files also support nested data structures, which makes them ideal for storing complex data, and compression, which enables efficient use of space within the bitcoin blockchain.
-
-\
-
+How the Lead Actuary calculates the new monthly Dreybits allocation is covered in the section [Dreybits Allocation Method](../docs/Operations.md#dreybit-allocation-method). Dreybits monthly allocation tables are built and stored in the bitcoin blockchain as Parquet files. [Parquet](https://parquet.apache.org/docs/overview/motivation/) is a columnar data format that is designed for efficient data storage and retrieval. Parquet files are smaller than CSV files, and they can be read and written much faster. Parquet files also support nested data structures, which makes them ideal for storing complex data, and compression, which enables efficient use of space within the bitcoin blockchain.
 
 Each row in the Parquet file includes a hash of all the concatenated data in the row and this hash serves as the leaf in a Merkle tree. When the entire table is updated, the Dreybits allocation column will change as each value in that cell will change for all existing rows and obviously new rows (as new Drey plans are created for new users).
 
-&#x20;
-
 So, for example, the row would contain at a minimum:
 
-&#x20;
-
-Month | UserID | Dreybits Allocation | h(Time Period | UserID | Dreybits Allocation)
-
-&#x20;
+_Month | UserID | Dreybits Allocation | h(Time Period | UserID | Dreybits Allocation)_
 
 Each new update of the table changes at least the Month and Dreybits Allocation cells, changing the hash of the concatenated data at the end of the row.
 
-\
-
-
 This hash serves as the leaf in a Merkle tree that represents that month resulting in a new root for each month. In other words, for each new month in the table, an entirely new Merkle tree with a new root node is created.
-
-&#x20;
 
 This root node then serves as a leaf in another Merkle tree creating a relationship between months.
 
-\
-
+INSERT GRAPHIC HERE
 
 Using zkWASM, we can run a purpose built WASM binary inside the zkWASM VM which takes an existing Merkle tree data structure (the one representing the current month), forms a new leaf (representing the current upcoming monthly distribution) as the input, and outputs a new Merkle tree root along with a zero-knowledge proof that the new Merkle tree root was computed correctly.
 
-\
-
-
 To derive the zero-knowledge proof, the code that calculates the output of the Merkle tree is a self-contained WASM binary loaded up as a plug-in to the Drey Actuary client application, and then run inside a zkWASM virtual machine embedded within the Drey Actuary client software application. The WASM binary is small size. By embedding the WASM binary that calculates the Dreybits allocation formula into the bitcoin blockchain, any Dreybit Actuary client, or indeed anyone with access to the bitcoin blockchain, can verify the WASM binary’s data integrity, correct version and data availability.
 
-\
-
+INSERT GRAPHIC HERE
 
 The result is a zero-knowledge proof, verifiable by anyone running a zkWASM virtual machine, which proves the new root nodes of the Merkle tree were calculated correctly.&#x20;
 
-\
-
-
 To finalise the new Dreybit monthly allocation table, the Lead Actuary for the month creates a bitcoin inscription transaction embedding a digitally signed binary data package into the bitcoin blockchain. The binary data includes the new Dreybits monthly allocation column, the new root node value and the zero knowledge proof of correct computation of the new root node value.&#x20;
-
-\
-
 
 With this data inserted as an inscription in the bitcoin blockchain, any Drey Actuary client, even one that is not participating in the allocation calculation protocol, can recalculate on their own the Dreybits monthly allocation table using the WASM binary loaded into the Actuary Client which is retrieved out of the bitcoin blockchain at a specific satoshi (an inscription with binary data). In this way, the Actuary Client serves a light client, able to verify that the Dreybits allocation formula was adhered to with a proof of correct calculation.&#x20;
 
-\
+## Game Theory
 
+### Naive Approach
 
-However, this naive approach on its own still leaves gaps where a malicious Actuary Client could fake additional data into the calculation set, pass it off as legitimate, and calculate an inaccurate allocation distribution result. In other words, the security and censorship resistance of this naive approach depends on the likelihood of having an honest node drawn from the verifiable random function producing lottery. What is required here is to have a collection of incentives and disincentives that punishes malicious behaviour and incentivizes honest participation of a group of Actuary Clients in verifying the monthly allocation distribution result to achieve liveliness and correctness via a competitive incentive.
+The naive approach outlined above, on its own, still leaves gaps where a malicious Actuary Client could fake additional data into the calculation set, pass it off as legitimate, and calculate an inaccurate allocation distribution result. In other words, the security and censorship resistance of this naive approach depends on the likelihood of having an honest node drawn from the verifiable random function producing lottery. What is required here is to have a collection of incentives and disincentives that punishes malicious behaviour and incentivizes honest participation of a group of Actuary Clients in verifying the monthly allocation distribution result to achieve liveliness and correctness via a competitive incentive.
 
-\
-
-
-This is achieved by having a super majority of Actuary Clients compete to also calculate the Dreybits monthly allocation formula, produce on their own the new root node and zero knowledge proof of correct computation of the new root node, and create an inscription (taproot transaction) that embeds a digitally signed data package that contains their calculated new root node and their calculated zero knowledge proof of correct computation into the bitcoin blockchain. The do not need to include the new Dreybits allocation column, as the Lead Actuary has already embedded this column into their data package, and a correct result of the column will result in the same root node being produced for everyone. The idea behind this action is that all Secondary Actuary’s validate the Lead Actuaries monthly Dreybit allocation result.
-
-\
-
+This is achieved by having a super majority of Actuary Clients compete to also calculate the Dreybits monthly allocation formula, produce on their own the new root node and zero knowledge proof of correct computation of the new root node, and create an inscription (taproot transaction) that embeds a digitally signed data package that contains their calculated new root node and their calculated zero knowledge proof of correct computation into the bitcoin blockchain. They do not need to include the new Dreybits allocation column, as the Lead Actuary has already embedded this column into their data package, and a correct result of the column will result in the same root node being produced for everyone. The idea behind this action is that all Secondary Actuary’s validate the Lead Actuaries monthly Dreybit allocation result.
 
 This approach, while better, doesn’t provide a sufficient safeguard against a lazy Actuary Client inadvertently providing help to a malicious Actuary Client.&#x20;
 
-\
-
-
 A digitally signed zero knowledge proof and new root node does not prohibit the lazy Actuary Client from copying the new root node and zero knowledge proof out of the bitcoin mempool, remove the digital signature, sign the new root node and zero knowledge proof as their own calculations, formulating a transaction (inscription) embedding these values and sending it to the network. The interloper will have done no real work and will have bolstered a malicious actor’s chance of succeeding.
 
-—
+### Commitment Scheme
 
-The solution here is to employ a threshold encryption scheme among all eligible Actuary Clients involved in the protocol. Specifically, the Pallier threshold encryption scheme.
+The solution here is to employ a threshold encryption scheme among all eligible Actuary Clients involved in the protocol. Specifically, the [Pallier threshold encryption scheme](ttps://eprint.iacr.org/2023/998.pdf).
 
-\
+Each Secondary Actuary Client participating in the protocol will calculate the new Dreybits monthly allocation on their own, and generate a new root node and zero knowledge proof of correct computation of the root node. Each Actuary Client, including the Lead Actuary, encrypts their new root node and zero knowledge proof to the public key of a threshold Pallier encryption. Only a threshold (majority) of Actuary Clients working together will be able to decrypt the encrypted data packages once they are placed into the bitcoin blockchain. The Actuary Clients will only run the collective decryption routine once a majority of Actuary Clients have placed their encrypted data packages in the bitcoin blockchain.
 
+By having all Actuary Clients encrypt their data packages, this action negates any possibility of a lazy Actuary Client providing help to a malicious Actuary Client through the protocol itself, as all data that everyone is must attest to as correct is in fact encrypted, creating a commitment scheme.&#x20;
 
-Each Secondary Actuary Client participating in the protocol will calculate the new Dreybits monthly allocation on their own, and generate a new root node and zero knowledge proof of correct computation of the root node. Each Actuary Client, including the Lead Actuary, encrypts their new root node and zero knowledge proof to the public key of a threshold Pallier encryption [https://eprint.iacr.org/2023/998.pdf](https://eprint.iacr.org/2023/998.pdf). Only a threshold (majority) of Actuary Clients working together will be able to decrypt the encrypted data packages once they are placed into the bitcoin blockchain. The Actuary Clients will only run the collective decryption routine once a majority of Actuary Clients have placed their encrypted data packages in the bitcoin blockchain.
-
-\
-
-
-By having all Actuary Clients encrypt their data packages, this action negates any possibility of a lazy Actuary Client providing help to a malicious Actuary Client through the protocol itself, as all data that everyone is must attest to as correct is in fact encrypted, creating a commitment scheme. Because the data package to be encrypted includes the digital signature of the Actuary Client creating the encrypted data package, the encryptions themselves will be worldly unique. In other words, copying the Lead Actuaries encrypted data package as your own will fail as it will become evident that the data package does not contain the correct digital signature from the individual Actuary Client once decrypted.
-
-\
-
+Because the data package to be encrypted includes the digital signature of the Actuary Client creating the encrypted data package, the encryptions themselves will be worldly unique. In other words, copying the Lead Actuaries encrypted data package as your own will fail as it will become evident that the data package does not contain the correct digital signature from the individual Actuary Client once decrypted.
 
 This encryption to the Pallier threshold public key also applies to the Lead Actuary client performing the initial calculations. The difference is the Lead Actuary also encrypts the new Dreybit Allocation column with the new Dreybits allocation amounts also with the Pallier threshold public key. The result is that all data packages inserted as an inscription into the bitcoin blockchain on this initial step, from the Lead Actuary’s to the secondary Actuary’s data packages are encrypted in a way that only a majority of Actuary Clients operating together can decrypt the data. Again, the difference between the Lead Actuary’s encrypted data package and the secondary Actuary’s encrypted data packages is that the Lead Actuary includes the new monthly Dreybit allocation column from the table, in addition to the new root node and zero knowledge proof of correct computation of the new root node. The secondary Actuary’s encrypted data packages contain only their calculated new root node and their calculated zero knowledge proof of correct computation of the new root node.&#x20;
 
