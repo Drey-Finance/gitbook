@@ -38,15 +38,13 @@ _Month | UserID | Dreybits Allocation | h(Time Period | UserID | Dreybits Alloca
 
 Each new update of the table changes at least the Month and Dreybits Allocation cells, changing the hash of the concatenated data at the end of the row.
 
-This hash serves as the leaf in a Merkle tree that represents that month resulting in a new root for each month. In other words, for each new month in the table, an entirely new Merkle tree with a new root node is created.
-
-This root node then serves as a leaf in another Merkle tree creating a relationship between months.
+This hash serves as the leaf in a Merkle tree that represents that month resulting in a new root for each month. This root node then serves as a leaf in another Merkle tree creating a relationship between months.
 
 INSERT GRAPHIC HERE
 
 Using zkWASM, we can run a purpose built WASM binary inside the zkWASM VM which takes an existing Merkle tree data structure (the one representing the current month), forms a new leaf (representing the current upcoming monthly distribution) as the input, and outputs a new Merkle tree root along with a zero-knowledge proof that the new Merkle tree root was computed correctly.
 
-To derive the zero-knowledge proof, the code that calculates the output of the Merkle tree is a self-contained WASM binary loaded up as a plug-in to the Drey Actuary client application, and then run inside a zkWASM virtual machine embedded within the Drey Actuary client software application. The WASM binary is small size. By embedding the WASM binary that calculates the Dreybits allocation formula into the bitcoin blockchain, any Dreybit Actuary client, or indeed anyone with access to the bitcoin blockchain, can verify the WASM binary’s data integrity, correct version and data availability.
+To derive the zero-knowledge proof, the code that calculates the output of the Merkle tree is a self-contained WASM binary loaded up as a plug-in to the Drey Actuary client application, and then run inside a zkWASM virtual machine embedded within the Drey Actuary client software application. The WASM binary is small size. By embedding the WASM binary that calculates the Dreybits allocation formula into the bitcoin blockchain as an inscription, any Dreybit Actuary client, or indeed anyone with access to the bitcoin blockchain, can verify the WASM binary’s data integrity, correct version and data availability.
 
 INSERT GRAPHIC HERE
 
@@ -54,7 +52,7 @@ The result is a zero-knowledge proof, verifiable by anyone running a zkWASM virt
 
 To finalise the new Dreybit monthly allocation table, the Lead Actuary for the month creates a bitcoin inscription transaction embedding a digitally signed binary data package into the bitcoin blockchain. The binary data includes the new Dreybits monthly allocation column, the new root node value and the zero knowledge proof of correct computation of the new root node value.&#x20;
 
-With this data inserted as an inscription in the bitcoin blockchain, any Drey Actuary client, even one that is not participating in the allocation calculation protocol, can recalculate on their own the Dreybits monthly allocation table using the WASM binary loaded into the Actuary Client which is retrieved out of the bitcoin blockchain at a specific satoshi (an inscription with binary data). In this way, the Actuary Client serves a light client, able to verify that the Dreybits allocation formula was adhered to with a proof of correct calculation.&#x20;
+With this data inserted as an inscription in the bitcoin blockchain, any Drey Actuary client, even one that is not participating in the allocation calculation protocol, can recalculate on their own the Dreybits monthly allocation table using the WASM binary loaded into the Actuary Client which is retrieved out of the bitcoin blockchain at a specific satoshi (an inscription with binary data). Any client building up the application and data from the series of recursive inscriptions can verify that the Dreybits allocation formula was adhered to with a proof of correct calculation (computation).&#x20;
 
 ## Game Theory
 
