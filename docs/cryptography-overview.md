@@ -8,7 +8,7 @@ description: >-
 
 ## Cryptography and Communications
 
-Drey Actuaries utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, validating and processing proof of life claims, issuing DREY tokens and all actuarial operations, including voting, wallet operations and distribution calculations.
+Drey Actuaries software clients and services utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, validating and processing proof of life claims, issuing DREY tokens and all actuarial operations, including voting, wallet operations and distribution calculations.
 
 ## Zero-Knowledge Proofs <a href="#nostr-protocol" id="nostr-protocol"></a>
 
