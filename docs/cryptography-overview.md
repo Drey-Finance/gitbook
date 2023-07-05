@@ -8,7 +8,7 @@ description: >-
 
 ## Cryptography and Communications
 
-Drey Actuaries software clients and services utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, validating and processing proof of life claims, issuing DREY tokens and all actuarial operations, including voting, wallet operations and distribution calculations.
+[Drey Actuaries software clients](architecture-iii.md#drey-actuary-client) and services utilize different cryptographic technology and communications protocols together to create robust methods for securing the network, validating and processing proof of life claims and all actuarial operations, including voting, wallet operations and distribution calculations. High level descriptions of these cryptographic and communications protocols are described below.
 
 ## Zero-Knowledge Proofs <a href="#nostr-protocol" id="nostr-protocol"></a>
 
@@ -31,7 +31,7 @@ Drey Finance uses zero-knowledge proofs to verify information in two main areas:
 
 ## Recursive Inscriptions
 
-While neither a cryptographic communication protocol, recursive inscriptions are important to Drey Finance's architecture. Developers have introduced the idea of calling data from existing inscriptions and using that data within new inscriptions, a concept known as a 'recursive inscription'. This could potentially allow robust software to run entirely on-chain.
+While neither a cryptographic or communications protocol, recursive inscriptions are important to Drey Finance's architecture. Developers have introduced the idea of calling data from existing inscriptions and using that data within new inscriptions, a concept known as a 'recursive inscription'. This could potentially allow robust software to run entirely on-chain.
 
 Recursive inscriptions work like interconnected puzzle pieces, allowing inscriptions to borrow and use data from one another. Instead of each inscription standing alone in isolation as they always have done, they can now reference content from other inscriptions. This approach offers greater flexibility and optimizes storage efficiency. Programs can simply call already-existing repositories of inscriptions that already have complex code or data.&#x20;
 
@@ -43,7 +43,7 @@ Using this technique it is well within reach to create new types of permissionle
    * A smart contract is created and stored as a recursive inscription on the Bitcoin blockchain. This contract includes all the necessary logic and conditions for its execution.
    * When the conditions for the contract's execution are met, the contract is executed off-chain. This is performed by a fleet of [Drey's decentralized Actuary Clients](architecture-i.md#actuarial-operating-system).
    * The result of the contract's execution is then inscribed back onto the Bitcoin blockchain. This inscription includes a zero-knowledge proof of correct computation, which allows anyone to verify that the contract was executed correctly without revealing any information about the execution itself.
-   * Other parties can then verify the correctness of the contract's execution by checking the zero-knowledge proof. If the proof is valid, they can be sure that the contract was executed correctly, even though the execution happened off-chain.
+   * Other parties can then verify the correctness of the contract's execution by checking the zero-knowledge proof. If the proof is valid, they can be sure that the contract was executed correctly, even though the execution happened off-chain. It's also possible to daisy-chain automations this way.
 
 This approach allows for the creation of complex, scalable, and privacy-preserving smart contracts on the Bitcoin network.
 
