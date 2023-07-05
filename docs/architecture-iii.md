@@ -6,7 +6,7 @@ description: Drey's decentralised actuarial operating system explained.
 
 ## Drey Actuary Client
 
-The Drey Actuary Client is a software component developed in Rust, which interfaces with the Drey Finance system and the underlying Bitcoin blockchain. This open-source project, licensed under Apache 2.0, ensures reliable access to and liveliness of the network.
+The Drey Actuary Client is a software component developed in Rust, which interfaces with the Drey Finance system and the underlying Bitcoin blockchain. This open-source project, licensed under MIT/Apache 2.0, ensures reliable access to and liveliness of the network.
 
 The client's functionality includes integration with the Bitcoin client RPC-API, and embeds its own instance of the zkWASM virtual machine. This integration allows direct interaction with the Bitcoin blockchain for operations such as transaction submission and data retrieval. The ability to interact with these APIs provides necessary infrastructure for the Drey Finance system to operate efficiently.
 
@@ -28,13 +28,13 @@ Using CRDTs and Nostr events offers a range of capabilities within the Drey Fina
 
 Another key capability enabled by this architecture is the robust handling of conflicts. In a multi-user environment, it's common for conflicting updates to occur. For example, two parties might simultaneously create a proposal or modify a proposed actuarial model. However, thanks to the conflict-resolution properties of CRDTs, these conflicts are automatically resolved without the need for manual intervention or centralized control. This ensures the smooth operation of the system, even in highly active and dynamic environments.
 
-In summary, the use of CRDTs and Nostr events in the Drey Finance Actuary Client is a powerful approach for building a decentralized, robust, and scalable actuarial operating system. By enabling seamless collaboration, robust conflict resolution, and the handling of a diverse range of data types and tasks, this architecture is well-suited to the needs and demands of a blockchain-powered income platform for the 21st century.
+The use of CRDTs and Nostr events in the Drey Finance Actuary Client is a powerful approach for building a decentralized, robust, and scalable actuarial operating system. By enabling seamless collaboration, robust conflict resolution, and the handling of a diverse range of data types and tasks, this architecture is well-suited to the needs and demands of a blockchain-powered income platform for the 21st century.
 
 ## Collaboration to Finality
 
 The [Drey Finance Voting protocol](Operations.md#voting) serves as a bridge between the collaborative environment enabled by Nostr and CRDTs and the immutable ledger provided by the Bitcoin blockchain. For example, Drey Actuaries might need to discuss an upgrade to a mortality table. Initially, the discussion would take place within the Drey Finance Actuary Client, utilizing Nostr's event-based communication to facilitate real-time interaction and deliberation. The proposed upgrade to the mortality table would be represented as a unique data type within the CRDT framework, allowing it to be shared, scrutinized, and modified collaboratively.
 
-Once the Actuaries are satisfied with the proposed changes, they can use the Actuary Client to create a partially signed Bitcoin transaction. This transaction represents a formal vote on the proposal and is prepared using the Ordinal-Inscription feature of the Drey Finance platform. Inscription is a process in which data, such as a proposed mortality table upgrade, is embedded into a Bitcoin transaction through the use of Taproot-type transactions. This mechanism allows for important information to be stored on Bitcoin's blockchain in a secure, tamper-proof manner.
+Once the Actuaries are satisfied with the proposed changes, they can use the Actuary Client to create a partially signed Bitcoin transaction. This transaction represents a formal vote on the proposal and is prepared using the Ordinal/Inscription capability of the Drey Finance platform.&#x20;
 
 The voting process itself is facilitated by the [ROAST protocol's Schnorr threshold signature algorithm](cryptography-overview.md#roast-protocol). Each Drey Actuary holds a share of the signature, and a certain number of these shares - the threshold - are required to validate the transaction. Once the threshold is met, the Bitcoin transaction is finalized, effectively casting the vote. This mechanism ensures the voting process is both democratic and secure, requiring a majority consensus among the Drey Actuaries.
 
