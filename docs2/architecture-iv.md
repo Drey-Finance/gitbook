@@ -68,19 +68,21 @@ A digitally signed zero knowledge proof and new root node does not prohibit the 
 
 ### Commitment Scheme
 
-The solution here is to employ a threshold encryption scheme among all eligible Actuary Clients involved in the protocol. Specifically, the [Pallier threshold encryption scheme](ttps://eprint.iacr.org/2023/998.pdf).
+The solution here is to employ a threshold encryption scheme among all eligible Actuary Clients involved in the protocol. Specifically, the [Pallier threshold encryption scheme](ttps://eprint.iacr.org/2023/998.pdf) serves as our mechanism to enforce commitments.
 
 Each Secondary Actuary Client participating in the protocol will calculate the new Dreybits monthly allocation on their own, and generate a new root node and zero knowledge proof of correct computation of the root node. Each Actuary Client, including the Lead Actuary, encrypts their new root node and zero knowledge proof to the public key of a threshold Pallier encryption. Only a threshold (majority) of Actuary Clients working together will be able to decrypt the encrypted data packages once they are placed into the bitcoin blockchain. The Actuary Clients will only run the collective decryption routine once a majority of Actuary Clients have placed their encrypted data packages in the bitcoin blockchain.
 
-By having all Actuary Clients encrypt their data packages, this action negates any possibility of a lazy Actuary Client providing help to a malicious Actuary Client through the protocol itself, as all data that everyone is must attest to as correct is in fact encrypted, creating a commitment scheme.&#x20;
+By having all Actuary Clients encrypt their data packages, this action negates any possibility of a lazy Actuary Client providing help to a malicious Actuary Client through the protocol itself, as all data that everyone is must attest to as correct is in fact encrypted to a public key, creating a commitment scheme.&#x20;
 
-Because the data package to be encrypted includes the digital signature of the Actuary Client creating the encrypted data package, the encryptions themselves will be worldly unique. In other words, copying the Lead Actuaries encrypted data package as your own will fail as it will become evident that the data package does not contain the correct digital signature from the individual Actuary Client once decrypted.
+Because the data package to be encrypted includes the digital signature of the Actuary Client creating the encrypted data package, the encryptions themselves will be worldly unique. In other words, copying the Lead Actuaries encrypted data package as your own (or anyone else) will fail as it will become evident that the data package does not contain the correct digital signature from the individual Actuary Client once decrypted.
 
 This encryption to the Pallier threshold public key also applies to the Lead Actuary client performing the initial calculations. The difference is the Lead Actuary also encrypts the new Dreybit Allocation column with the new Dreybits allocation amounts also with the Pallier threshold public key. The result is that all data packages inserted as an inscription into the bitcoin blockchain on this initial step, from the Lead Actuary’s to the Secondary Actuary’s data packages are encrypted in a way that only a majority of Actuary Clients operating together can decrypt the data. Again, the difference between the Lead Actuary’s encrypted data package and the Secondary Actuary’s encrypted data packages is that the Lead Actuary includes the new monthly Dreybit allocation column from the table, in addition to the new root node and zero knowledge proof of correct computation of the new root node. The Secondary Actuary’s encrypted data packages contain only their calculated new root node and their calculated zero knowledge proof of correct computation of the new root node.&#x20;
 
 INSERT GRAPHIC HERE
 
 Note that in the event the Lead Actuary does not make a calculation and post the inscription to the bitcoin blockchain in a determinate amount of time, the verifiable random function lottery will be run again to select a new Lead Actuary. Not responding to the call to perform as Lead Actuary to calculate the new monthly Dreybits allocation distribution table will result in a penalty to reputation or possible monetary (via slashing bitcoin deposit and redistributing it to the fund depositors). Additionally, a penalty mechanism will be in place for a Lead Actuary that purposefully inserts junk or incorrect calculations into the bitcoin blockchain.
+
+### Proof Race
 
 The Secondary Actuary Clients will only begin a proof race to confirm the Lead Actuary’s calculations after the sixth confirmation block is finalised containing the Lead Actuary’s encrypted data package. Then the ‘race’ between the Secondary Actuary Clients begins.&#x20;
 
@@ -96,13 +98,13 @@ It’s only then that the new Dreybits monthly allocation calculation, the new r
 
 As a final step, the new Dreybit monthly allocation column (which enables the buildup of the table) is written into the bitcoin blockchain as an inscription, but this time in plaintext. The transaction is created by the Drey Actuaries using the [Drey Voting protocol](../docs/Operations.md#drey-voting-protocol).
 
-## Tidying Up
+## Using Recursive Inscriptions
 
 Using a full Bitcoin Core node with txindex and RPC enabled, all blocks and transactions can be queried. This is done by querying the blockhash for every block number. Subsequently, by using this blockhash, the block of transactions is retrieved. Then for every transaction hash in the retrieved block, the raw transaction is queried and decoded.&#x20;
 
-Date of creation is not necessary because the blockheight of the block the initial enrolment transaction is in can tell you when the account was created.&#x20;
+Allowing WASM file inscriptions to request the content of other inscriptions such as other WASM files fits within [WASMs own concept of composability](https://github.com/WebAssembly/component-model), a system design principal that deals with the inter-relationship between components. A highly composable system provides components that can be selected and assembled in various combinations to satisfy specific user requirements.&#x20;
 
-Amount on deposit is not necessary because the Deposit Address can be looked up amongst all transactions within bitcoin to tell you what the account balances are within each account.
+### Data Structure
 
 The intention is to limit the data put into the bitcoin blockchain to that data which is critical foundation data about the fund depositor but from which other profile data can be built up around it. As an example, a ‘date of creation’ field is not necessary to embed into the bitcoin blockchain because the time when initial funding tx was recorded into the bitcoin blockchain is discernible from the block height of the block where the initial funding tx is embedded.
 
