@@ -106,7 +106,7 @@ Allowing WASM file inscriptions to request the content of other inscriptions suc
 
 ### Data Structure
 
-The intention is to limit the data put into the bitcoin blockchain to that data which is critical foundation data about the fund depositor but from which other profile data can be built up around it. As an example, a ‘date of creation’ field is not necessary to embed into the bitcoin blockchain because the time when initial funding tx was recorded into the bitcoin blockchain is discernible from the block height of the block where the initial funding tx is embedded.
+The intention is to limit the data put into the bitcoin blockchain to that data which is critical foundation data about the fund depositor but from which other profile data can be built up around it. As an example, a ‘date of creation’ field is not necessary to embed into the bitcoin blockchain because the time when initial funding transaction was recorded into the bitcoin blockchain is discernible from the block height of the block where the initial funding transaction is embedded.
 
 Using the [Apache Parquet file system](https://parquet.apache.org/docs/overview/motivation/) delivers efficiencies. Data can be sharded by column, so producing a new Dreybits allocation table in totality is not necessary.&#x20;
 
