@@ -10,9 +10,7 @@ First, there is a [Proof of Life app](architecture-ii.md#proof-of-life-app) for 
 
 Second, the Drey Decentralized Actuary Network is a federation consisting of independent parties using their instance of [Drey's Actuary Client software](architecture-iii.md#drey-actuary-client), with communication conducted using the [Nostr protocol](https://nostr.com/). Drey Actuary Clients coordinate over the Nostr to action actuarial processes and wallet operations for the benefit of the Drey Fund investors. Drey Actuary Clients also serve information to Drey customer's on their instances of the Drey Proof of Life App
 
-
-
-<figure><img src="../docs2/.gitbook/assets/image.png" alt=""><figcaption><p>Figure 3. Drey Finance Actuary Network</p></figcaption></figure>
+<figure><img src="../docs2/.gitbook/assets/Drey Finance - Diagram 1 (Latest)[60].png" alt=""><figcaption><p>Figure 3. Drey Finance Architecture</p></figcaption></figure>
 
 ## Proof of Life App
 
@@ -40,7 +38,7 @@ The Drey Proof of Life App is configured to comply with U.S. State Department te
 
 Here again, Drey utilizes [zero knowledge proof technology](https://en.wikipedia.org/wiki/Zero-knowledge\_proof) to authenticate a user to the Drey Actuary network without revealing any personally identifying details. As described in [following sections](cryptography-overview.md), zero-knowledge proof technology is a cryptographic method that allows one party (the prover) to prove to another party (the verifier) that they know a specific piece of information without revealing that information itself. Not only is this useful to verify correct computation, this technology is particularly useful for authentication processes where the goal is to verify an identity without revealing any personally identifiable information.
 
-In the context of the technology used in Drey Finance, the zero-knowledge proof technology works by using a [multi-factor authentication protocol](https://milagro.apache.org/docs/milagro-protocols/) built upon zero-knowledge proofs. When a user wants to authenticate themselves, they create a proof that shows they know how to re-create their secret information (like a password or a private key) from something they have (a device), something they know (a pin) and something they are (a biometric) without actually revealing that secret information. This proof is then sent to the verifier.
+In the context of the technology used in Drey Finance, the zero-knowledge proof technology works by using a [multi-factor authentication protocol](https://milagro.apache.org/docs/milagro-protocols/) built upon zero-knowledge proofs. When a user wants to authenticate themselves, they create a proof that shows they know how to re-create their secret information (a private key) from something they have (a device), something they know (a pin) and something they are (a biometric) without actually revealing that secret information. This proof is then sent to the verifier.
 
 The verifier, having the public information corresponding to the user's secret, can verify the proof without learning anything about the user's secret. This is the "zero-knowledge" aspect of the protocol. If the proof is valid, the verifier can be sure that the user knows their secret, and thus the user's identity is authenticated.
 
