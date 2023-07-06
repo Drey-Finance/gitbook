@@ -29,9 +29,9 @@ Drey Finance uses zero-knowledge proofs to verify information in two main areas:
 1. **Identity**: Users can prove, in zero knowledge, that they possess a key issued to a certain anonymized identity encapsulating identity traits without revealing the key or the identity.
 2. **Computation**: A fleet of decentralized nodes can verify in zero knowledge that a particular piece of software was run correctly and that its result is a true representation of the intent of the software. This proof can be verified extremely quickly even if the underlying computation takes a very long time to run.
 
-## Recursive Inscriptions
+## Bitcoin Recursive Inscriptions
 
-While neither a cryptographic or communications protocol, recursive inscriptions are important to Drey Finance's architecture. Developers have introduced the idea of calling data from existing inscriptions and using that data within new inscriptions, a concept known as a 'recursive inscription'. This could potentially allow robust software to run entirely on-chain.
+While neither a cryptographic or communications protocol, Bitcoin's recursive inscriptions are important to Drey Finance's architecture. Developers have introduced the idea of calling data from existing inscriptions and using that data within new inscriptions, a concept known as a 'recursive inscription'. This could potentially allow robust software to run entirely on-chain.
 
 Recursive inscriptions work like interconnected puzzle pieces, allowing inscriptions to borrow and use data from one another. Instead of each inscription standing alone in isolation as they always have done, they can now reference content from other inscriptions. This approach offers greater flexibility and optimizes storage efficiency. Programs can simply call already-existing repositories of inscriptions that already have complex code or data.&#x20;
 
@@ -39,10 +39,10 @@ Using this technique it is well within reach to create new types of permissionle
 
 1. **Recursive Inscriptions**: Recursive inscriptions allow for the creation of a complex network of interconnected data sources on the Bitcoin blockchain. This can be used to store and reference large amounts of data efficiently, which is crucial for the execution of complex smart contracts.
 2. **Zero-Knowledge Proofs of Correct Computation**: Zero-knowledge proofs can be used to verify the correctness of computations without revealing any information about the computation itself. This means that a smart contract's execution can be verified without revealing any sensitive information about the parties involved or the specifics of the contract.
-3. **Trustless Off-Chain Smart Contracts**: By combining these two technologies, it's theoretically possible to create trustless off-chain smart contracts on the Bitcoin network. Here's how:
-   * A smart contract is created and stored as a recursive inscription on the Bitcoin blockchain. This contract includes all the necessary logic and conditions for its execution.
+3. **Trustless Off-Chain Smart Contracts**: By combining these two technologies, it's theoretically possible to create trustless off-chain smart contracts on the Bitcoin network.
+   * A smart contract is created and stored as a recursive inscription on the Bitcoin blockchain. This contract includes all the necessary logic and conditions for its execution. For our purposes, it's a deterministic WASM binary, guaranteed to run the same way on any machine with a WASM runtime installed.
    * When the conditions for the contract's execution are met, the contract is executed off-chain. This is performed by a fleet of [Drey's decentralized Actuary Clients](architecture-i.md#actuarial-operating-system).
-   * The result of the contract's execution is then inscribed back onto the Bitcoin blockchain. This inscription includes a zero-knowledge proof of correct computation, which allows anyone to verify that the contract was executed correctly without revealing any information about the execution itself.
+   * The result of the contract's execution is then inscribed back onto the Bitcoin blockchain. This inscription includes a zero-knowledge proof of correct computation, which allows anyone to verify that the contract was executed correctly without having to re-execute the code to get to the same result. In fact, verifying the zero knowledge proof will take less time than re-validating the result by re-running the code.
    * Other parties can then verify the correctness of the contract's execution by checking the zero-knowledge proof. If the proof is valid, they can be sure that the contract was executed correctly, even though the execution happened off-chain. It's also possible to daisy-chain automations this way.
 
 This approach allows for the creation of complex, scalable, and privacy-preserving smart contracts on the Bitcoin network.
