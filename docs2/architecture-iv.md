@@ -20,7 +20,7 @@ Introducing multiple provers and verifiers to a protocol creates additional comp
 * Proof mining — Provers are tasked with repeatedly generating ZKPs until they generate a proof with a sufficiently rare hash. Doing so earns them the right to prove at the next slot and earn the slot reward. Provers that can generate more ZKPs are more likely to win the slot. This type of proving closely mirrors PoW mining — it is energy and hardware intensive. A key difference with traditional mining is that in PoW, hashing is merely a means to an end. Being able to produce SHA-256 hashes in Bitcoin has no value beyond increasing the network’s security. In proof mining however, the network provides incentives to miners to accelerate ZKP generation.
 * Proof racing — At each slot, provers compete to produce a proof as quickly as possible. Whoever generates the proof first receives the slot reward. This approach is vulnerable to winner-takes-all dynamics. If a single operator is able to generate proofs faster than anyone else, they should win every slot. [Centralization can be reduced](https://ethresear.ch/t/proof-of-efficiency-a-new-consensus-mechanism-for-zk-rollups/11988/6) by splitting up the proof reward across the first _n_ operators who generate a valid proof or introducing some randomness into which proof is accepted. Yet even in this case, the fastest operator can simply run multiple machines to capture the other revenue.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Figure 4. Proving Models</p></figcaption></figure>
 
 Drey Finance incorporates elements of both Stake-based Prover Selection and Proof Racing, accentuating the benefits of both but limiting the downside of proof racing’s centralisation.
 
@@ -36,19 +36,19 @@ Each row in the Parquet file includes a hash of all the concatenated data in the
 
 So, for example, the row would contain at a minimum:
 
-_Month | UserID | Dreybits Allocation | h(Time Period | UserID | Dreybits Allocation)_
+_UserID1 | Month | Dreybits Allocation | h(UserID1 | Month | Dreybits Allocation)_
 
 Each new update of the table changes at least the Month and Dreybits Allocation cells, changing the hash of the concatenated data at the end of the row.
 
 This hash serves as the leaf in a Merkle tree that represents that month resulting in a new root for each month. This root node then serves as a leaf in another Merkle tree creating a relationship between months.
 
-INSERT GRAPHIC HERE
+<figure><img src=".gitbook/assets/Month1-root-node.png" alt=""><figcaption><p>Figure 5. Merkle Tree - monthly root node</p></figcaption></figure>
 
 Using zkWASM, we can run a purpose built WASM binary inside the zkWASM VM which takes an existing Merkle tree data structure (the one representing the current month), forms a new leaf (representing the current upcoming monthly distribution) as the input, and outputs a new Merkle tree root along with a zero-knowledge proof that the new Merkle tree root was computed correctly.
 
 To derive the zero-knowledge proof, the code that calculates the output of the Merkle tree is a self-contained WASM binary loaded up as a plug-in to the Drey Actuary client application, and then run inside a zkWASM virtual machine embedded within the Drey Actuary client software application. The WASM binary is small size. By embedding the WASM binary that calculates the Dreybits allocation formula into the bitcoin blockchain as an inscription, any Dreybit Actuary client, or indeed anyone with access to the bitcoin blockchain, can verify the WASM binary’s data integrity, correct version and data availability.
 
-INSERT GRAPHIC HERE
+<figure><img src=".gitbook/assets/Months-Root-Node.png" alt=""><figcaption><p>Figure 6. Final root node and ZKP of correct computation</p></figcaption></figure>
 
 The result is a zero-knowledge proof, verifiable by anyone running a zkWASM virtual machine, which proves the new root nodes of the Merkle tree were calculated correctly.&#x20;
 
