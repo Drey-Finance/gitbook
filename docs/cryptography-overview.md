@@ -29,7 +29,7 @@ Drey Finance uses zero-knowledge proofs to verify information in two main areas:
 1. **Identity**: Users can prove, in zero knowledge, that they possess a key issued to a certain anonymized identity encapsulating identity traits without revealing the key or the identity.
 2. **Computation**: A fleet of decentralized nodes can verify in zero knowledge that a particular piece of software was run correctly and that its result is a true representation of the intent of the software. This proof can be verified extremely quickly even if the underlying computation takes a very long time to run.
 
-## Bitcoin Recursive Inscriptions
+## Bitcoin's Recursive Inscriptions
 
 While neither a cryptographic or communications protocol, Bitcoin's recursive inscriptions are important to Drey Finance's architecture. Developers have introduced the idea of calling data from existing inscriptions and using that data within new inscriptions, a concept known as a 'recursive inscription'. This could potentially allow robust software to run entirely on-chain.
 
