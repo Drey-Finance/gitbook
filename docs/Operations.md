@@ -18,9 +18,9 @@ First, Drey utilises [bitcoin inscription/ordinals](https://www.galaxy.com/resea
 
 Second, Drey employs an accounting allocation method called **Dreybits**. The system allocates Dreybits to participants in the fund, which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants. **Dreybits are not DREY tokens**, they are a formalised accounting method that is designed to be an easily understood accounting convention designed to be relevant across lifetimes.
 
-## Bitcoin Ordinals and Inscriptions
+## Bitcoin Ordinals and Recursive Inscriptions
 
-Bitcoin inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.
+As written previously, Bitcoin's recursive inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.
 
 All manner of Mime types can be inserted into a bitcoin blob space intrinsically linked to a specific satoshi, making the data both immutable and transferable. As Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if Drey Actuaries (miners) use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases and more:
 
@@ -32,7 +32,7 @@ All manner of Mime types can be inserted into a bitcoin blob space intrinsically
 * New or updated actuarial models to be deployed
 * New or updated WASM binaries to be used in distribution calculations and accounting allocations
 
-Documents generated for insertion into bitcoin storage will use a defined schema and the [Apache Parquet file format ](https://parquet.apache.org/docs/overview/motivation/)compressed with [Briotli.](https://github.com/google/brotli) See the recommendations [here](https://www.lucidchart.com/techblog/2019/12/06/json-compression-alternative-binary-formats-and-compression-methods/).
+Two types of files will be stored in the Blockchain. WASM binaries and documents. Documents generated for insertion into bitcoin storage will use a defined schema and the [Apache Parquet file format ](https://parquet.apache.org/docs/overview/motivation/)compressed with [Briotli.](https://github.com/google/brotli) See the recommendations [here](https://www.lucidchart.com/techblog/2019/12/06/json-compression-alternative-binary-formats-and-compression-methods/).
 
 The rest of this specification is described **in another technical section to be completed**.
 
