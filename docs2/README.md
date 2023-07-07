@@ -7,9 +7,9 @@ coverY: 102
 
 # Overview
 
-Drey Finance is a pioneering startup offering an blockchain-powered income platform for the 21st century that provides Bitcoin income for life through our decentralized actuarial operating system and artificial intelligence (AI) integrations. Our innovative solution addresses the shortcomings of traditional annuities and pensions, such as low interest rates, inflationary fiat payments, opaque solvency issues, and the lack of transparency that hinders effective retirement planning. By 2050, the public pension funding gap is projected to reach $400 trillion, demonstrating the urgent need for alternative retirement solutions.
+Drey Finance is a blockchain-powered income platform for the 21st century that provides Bitcoin income for life through our decentralized actuarial operating system and artificial intelligence (AI) integrations. Our innovative solution addresses the shortcomings of traditional annuities and pensions, such as low interest rates, inflationary fiat payments, opaque solvency issues, and the lack of transparency that hinders effective retirement planning. By 2050, the public pension funding gap is projected to reach $400 trillion, demonstrating the urgent need for alternative retirement solutions.
 
-Our groundbreaking platform combines the pooling of gifted mortality-based life credits used within classical style [tontines](../docs/drey-fund-primer.md), with the growth and income potential of digital assets, delivering stable high income returns in Bitcoin. Drey's income and retirement plans for individuals, couples, and families eliminate longevity risk, underfunding risk, and inflationary risk.
+Our platform combines the pooling of gifted mortality-based life credits used within classical style [tontines](../docs/drey-fund-primer.md), with the growth and income potential of digital assets, delivering stable high income returns in Bitcoin. Drey's income and retirement plans for individuals, couples, and families eliminate longevity risk, underfunding risk, and inflationary risk.
 
 Key features of Drey income and retirement plans include:
 
@@ -19,17 +19,6 @@ Key features of Drey income and retirement plans include:
 4. Tax-efficient gifting mechanism that preserves all income
 5. High returns via combined life-credit pooling and lightning channel operation fees
 6. AI enhanced for streamlined operations
-
-### The Role of AI in Drey Finance
-
-Artificial Intelligence (AI) will be be incorporated into Drey Finance's operations in several ways to enhance efficiency, accuracy, and user experience:
-
-1. **Risk Assessment and Fraud Detection**: AI will be used to analyze patterns and detect anomalies in user behavior or transaction data, which can help identify fraudulent activities or security threats. Machine learning algorithms will be trained to recognize patterns indicative of fraud, thereby enhancing the security of the platform.
-2. **Predictive Analytics**: AI will be used to analyze historical data and predict future trends. This can be particularly useful in forecasting market trends, which will help Drey Finance make informed decisions about their investment strategies.
-3. **Customer Service**: AI will be used to power chatbots for customer service. These chatbots can handle common queries from users, providing instant responses. This will improve the user experience by providing faster and more efficient customer service.
-4. **Personalized Services**: AI will be used to analyze user behaviour and preferences to provide personalized services. For example, it can recommend investment options based on a user's risk tolerance and financial goals.
-5. **Operational Efficiency**: AI will automate routine tasks, such as data entry and report generation, which can significantly improve operational efficiency.&#x20;
-6. **Regulatory Compliance**: AI will be used to ensure compliance with regulatory requirements. For example, it will monitor transactions to ensure they comply with anti-money laundering (AML) and know your customer (KYC) regulations.
 
 ### Why Drey Now?
 
