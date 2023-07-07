@@ -22,7 +22,7 @@ Introducing multiple provers and verifiers to a protocol creates additional comp
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Figure 4. Figment Capital's Proving Models</p></figcaption></figure>
 
-Drey Finance incorporates elements of both Stake-based Prover Selection and Proof Racing, accentuating the benefits of both but limiting the downside of proof racing’s centralisation.
+Drey Finance incorporates elements of both Stake-based Prover Selection and Proof Racing, accentuating the benefits of both but limiting the downside of Proof Racing’s centralisation.
 
 ### Network Operations&#x20;
 
