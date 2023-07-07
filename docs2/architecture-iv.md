@@ -98,7 +98,7 @@ The ‘race’ between Secondary Actuaries is to see who can submit their transa
 
 <figure><img src=".gitbook/assets/Secondary Actuary Race (1).png" alt=""><figcaption><p>Figure 9. Proof Race Results</p></figcaption></figure>
 
-It’s only then that the new Dreybits monthly allocation calculation, the new root node and zero knowledge proof of correct computation of the new root are revealed for both the Lead Actuary Client’s encrypted data package and the Secondary Actuary Clients who have embedded their calculated new root node and zero knowledge proof of correct computation into their encrypted data packages and inscribed them into the bitcoin blockchain. In order for the Dreybit monthly distribution allocation result to be accepted, upon the decryption of all values, a super majority of Dreybit Actuaries must have agreed on the same allocation result (the new Merkle tree root) as the Lead Actuary, and each must have produced a proof of correct computation.
+It’s only then that the new Dreybits monthly allocation calculation, the new root node and zero knowledge proof of correct computation of the new root are revealed for both the Lead Actuary Client’s encrypted data package and the Secondary Actuary Clients who have embedded their calculated new root node and zero knowledge proof of correct computation into their encrypted data packages and inscribed them into the Bitcoin blockchain. In order for the Dreybit monthly distribution allocation result to be accepted, upon the decryption of all values, a super majority of Dreybit Actuaries must have agreed on the same allocation result (the new Merkle tree root) as the Lead Actuary, and each must have produced a proof of correct computation.
 
 As a final step, the new Dreybit monthly allocation column (which enables the buildup of the table) is written into the bitcoin blockchain as an inscription, but this time in plaintext. The transaction is created by the Drey Actuaries using the [Drey Voting protocol](../docs/Operations.md#drey-voting-protocol).
 
@@ -106,22 +106,12 @@ As a final step, the new Dreybit monthly allocation column (which enables the bu
 
 Using a full Bitcoin Core node with txindex and RPC enabled, all blocks and transactions can be queried. This is done by querying the blockhash for every block number. Subsequently, by using this blockhash, the block of transactions is retrieved. Then for every transaction hash in the retrieved block, the raw transaction is queried and decoded.&#x20;
 
-Allowing WASM file inscriptions to request the content of other inscriptions such as other WASM files fits within [WASMs own concept of composability](https://github.com/WebAssembly/component-model), a system design principal that deals with the inter-relationship between components. A highly composable system provides components that can be selected and assembled in various combinations to satisfy specific user requirements.&#x20;
+Allowing WASM binary file inscriptions to request the content of other inscriptions such as other WASM files fits within [WASMs own concept of composability](https://github.com/WebAssembly/component-model), a system design principal that deals with the inter-relationship between components. A highly composable system provides components that can be selected and assembled in various combinations to satisfy specific user requirements.&#x20;
 
 ### Data Structure
 
-The intention is to limit the data put into the bitcoin blockchain to that data which is critical foundation data about the fund depositor but from which other profile data can be built up around it. As an example, a ‘date of creation’ field is not necessary to embed into the bitcoin blockchain because the time when initial funding transaction was recorded into the bitcoin blockchain is discernible from the block height of the block where the initial funding transaction is embedded.
+The intention is to limit the data put into the bitcoin blockchain to that data which is critical foundation data about the Drey Fund and customer base but from which other profile data can be built up around it. As an example, a ‘date of creation’ field is not necessary to embed into the bitcoin blockchain because the time when initial funding transaction was recorded into the Bitcoin blockchain is discernible from the block height of the block where the initial funding transaction is embedded.
 
 Using the [Apache Parquet file system](https://parquet.apache.org/docs/overview/motivation/) delivers efficiencies. Data can be sharded by column, so producing a new Dreybits allocation table in totality is not necessary.&#x20;
 
-A regular SQL database can be built up from a local bitcoin blockchain indexer (such as chainhooks) which interrogates the transactions in each block from the 1st block containing a new customer.
-
-All that is needed in a Parquet file for a complete picture is:
-
-_UserID | DoB | Geography | Sex | Dreybits | Deposit Address | hash of all concatenated items._
-
-However, when a user is first injected into the system, they will not have Dreybits yet so their data looks like this:
-
-_UserID | DoB | Geography | Sex | Deposit Address_
-
-Mortality rates get updated as mortality tables change and as users age so there is no use in putting that data into the bitcoin blockchain as it is ephemeral and changing.
+A regular SQL database can be built up from a local Bitcoin blockchain indexer (such as [chainhooks](https://docs.hiro.so/clarinet/feature-guides/chainhooks)) which interrogates the transactions in each block from the 1st block containing a new customer.
