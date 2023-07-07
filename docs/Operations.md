@@ -18,11 +18,11 @@ First, Drey utilises Bitcoin[ ](https://www.galaxy.com/research/whitepapers/bitc
 
 Second, Drey employs an accounting allocation method called **Dreybits**. The system allocates Dreybits to participants in the fund (customers), which is a method to price participation and schedule distributions in an aggressively transparent, decentralised manner which preserves fairness for all participants. **Dreybits are not DREY tokens**, they are a formalised accounting method that is designed to be an easily understood accounting convention designed to be relevant across lifetimes.
 
-## Bitcoin Ordinals and Recursive Inscriptions
+## Bitcoin Data Store
 
 As written previously, Bitcoin's recursive inscriptions and ordinal theory have enabled bitcoin to be transformed into the world's most secure write once read only database.
 
-All manner of Mime types can be inserted into a bitcoin blob space intrinsically linked to a specific satoshi, making the data both immutable and transferable. As Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if Drey Actuaries (miners) use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases and more:
+All manner of Mime types can be inserted into a bitcoin data space intrinsically linked to a specific satoshi, making the data both immutable and transferable. As Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if Drey Actuaries (miners) use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases and more:
 
 * Monthly investor distributions schedule per fund to be agreed upon by Drey Actuaries
 * DAO proposals to be voted on by the Drey Actuaries
