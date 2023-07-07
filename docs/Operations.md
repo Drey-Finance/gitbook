@@ -146,9 +146,9 @@ As mentioned, for an annuity paid for life the formula continues until it is ass
 
 ### New Dreybit Monthly Re-Allocation
 
-When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month _AFTER_ deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund _AND AFTER_ monthly annuity payments are remitted over the bitcoin network.
+When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month after a deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund after monthly annuity payments are remitted over the bitcoin network.
 
-Therefore, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members, paying monthly annuity payments, and optionally adding new investors (if there are any for the next month) into the fund.
+Therefore, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members, paying monthly annuity payments, and optionally adding new customers (if there are any for the next month) into the fund.
 
 $$p_{(1-ith)}= q_{(1-ith)} s_{(1-ith)}$$
 
@@ -156,7 +156,7 @@ $$\sum=p_{1}+p_{2}+p_{..ith}$$
 
 $$\overline{W}=\frac{\sum}{s_(1-ith)}$$
 
-The formula for new Dreybit monthly allocation per individual investor (new and existing) is as before, the product of their investment and the calculated weighted average.
+The formula for new Dreybit monthly allocation per individual customer (new and existing) is as before, the product of their investment and the calculated weighted average.
 
 $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
