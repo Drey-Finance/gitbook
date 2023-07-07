@@ -8,7 +8,7 @@ description: Drey's decentralised actuarial operating system explained.
 
 The Drey Actuary Client is a software component developed in Rust, which interfaces with the Drey Finance system and the underlying Bitcoin blockchain. This open-source project, licensed under MIT/Apache 2.0, ensures reliable access to and liveliness of the network.
 
-The client's functionality includes integration with the Bitcoin client RPC-API, and embeds its own instance of the zkWASM virtual machine. This integration allows direct interaction with the Bitcoin blockchain for operations such as transaction submission and data retrieval. The ability to interact with these APIs provides necessary infrastructure for the Drey Finance system to operate efficiently.
+The client's functionality includes an integration with the Bitcoin client, an onboard event observer and it embeds its own instance of the zkWASM virtual machine. This integration allows direct interaction with the Bitcoin blockchain for operations such as transaction submission and data retrieval.&#x20;
 
 The Nostr protocol, a decentralized communication protocol, is a key feature of the Drey Actuary Client. It ensures secure and efficient communication between different instances of the software, providing the synchronous communication required for the coordination of operations within the Drey Finance system.
 
