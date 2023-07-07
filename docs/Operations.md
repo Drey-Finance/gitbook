@@ -51,9 +51,9 @@ Using ROAST, Drey Actuaries have the ability to determine among themselves which
 
 ## Dreybits
 
-A Drey Actuary selected by verifiable random function, proposes a monthly distribution schedule called a Dreybit ledger based upon the WASM software packages each Drey Actuary runs to operate the fund. This proposed distribution schedule is written into the bitcoin blockchain at a specific satoshi and relayed to the Drey Actuary population over Nostr. The decentralised actuary system summons a vote by creating a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection.&#x20;
+A Drey Actuary selected by verifiable random function, formalizes a monthly distribution schedule called a Dreybit ledger based upon the WASM software packages each Drey Actuary runs to operate the fund and this action follows the proof race results. This formalized distribution schedule is written into the Bitcoin blockchain at a specific satoshi and relayed to the Drey Actuary population over Nostr. The decentralized actuary system summons a vote by creating a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection.&#x20;
 
-The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialisation of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.
+The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialization of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.
 
 Each Dreybit ledger contains an anonymized ID created for the user during signup which maps to their individual bitcoin allowance address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investments in a particular fund.
 
@@ -63,12 +63,12 @@ The reason Dreybit ledgers must be re-updated monthly is to take into account va
 
 Drey creates a set of binding off-chain smart contracts with terms and conditions which reflect the following stipulations that a longevity risk pooling fund naturally inherits:
 
-* The investors in the fund agree that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
-* This gift passes in entirety to the living participants in the fund when the contributing investor passes away
+* The customer agrees that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
+* This gift passes in entirety to the living participants in the fund when the contributing customer passes away
 * It is held in escrow in a vault controlled by a super majority of Drey Actuaries&#x20;
 * An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away
 * He/she continues to enjoy the benefit of holding those Dreybits as long as they continuously (monthly) provide proof that he/she/they/them is/are alive within a certain time limit using the Drey Proof of Life app
-* If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs — i.e., proof of life. This is a type of [tontine agreement](https://en.wikipedia.org/wiki/Tontine).
+* If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs — i.e., proof of life.&#x20;
 
 ### Other Mechanics
 
