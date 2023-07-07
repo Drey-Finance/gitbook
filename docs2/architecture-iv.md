@@ -84,7 +84,7 @@ This encryption to the Pallier threshold public key also applies to the Lead Act
 
 <figure><img src=".gitbook/assets/Threshold Decryption.png" alt=""><figcaption><p>Figure 7. Threshold Decryption</p></figcaption></figure>
 
-Note that in the event the Lead Actuary does not make a calculation and post the inscription to the bitcoin blockchain in a determinate amount of time, the verifiable random function lottery will be run again to select a new Lead Actuary. Not responding to the call to perform as Lead Actuary to calculate the new monthly Dreybits allocation distribution table will result in a penalty to reputation or possible monetary (via slashing bitcoin deposit and redistributing it to the fund depositors). Additionally, a penalty mechanism will be in place for a Lead Actuary that purposefully inserts junk or incorrect calculations into the bitcoin blockchain.
+Note that in the event the Lead Actuary does not make a calculation and post the inscription to the bitcoin blockchain in a determinate amount of time, the verifiable random function lottery will be run again to select a new Lead Actuary. Not responding to the call to perform as Lead Actuary to calculate the new monthly Dreybits allocation distribution table will result in a penalty to reputation or possible monetary (via slashing bitcoin deposit and redistributing it to the Drey customers). Additionally, a penalty mechanism will be in place for a Lead Actuary that purposefully inserts junk or incorrect calculations into the bitcoin blockchain.
 
 ### Proof Race
 
