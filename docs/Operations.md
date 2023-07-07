@@ -130,19 +130,19 @@ $$\sum dec(btc) = sum\, of\, decased's\, bitcoin$$
 
 $$p*\sum dec(btc) = percentage\, of\, \sum dec(btc)\, distributed$$
 
-Note that this operation _MUST_ remove the deceased's Dreybits and hence the underlying bitcoin from the original fund and distribute the bitcoin to the survivors. However, the survivors have a choice of receiving this distribution directly to a wallet under their control, or, they can elect to deposit the received bitcoin (and monthly airdrop of DREY tokens) into a Drey savings/staking account, where the bitcoin and DREY tokens are deposited into a two-sided liquidity pool (DREY/BTC). This is explained in detail in the section on **Drey Savings accounts to be completed (TBC)**.
+Note that this operation _MUST_ remove the deceased's Dreybits and hence the underlying bitcoin from the original fund and distribute the bitcoin to the survivors. However, the survivors have a choice of receiving this distribution directly to a wallet under their control, or, they can elect to deposit the received bitcoin into a Drey savings/staking account. This is explained in detail in the section on **Drey Savings accounts to be completed (TBC)**.
 
 ### Monthly Annuity Payment
 
-In latest version of the system, rather than returning all of the deceased’s bitcoin every month to the survivors and emptying the sum of all deceased’s bitcoin out of the fund, the fund will redistribute the ownership of the bitcoin to surviving members but KEEP the bitcoin in the fund. A back of an envelope calculation sees that by doing so Drey greatly increase the bitcoin in the fund which drives an ever-increasing yield from the staking or lending operations. The individual investor will still experience an increase in their monthly distribution by way of the pro-rata assignment of deceased’s bitcoin to them which will also increase their ‘annuity like’ payment (from the remaining principal since their principal increases) and should increase their overall Dreybits allocation (unless perhaps there was a huge jump in new investors that month).
+In latest version of the system, rather than returning all of the deceased’s bitcoin every month to the survivors and emptying the sum of all deceased’s bitcoin out of the fund, the fund will redistribute the ownership of the bitcoin to surviving members but maintains the bitcoin in the fund. A back of an envelope calculation sees that by doing so Drey greatly increase the bitcoin in the fund which drives an ever-increasing yield from Lightning network operations. The individual investor will still experience an increase in their monthly distribution by way of the pro-rata assignment of deceased’s bitcoin to them which will also increase their ‘annuity like’ payment (from the remaining principal since their principal increases) and should increase their overall Dreybits allocation (unless perhaps there was a huge jump in new investors that month).
 
-To determine the monthly payout, we use 120 as the age by which we expect all investors in the fund to live to for the USA, and for other locales we will use the last year by which mortality is expected to cease per that location's accepted mortality table. For the USA, we will use the 2012 IAM w/G2 scale for allocation operations.
+To determine the monthly payout, we use the maximum age by accredited mortality table for the geography as the age. As an example, for the USA, we will use the 2012 IAM w/G2 scale for allocation operations.
 
 $$1 + _{n}p_{x} / (1+i)^n + _{(n+1)}p_{x} / (1+i)^{(n+1) }+_{(n+2)}p_{x}$$
 
 $$_{n}p_{x}$$ where _x_ is the current age of the annuitant, _n_ is the time from the current age until projected death (in months), and _p_ is the probability of survival to the next payment, and _i_ represents the discount rate.
 
-As mentioned, for an annuity paid for life the formula continues until it is assumed the person cannot live longer (typically 120) but will rebalance based on new published and accepted mortality tables that enable the lifespan variable to increase.
+As mentioned, for an annuity paid for life the formula continues until it is assumed the person cannot live longer but will rebalance based on new published and accepted mortality tables that enable the lifespan variable to increase.
 
 ### New Dreybit Monthly Re-Allocation
 
