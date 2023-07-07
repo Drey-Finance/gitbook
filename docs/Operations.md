@@ -24,7 +24,7 @@ As written previously, Bitcoin's recursive inscriptions and ordinal theory have 
 
 All manner of Mime types can be inserted into a bitcoin data space intrinsically linked to a specific satoshi, making the data both immutable and transferable. As Drey Finance will be keeping records that last lifespans, and in order to reduce shared object storage complexities that will no doubt arise if Drey Actuaries (miners) use a DHT or off chain storage, Drey uses bitcoin as the shared object storage, exploiting the ordinals system for the following use cases and more:
 
-* Monthly investor distributions schedule per fund to be agreed upon by Drey Actuaries
+* Monthly customer distributions schedule per fund to be agreed upon by Drey Actuaries
 * DAO proposals to be voted on by the Drey Actuaries
 * Individual records pertaining to anonymous identity verification and authentication
 * Individual records containing masked distribution information such as wallet address to send distributions
@@ -53,34 +53,32 @@ Using ROAST, Drey Actuaries have the ability to determine among themselves which
 
 A Drey Actuary selected by verifiable random function, formalizes a monthly distribution schedule called a Dreybit ledger based upon the WASM software packages each Drey Actuary runs to operate the fund and this action follows the proof race results. This formalized distribution schedule is written into the Bitcoin blockchain at a specific satoshi and relayed to the Drey Actuary population over Nostr. The decentralized actuary system summons a vote by creating a transaction at _x_ block height to move the satoshi to a specific wallet address conveying acceptance or rejection.&#x20;
 
-The Dreybit ledger contains each investor's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialization of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.
+The Dreybit ledger contains each customer's allocated Dreybit amount to be received in each re-allocation cycle that occurs on the beginning of each month. Note that this is after an initial cycle at the initialization of the fund at the beginning of month one. This process starts following the distribution of deceased member's Dreybits to survivors, and ultimately distribution of deceased member's bitcoin to surviving members which occurs at the end of the month.
 
-Each Dreybit ledger contains an anonymized ID created for the user during signup which maps to their individual bitcoin allowance address and Dreybits allocated. The amount of Dreybits allocated depends on the investor’s probability of dying and amount invested (explained in a following section) relative to all investments in a particular fund.
+Each Dreybit ledger contains an anonymized ID created for the user during signup which maps to their individual bitcoin allowance address and Dreybits allocated. The amount of Dreybits allocated depends on the customer’s probability of dying and amount invested (explained in a following section) relative to all investments in a particular fund.
 
-The reason Dreybit ledgers must be re-updated monthly is to take into account variables such as the heuristics of the entire population at the beginning of the month since investors will move into new mortality rates as they age, previous investors pass away and are removed from the fund, new investors were added during the month, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc. These variables will change during the month, hence the allocated Dreybits to individual investor will change.
+The reason Dreybit ledgers must be re-updated monthly is to take into account variables such as the heuristics of the entire population at the beginning of the month since customers will move into new mortality rates as they age, previous customers pass away and are removed from the fund, new customers were added during the month, amounts invested as a pro-rata percentage of the entire value of the fund have changed, etc. These variables will change during the month, hence the allocated Dreybits to an individual customer will change.
 
 ### Longevity Fund Terms and Conditions
 
 Drey creates a set of binding off-chain smart contracts with terms and conditions which reflect the following stipulations that a longevity risk pooling fund naturally inherits:
 
-* The customer agrees that upon their deposit of bitcoin, this investment is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
+* The customer agrees that upon their deposit of bitcoin, this deposit is an irrevocable gift to all other present and living participants in the fund who have already joined or will join in the future.
 * This gift passes in entirety to the living participants in the fund when the contributing customer passes away
 * It is held in escrow in a vault controlled by a super majority of Drey Actuaries&#x20;
-* An investor’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away
+* An customer’s allocation of their Dreybits is revoked/cancelled if-and-when the unit owners pass away
 * He/she continues to enjoy the benefit of holding those Dreybits as long as they continuously (monthly) provide proof that he/she/they/them is/are alive within a certain time limit using the Drey Proof of Life app
 * If such proof isn’t supplied, the rights conveyed by holding these Dreybits are forfeited, and ownership of the underlying bitcoin is distributed among those who did supply such proofs — i.e., proof of life.&#x20;
 
 ### Other Mechanics
 
 * Individuals can continuously invest in the fund and be assigned Dreybits at the beginning of the month
-* Dreybits ARE NOT transferrable by action of the owner
-* They are transferrable by action of the smart contracts only under control of the supermajority of Drey Actuaries
 * Dreybits are calculated using satoshi as the base investment numbering system
 * Yearly mortality rates are divisible by 12, to acclimate the rates to a monthly accounting.
 
 ## Dreybit Allocation Method
 
-Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the investor's probability of dying and their investment amount. For example, if an investor is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data being used. This keeps the distributions fair via formulas inspired by the [nominal gain method](#user-content-fn-1)[^1].
+Dreybit allocation is specific to each individual user, so a scaling factor arises based on the the customer's probability of dying and their investment amount. For example, if a customer is 30 years old, a down scale occurs because their probability of living is much higher than a 65-year-old based on the actuarial data being used. This keeps the distributions fair via formulas inspired by the [nominal gain method](#user-content-fn-1)[^1].
 
 Surviving members of a fair tontine do not receive equal allocations of each dying member’s forfeited balance.
 
@@ -105,7 +103,7 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 
 ### Allocating Deceased's Distributions
 
-When an existing investor passes away, Dreybits are re-allocated to the surviving investors. This step happens _BEFORE_ new investors are allocated Dreybits at the beginning of the month which results in a total re-allocation across the investor population. Note that even if no new investors were added, a re-allocation exercise is still necessary to take into account the removal of deceased members, changes in mortality rate, etc. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
+When an existing customer passes away, Dreybits are re-allocated to the surviving customers. This step happens _BEFORE_ new customers are allocated Dreybits at the beginning of the month which results in a total re-allocation across the customer population. Note that even if no new customers were added, a re-allocation exercise is still necessary to take into account the removal of deceased members, changes in mortality rate, etc. The formula for determining the surviving members Dreybits received from the deceased members Dreybits is:
 
 1. Sum the total of all deceased member's Dreybits in circulation at the end of the month.
 2. Sum the total of all surviving member's Dreybits in circulation at the end of the month.
@@ -134,7 +132,7 @@ Note that this operation _MUST_ remove the deceased's Dreybits and hence the und
 
 ### Monthly Annuity Payment
 
-In latest version of the system, rather than returning all of the deceased’s bitcoin every month to the survivors and emptying the sum of all deceased’s bitcoin out of the fund, the fund will redistribute the ownership of the bitcoin to surviving members but maintains the bitcoin in the fund. A back of an envelope calculation sees that by doing so Drey greatly increase the bitcoin in the fund which drives an ever-increasing yield from Lightning network operations. The individual investor will still experience an increase in their monthly distribution by way of the pro-rata assignment of deceased’s bitcoin to them which will also increase their ‘annuity like’ payment (from the remaining principal since their principal increases) and should increase their overall Dreybits allocation (unless perhaps there was a huge jump in new investors that month).
+In latest version of the system, rather than returning all of the deceased’s bitcoin every month to the survivors and emptying the sum of all deceased’s bitcoin out of the fund, the fund will redistribute the ownership of the bitcoin to surviving members but maintains the bitcoin in the fund. A back of an envelope calculation sees that by doing so Drey greatly increase the bitcoin in the fund which drives an ever-increasing yield from Lightning network operations. The individual customer will still experience an increase in their monthly distribution by way of the pro-rata assignment of deceased’s bitcoin to them which will also increase their ‘annuity like’ payment (from the remaining principal since their principal increases) and should increase their overall Dreybits allocation (unless perhaps there was a huge jump in new customers that month).
 
 To determine the monthly payout, we use the maximum age by accredited mortality table for the geography as the age. As an example, for the USA, we will use the 2012 IAM w/G2 scale for allocation operations.
 
@@ -146,7 +144,7 @@ As mentioned, for an annuity paid for life the formula continues until it is ass
 
 ### New Dreybit Monthly Re-Allocation
 
-When a new investor joins and makes a deposit in any month, Dreybits are re-allocated to new and existing investors on the 1st of the month after a deceased's Dreybits and bitcoin are allocated to existing investors and then removed from the fund after monthly annuity payments are remitted over the bitcoin network.
+When a new customer joins and makes a deposit in any month, Dreybits are re-allocated to new and existing customers on the 1st of the month after a deceased's Dreybits and bitcoin are allocated to existing customers and then removed from the fund after monthly annuity payments are remitted over the bitcoin network.
 
 Therefore, a new weighted average is calculated using the new figures that naturally occur when removing the deceased members, paying monthly annuity payments, and optionally adding new customers (if there are any for the next month) into the fund.
 
@@ -168,8 +166,8 @@ $$DB_{(1-ith)}=\overline{W}s_{(1-ith)}$$
 4. Use this number to determine the pro-rata percentage of deceased member's bitcoin to be allocated to survivors.
 5. Obtain a positive vote on the distribution schedule.
 6. Remove the deceased member's Dreybits from the total and allocate the deceased member's bitcoin to survivor's balances.
-7. Perform the APV of an Immediate Annuity formula to determine all fund investors' monthly payments.
-8. Distribute the monthly payments to all fund investors via bitcoin network.
+7. Perform the APV of an Immediate Annuity formula to determine all customers' monthly payments.
+8. Distribute the monthly payments to all customers via the Lightning network.
 9. On the first of the month, re-run the Dreybit allocation steps and submit the re-allocation schedule for vote.
 10. Obtain a positive vote on the re-allocation schedule.
 11. Go to Step 3.
